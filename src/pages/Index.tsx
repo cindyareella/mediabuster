@@ -6,10 +6,16 @@ import ProcessSection from "@/components/ProcessSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { SchemaOrg, AllServicesSchema } from "@/components/SchemaOrg";
+import { seoData } from "@/lib/seoData";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO {...seoData.home} path="/" />
+      <SchemaOrg type="Organization" />
+      <AllServicesSchema />
       <Header />
       <main>
         <HeroSection />
