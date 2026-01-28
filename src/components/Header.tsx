@@ -40,7 +40,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+      <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <a 
             href="#inicio" 
@@ -50,7 +50,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Media Buster" 
-              className="h-20 w-auto"
+              className="h-32 w-auto"
             />
           </a>
 
