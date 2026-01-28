@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -22,9 +24,11 @@ const Footer = () => {
                 onClick={(e) => { e.preventDefault(); scrollToSection("#inicio"); }}
                 className="inline-block mb-2"
               >
-                <span className="font-display text-2xl font-bold text-foreground">
-                  MEDIA<span className="text-primary">BUSTER</span>
-                </span>
+                <img 
+                  src={logo} 
+                  alt="Media Buster" 
+                  className="h-8 w-auto"
+                />
               </a>
               <p className="text-sm text-muted-foreground">
                 Estrategia que se ve. Crecimiento que se mide.

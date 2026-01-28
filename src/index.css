@@ -6,36 +6,40 @@
 
 @layer base {
   :root {
-    /* Media Buster Dark Premium Theme */
-    --background: 0 0% 3%;
-    --foreground: 0 0% 98%;
+    /* Media Buster Dark Premium Theme - Updated Palette */
+    /* Carbon Black background: RGB 18, 18, 18 */
+    --background: 0 0% 7%;
+    /* White foreground */
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Red accent - primary */
-    --primary: 0 85% 55%;
+    /* Primary Red: RGB 198, 45, 45 - HSL 0, 63%, 48% */
+    --primary: 0 63% 48%;
     --primary-foreground: 0 0% 100%;
 
-    /* Yellow accent - secondary */
-    --secondary: 45 100% 55%;
-    --secondary-foreground: 0 0% 5%;
+    /* Legacy Yellow accent: RGB 245, 200, 35 - HSL 47, 91%, 55% */
+    --secondary: 47 91% 55%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    /* Dark Gray for muted: RGB 78, 78, 78 */
+    --muted: 0 0% 15%;
+    /* Medium Gray: RGB 160, 160, 160 */
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 0 0% 10%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 48%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 85% 55%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 63% 48%;
 
     --radius: 0.5rem;
 
@@ -43,15 +47,18 @@
     --whatsapp: 142 70% 45%;
     --whatsapp-foreground: 0 0% 100%;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 85% 55%) 0%, hsl(20 90% 50%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(35 100% 60%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 2%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
+    /* Secondary Red for gradients: RGB 235, 93, 56 - HSL 12, 82%, 57% */
+    --primary-light: 12 82% 57%;
+
+    /* Custom gradients using new palette */
+    --gradient-primary: linear-gradient(135deg, hsl(0 63% 48%) 0%, hsl(12 82% 57%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(47 91% 55%) 0%, hsl(47 91% 45%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 7%) 0%, hsl(0 0% 4%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 12%) 0%, hsl(0 0% 7%) 100%);
 
     /* Shadows */
-    --shadow-glow: 0 0 40px -10px hsl(0 85% 55% / 0.3);
-    --shadow-glow-secondary: 0 0 40px -10px hsl(45 100% 55% / 0.3);
+    --shadow-glow: 0 0 40px -10px hsl(0 63% 48% / 0.4);
+    --shadow-glow-secondary: 0 0 40px -10px hsl(47 91% 55% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -64,25 +71,25 @@
   }
 
   .dark {
-    --background: 0 0% 3%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 85% 55%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 63% 48%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 45 100% 55%;
-    --secondary-foreground: 0 0% 5%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 0 0% 10%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 85% 55%;
+    --secondary: 47 91% 55%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 63%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 63% 48%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -185,7 +192,7 @@
   .border-gradient {
     border: 1px solid transparent;
     background: linear-gradient(var(--gradient-card)) padding-box,
-                linear-gradient(135deg, hsl(0 85% 55% / 0.3), hsl(45 100% 55% / 0.3)) border-box;
+                linear-gradient(135deg, hsl(0 63% 48% / 0.3), hsl(47 91% 55% / 0.3)) border-box;
   }
 }
 
@@ -224,14 +231,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(0 0% 5%);
+  background: hsl(0 0% 7%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(0 0% 20%);
+  background: hsl(0 0% 25%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0 85% 55%);
+  background: hsl(0 63% 48%);
 }
