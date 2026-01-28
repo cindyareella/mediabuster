@@ -27,7 +27,7 @@ const Footer = () => {
                 <img 
                   src={logo} 
                   alt="Media Buster" 
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
               </a>
               <p className="text-sm text-muted-foreground">
