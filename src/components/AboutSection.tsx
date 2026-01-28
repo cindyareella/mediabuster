@@ -1,5 +1,4 @@
 import { Target, Users, TrendingUp, Lightbulb } from "lucide-react";
-import isotipo from "@/assets/isotipo.png";
 
 const AboutSection = () => {
   const differentiators = [
@@ -76,7 +75,9 @@ const AboutSection = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-card border border-border p-8 lg:p-12">
                 <div className="h-full flex flex-col justify-center items-center text-center space-y-6">
-                  <img src={isotipo} alt="Media Buster" className="w-24 h-24 object-contain" />
+                  <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
+                    <Lightbulb className="w-10 h-10 text-primary" />
+                  </div>
                   <h3 className="font-display text-2xl font-bold text-foreground">
                     La alternativa inteligente
                   </h3>
