@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,11 +45,13 @@ const Header = () => {
           <a 
             href="#inicio" 
             onClick={(e) => { e.preventDefault(); scrollToSection("#inicio"); }}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
-            <span className="font-display text-2xl font-bold text-foreground">
-              MEDIA<span className="text-primary">BUSTER</span>
-            </span>
+            <img 
+              src={logo} 
+              alt="Media Buster" 
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
