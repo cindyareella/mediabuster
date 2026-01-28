@@ -50,7 +50,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Media Buster" 
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </a>
 
