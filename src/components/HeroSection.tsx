@@ -37,11 +37,10 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-slide-up">
-            <span className="text-foreground">Estrategia que</span>
-            <span className="text-gradient-primary"> se ve.</span>
+            <span className="text-gradient-primary">Marketing estratégico</span>
             <br />
-            <span className="text-foreground">Crecimiento que</span>
-            <span className="text-gradient-secondary"> se mide.</span>
+            <span className="text-foreground">para marcas en </span>
+            <span className="text-gradient-secondary">crecimiento</span>
           </h1>
 
           {/* Subheadline */}
