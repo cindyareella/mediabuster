@@ -130,7 +130,7 @@ const Contenido = () => {
                   {[
                     "Fotografía de producto",
                     "Video y reels",
-                    "Motion graphics",
+                    "Podcast y webcast",
                     "Carruseles informativos",
                     "Stories y contenido efímero",
                   ].map((item, index) => (
