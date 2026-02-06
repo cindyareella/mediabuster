@@ -29,8 +29,7 @@ const Footer = () => {
                 <img src={logo} alt="Media Buster" className="h-32 w-auto" />
               </Link>
               <p className="text-muted-foreground max-w-sm">
-                Estrategia que se ve. Crecimiento que se mide. Agencia de marketing 
-                digital estratégico en México.
+                Marketing estratégico para marcas en crecimiento.
               </p>
             </div>
 
