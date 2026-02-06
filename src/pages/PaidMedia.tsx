@@ -14,7 +14,7 @@ const PaidMedia = () => {
         title: "Agencia de pauta digital orientada a resultados",
         subtitle: "Paid Media & Performance",
         description:
-          "Diseñamos y ejecutamos campañas de Google Ads, Meta Ads y TikTok Ads con un enfoque claro: maximizar tu retorno de inversión con estrategia antes de cada peso invertido.",
+          "Diseñamos y ejecutamos campañas de Google Ads y Meta Ads con un enfoque claro: maximizar tu retorno de inversión con estrategia antes de cada peso invertido.",
       }}
     >
       {/* Performance con visión estratégica */}
@@ -147,7 +147,7 @@ const PaidMedia = () => {
             <div className="text-center">
               <p className="text-sm text-muted-foreground mb-6">Plataformas que dominamos</p>
               <div className="flex flex-wrap justify-center gap-4">
-                {["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "Programmatic"].map(
+                {["Google Ads", "Meta Ads", "LinkedIn Ads"].map(
                   (platform) => (
                     <span
                       key={platform}
