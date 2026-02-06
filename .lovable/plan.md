@@ -1,17 +1,19 @@
 
-# Plan: Quitar TikTok Ads y Programmatic de Paid Media
+# Plan: Restaurar la frase descriptiva del footer
 
-## Cambios a realizar
+## Cambio a realizar
 
-### Archivo: `src/pages/PaidMedia.tsx`
+### Archivo: `src/components/Footer.tsx`
 
-**1. Descripción del hero (línea 17)**
-- Texto actual: "...Google Ads, Meta Ads y TikTok Ads con un enfoque claro..."
-- Nuevo texto: "...Google Ads y Meta Ads con un enfoque claro..."
+**Líneas 31-33 - Texto actual:**
+```
+Marketing estratégico para marcas en crecimiento.
+```
 
-**2. Lista de plataformas (línea 150)**
-- Lista actual: `["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "Programmatic"]`
-- Nueva lista: `["Google Ads", "Meta Ads", "LinkedIn Ads"]`
+**Nuevo texto:**
+```
+Marketing estratégico para marcas en crecimiento. Agencia de marketing digital estratégico en México.
+```
 
 ## Resultado
-La página de Paid Media solo mostrará Google Ads, Meta Ads y LinkedIn Ads como las plataformas que maneja la agencia.
+El footer tendrá el nuevo slogan junto con la descripción de la agencia que estaba antes.
