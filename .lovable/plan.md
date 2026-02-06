@@ -1,19 +1,17 @@
 
-# Plan: Cambiar slogan principal del Home
+# Plan: Quitar TikTok Ads y Programmatic de Paid Media
 
-## Cambio
-Modificar el H1 principal en `src/components/HeroSection.tsx` (líneas 39-45).
+## Cambios a realizar
 
-## Texto actual
-```
-Estrategia que se ve.
-Crecimiento que se mide.
-```
+### Archivo: `src/pages/PaidMedia.tsx`
 
-## Nuevo texto
-```
-Marketing estratégico para marcas en crecimiento
-```
+**1. Descripción del hero (línea 17)**
+- Texto actual: "...Google Ads, Meta Ads y TikTok Ads con un enfoque claro..."
+- Nuevo texto: "...Google Ads y Meta Ads con un enfoque claro..."
 
-## Archivo a modificar
-`src/components/HeroSection.tsx` - Actualizar el contenido del H1 con el nuevo slogan, manteniendo los estilos de gradiente para resaltar partes clave del texto.
+**2. Lista de plataformas (línea 150)**
+- Lista actual: `["Google Ads", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "Programmatic"]`
+- Nueva lista: `["Google Ads", "Meta Ads", "LinkedIn Ads"]`
+
+## Resultado
+La página de Paid Media solo mostrará Google Ads, Meta Ads y LinkedIn Ads como las plataformas que maneja la agencia.
