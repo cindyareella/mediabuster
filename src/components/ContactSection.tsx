@@ -26,12 +26,12 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
 
   try {
-    const response = await fetch("WEBHOOK_URL_AQUI", {
+    const response = await fetch("https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -74,7 +74,8 @@ const ContactSection = () => {
     });
   } finally {
     setIsSubmitting(false);
-  };
+  }
+};
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hola, me interesa conocer más sobre Media Buster y sus servicios.");
