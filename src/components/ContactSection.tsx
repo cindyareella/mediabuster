@@ -2,28 +2,16 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MessageCircle, Mail, ArrowRight, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
-const SERVICES = [
-  "Paid Media & Growth",
-  "Contenido Multimedia",
-  "Branding",
-  "Content & Social Media",
-  "SEO",
-];
 
 const ContactSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    lastName: "",
     email: "",
     company: "",
-    phone: "",
-    service: "",
-    message: "",
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -38,50 +26,54 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch("https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          nombre: formData.name,
-          apellidos: formData.lastName,
-          email: formData.email,
-          empresa: formData.company,
-          telefono: formData.phone,
-          servicio: formData.service,
-          mensaje: formData.message,
-        })
-      });
+    const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-      if (!response.ok) {
-        throw new Error("Error al enviar");
-      }
+  try {
+    const response = await fetch("WEBHOOK_URL_AQUI", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nombre: formData.name,
+        apellidos: formData.apellidos,
+        empresa: formData.company,
+        email: formData.email,
+        telefono: formData.telefono,
+        servicio_interes: formData.servicio_interes,
+        mensaje: formData.message
+      })
+    });
 
-      toast({
-        title: "Mensaje enviado correctamente",
-        description: "Te responderemos pronto."
-      });
-
-      setFormData({
-        name: "",
-        lastName: "",
-        email: "",
-        company: "",
-        phone: "",
-        service: "",
-        message: "",
-      });
-    } catch (error) {
-      toast({
-        title: "Error al enviar",
-        description: "Inténtalo nuevamente.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
+    if (!response.ok) {
+      throw new Error("Error en el envío");
     }
+
+    toast({
+      title: "Mensaje enviado",
+      description: "Te responderemos pronto."
+    });
+
+    setFormData({
+      name: "",
+      apellidos: "",
+      company: "",
+      email: "",
+      telefono: "",
+      servicio_interes: "",
+      message: ""
+    });
+
+  } catch (error) {
+    toast({
+      title: "Error al enviar",
+      description: "Inténtalo nuevamente.",
+      variant: "destructive"
+    });
+  } finally {
+    setIsSubmitting(false);
   };
 
   const handleWhatsApp = () => {
@@ -116,7 +108,6 @@ const ContactSection = () => {
             {/* Contact Form */}
             <div className="lg:col-span-3">
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Fila 1: Nombre + Apellidos */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -130,39 +121,6 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="lastName" className="text-sm font-medium text-foreground">
-                      Apellidos *
-                    </label>
-                    <Input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      placeholder="Tus apellidos"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      required
-                      className="bg-card border-border focus:border-primary h-12"
-                    />
-                  </div>
-                </div>
-
-                {/* Fila 2: Empresa + Email */}
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium text-foreground">
-                      Empresa
-                    </label>
-                    <Input
-                      id="company"
-                      name="company"
-                      type="text"
-                      placeholder="Nombre de tu empresa"
-                      value={formData.company}
-                      onChange={handleChange}
                       className="bg-card border-border focus:border-primary h-12"
                     />
                   </div>
@@ -182,49 +140,25 @@ const ContactSection = () => {
                     />
                   </div>
                 </div>
-
-                {/* Fila 3: Teléfono + Servicio */}
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-foreground">
-                      Teléfono
-                    </label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="Tu número de teléfono"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="bg-card border-border focus:border-primary h-12"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">
-                      Servicio de interés
-                    </label>
-                    <Select
-                      value={formData.service}
-                      onValueChange={(value) => setFormData(prev => ({ ...prev, service: value }))}
-                    >
-                      <SelectTrigger className="bg-card border-border focus:border-primary h-12">
-                        <SelectValue placeholder="Selecciona un servicio" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {SERVICES.map((service) => (
-                          <SelectItem key={service} value={service}>
-                            {service}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
+                
+                <div className="space-y-2">
+                  <label htmlFor="company" className="text-sm font-medium text-foreground">
+                    Empresa / Proyecto
+                  </label>
+                  <Input
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Nombre de tu empresa o proyecto"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="bg-card border-border focus:border-primary h-12"
+                  />
                 </div>
 
-                {/* Fila 4: Mensaje */}
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground">
-                    Mensaje *
+                    ¿Cómo podemos ayudarte? *
                   </label>
                   <Textarea
                     id="message"
