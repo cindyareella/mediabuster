@@ -26,16 +26,51 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+   const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    toast({
-      title: "¡Mensaje enviado!",
-      description: "Nos pondremos en contacto contigo pronto.",
+  try {
+    const response = await fetch(https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nombre: formData.name,
+        email: formData.email,
+        empresa: formData.company,
+        mensaje: formData.message
+      })
     });
 
-    setFormData({ name: "", email: "", company: "", message: "" });
+    if (!response.ok) {
+      throw new Error("Error al enviar");
+    }
+
+    toast({
+      title: "Mensaje enviado correctamente",
+      description: "Te responderemos pronto."
+    });
+
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      message: ""
+    });
+
+  } catch (error) {
+    toast({
+      title: "Error al enviar",
+      description: "Inténtalo nuevamente.",
+      variant: "destructive"
+    });
+  } finally {
     setIsSubmitting(false);
+  }
+};
+
   };
 
   const handleWhatsApp = () => {
