@@ -6,16 +6,28 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { seoData } from "@/lib/seoData";
 import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, Mail, ArrowRight, Send, MapPin } from "lucide-react";
+
+const SERVICES = [
+  "Paid Media & Growth",
+  "Contenido Multimedia",
+  "Branding",
+  "Content & Social Media",
+  "SEO",
+];
 
 const Contacto = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
+    lastName: "",
     email: "",
     company: "",
+    phone: "",
+    service: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,16 +45,38 @@ const Contacto = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nombre: formData.name,
+          apellidos: formData.lastName,
+          email: formData.email,
+          empresa: formData.company,
+          telefono: formData.phone,
+          servicio: formData.service,
+          mensaje: formData.message,
+        }),
+      });
 
-    toast({
-      title: "¡Mensaje enviado!",
-      description: "Nos pondremos en contacto contigo pronto.",
-    });
+      if (!response.ok) throw new Error("Error al enviar");
 
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
+      toast({
+        title: "¡Mensaje enviado!",
+        description: "Nos pondremos en contacto contigo pronto.",
+      });
+
+      setFormData({ name: "", lastName: "", email: "", company: "", phone: "", service: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error al enviar",
+        description: "Inténtalo nuevamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsApp = () => {
@@ -98,80 +132,69 @@ const Contacto = () => {
                 {/* Contact Form */}
                 <div className="lg:col-span-3">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Fila 1: Nombre + Apellidos */}
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label
-                          htmlFor="name"
-                          className="text-sm font-medium text-foreground"
-                        >
+                        <label htmlFor="name" className="text-sm font-medium text-foreground">
                           Nombre *
                         </label>
-                        <Input
-                          id="name"
-                          name="name"
-                          type="text"
-                          placeholder="Tu nombre"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                          className="bg-card border-border focus:border-primary h-12"
-                        />
+                        <Input id="name" name="name" type="text" placeholder="Tu nombre" value={formData.name} onChange={handleChange} required className="bg-card border-border focus:border-primary h-12" />
                       </div>
                       <div className="space-y-2">
-                        <label
-                          htmlFor="email"
-                          className="text-sm font-medium text-foreground"
-                        >
-                          Email *
+                        <label htmlFor="lastName" className="text-sm font-medium text-foreground">
+                          Apellidos *
                         </label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          placeholder="tu@email.com"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                          className="bg-card border-border focus:border-primary h-12"
-                        />
+                        <Input id="lastName" name="lastName" type="text" placeholder="Tus apellidos" value={formData.lastName} onChange={handleChange} required className="bg-card border-border focus:border-primary h-12" />
                       </div>
                     </div>
 
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="company"
-                        className="text-sm font-medium text-foreground"
-                      >
-                        Empresa / Proyecto
-                      </label>
-                      <Input
-                        id="company"
-                        name="company"
-                        type="text"
-                        placeholder="Nombre de tu empresa o proyecto"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="bg-card border-border focus:border-primary h-12"
-                      />
+                    {/* Fila 2: Empresa + Email */}
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="company" className="text-sm font-medium text-foreground">
+                          Empresa
+                        </label>
+                        <Input id="company" name="company" type="text" placeholder="Nombre de tu empresa" value={formData.company} onChange={handleChange} className="bg-card border-border focus:border-primary h-12" />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-medium text-foreground">
+                          Email *
+                        </label>
+                        <Input id="email" name="email" type="email" placeholder="tu@email.com" value={formData.email} onChange={handleChange} required className="bg-card border-border focus:border-primary h-12" />
+                      </div>
                     </div>
 
+                    {/* Fila 3: Teléfono + Servicio */}
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                          Teléfono
+                        </label>
+                        <Input id="phone" name="phone" type="tel" placeholder="Tu número de teléfono" value={formData.phone} onChange={handleChange} className="bg-card border-border focus:border-primary h-12" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-foreground">
+                          Servicio de interés
+                        </label>
+                        <Select value={formData.service} onValueChange={(value) => setFormData(prev => ({ ...prev, service: value }))}>
+                          <SelectTrigger className="bg-card border-border focus:border-primary h-12">
+                            <SelectValue placeholder="Selecciona un servicio" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {SERVICES.map((service) => (
+                              <SelectItem key={service} value={service}>{service}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+
+                    {/* Fila 4: Mensaje */}
                     <div className="space-y-2">
-                      <label
-                        htmlFor="message"
-                        className="text-sm font-medium text-foreground"
-                      >
-                        ¿Cómo podemos ayudarte? *
+                      <label htmlFor="message" className="text-sm font-medium text-foreground">
+                        Mensaje *
                       </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        placeholder="Cuéntanos brevemente sobre tu proyecto y qué resultados buscas..."
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        rows={5}
-                        className="bg-card border-border focus:border-primary resize-none"
-                      />
+                      <Textarea id="message" name="message" placeholder="Cuéntanos brevemente sobre tu proyecto y qué resultados buscas..." value={formData.message} onChange={handleChange} required rows={5} className="bg-card border-border focus:border-primary resize-none" />
                     </div>
 
                     <Button
