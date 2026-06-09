@@ -7,7 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import PaidMedia from "./pages/PaidMedia";
 import SEOPage from "./pages/SEOPage";
-import Branding from "./pages/Branding";
+
 import Contenido from "./pages/Contenido";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
@@ -26,7 +26,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/paid-media" element={<PaidMedia />} />
             <Route path="/seo" element={<SEOPage />} />
-            <Route path="/branding" element={<Branding />} />
+            
             <Route path="/contenido" element={<Contenido />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />

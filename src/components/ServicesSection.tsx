@@ -1,4 +1,4 @@
-import { Zap, Video, Palette, Share2, Search, ArrowRight } from "lucide-react";
+import { Zap, Video, Share2, Search, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
@@ -16,13 +16,6 @@ const ServicesSection = () => {
       description: "Producción de contenido visual y audiovisual que conecta con tu audiencia y comunica tu propuesta de valor.",
       features: ["Video marketing", "Fotografía", "Motion graphics", "Reels & TikToks"],
       accent: "secondary"
-    },
-    {
-      icon: Palette,
-      title: "Branding",
-      description: "Construcción de marcas memorables. Identidad visual, naming y posicionamiento estratégico.",
-      features: ["Identidad visual", "Naming", "Brand guidelines", "Rebranding"],
-      accent: "primary"
     },
     {
       icon: Share2,

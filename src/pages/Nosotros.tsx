@@ -11,7 +11,6 @@ import {
   TrendingUp,
   Lightbulb,
   Zap,
-  Palette,
   Share2,
   Search,
   ArrowRight,
@@ -48,7 +47,6 @@ const Nosotros = () => {
   const services = [
     { name: "Paid Media", icon: Zap, slug: "paid-media" },
     { name: "SEO", icon: Search, slug: "seo" },
-    { name: "Branding", icon: Palette, slug: "branding" },
     { name: "Contenido", icon: Share2, slug: "contenido" },
   ];
 

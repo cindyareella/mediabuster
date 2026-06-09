@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Zap, Search, Palette, Share2 } from "lucide-react";
+import { ArrowRight, Zap, Search, Share2 } from "lucide-react";
 import { services } from "@/lib/seoData";
 
 const iconMap: Record<string, React.ElementType> = {
   "paid-media": Zap,
   seo: Search,
-  branding: Palette,
   contenido: Share2,
 };
 

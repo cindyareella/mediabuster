@@ -14,7 +14,6 @@ import { MessageCircle, Mail, ArrowRight, Send, MapPin } from "lucide-react";
 const SERVICES = [
   "Paid Media & Growth",
   "Contenido Multimedia",
-  "Branding",
   "Content & Social Media",
   "SEO",
 ];
