@@ -13,7 +13,7 @@ const ServiceCTA = ({
 }: ServiceCTAProps) => {
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hola, me interesa conocer más sobre los servicios de Media Buster.");
-    window.open(`https://wa.me/521234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/525635406982?text=${message}`, "_blank");
   };
 
   return (
