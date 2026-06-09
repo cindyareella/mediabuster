@@ -1,5 +1,6 @@
 import { Zap, Video, Share2, Search, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -8,28 +9,32 @@ const ServicesSection = () => {
       title: "Paid Media & Growth",
       description: "Campañas de performance en Meta, Google y TikTok. Estrategias de adquisición y retención basadas en datos.",
       features: ["Meta Ads", "Google Ads", "TikTok Ads", "Analytics avanzado"],
-      accent: "primary"
+      accent: "primary",
+      href: "/paid-media"
     },
     {
       icon: Video,
       title: "Contenido Multimedia",
       description: "Producción de contenido visual y audiovisual que conecta con tu audiencia y comunica tu propuesta de valor.",
       features: ["Video marketing", "Fotografía", "Motion graphics", "Reels & TikToks"],
-      accent: "secondary"
+      accent: "secondary",
+      href: "/contenido"
     },
     {
       icon: Share2,
       title: "Content & Social Media",
       description: "Estrategia de contenido y gestión de redes sociales con enfoque en engagement y conversión.",
       features: ["Estrategia de contenido", "Community management", "Calendario editorial", "Reportes"],
-      accent: "secondary"
+      accent: "secondary",
+      href: "/contenido"
     },
     {
       icon: Search,
       title: "SEO",
       description: "Posicionamiento orgánico que genera tráfico cualificado y reduce dependencia del paid media.",
       features: ["SEO On-page", "SEO Técnico", "Link building", "Content SEO"],
-      accent: "primary"
+      accent: "primary",
+      href: "/seo"
     }
   ];
 
@@ -85,7 +90,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Features */}
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className={`w-1.5 h-1.5 rounded-full ${
@@ -95,6 +100,13 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
+
+                <Button asChild variant="outline" size="sm" className="w-full group/btn">
+                  <Link to={service.href}>
+                    Ver más
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
+                </Button>
 
                 {/* Hover border effect */}
                 <div className={`absolute inset-0 rounded-2xl ${

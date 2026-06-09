@@ -82,7 +82,7 @@ const Contacto = () => {
     const message = encodeURIComponent(
       "Hola, me interesa conocer más sobre Media Buster y sus servicios."
     );
-    window.open(`https://wa.me/521234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/525635406982?text=${message}`, "_blank");
   };
 
   return (
