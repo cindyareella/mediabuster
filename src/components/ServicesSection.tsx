@@ -9,28 +9,32 @@ const ServicesSection = () => {
       title: "Paid Media & Growth",
       description: "Campañas de performance en Meta, Google y TikTok. Estrategias de adquisición y retención basadas en datos.",
       features: ["Meta Ads", "Google Ads", "TikTok Ads", "Analytics avanzado"],
-      accent: "primary"
+      accent: "primary",
+      href: "/paid-media"
     },
     {
       icon: Video,
       title: "Contenido Multimedia",
       description: "Producción de contenido visual y audiovisual que conecta con tu audiencia y comunica tu propuesta de valor.",
       features: ["Video marketing", "Fotografía", "Motion graphics", "Reels & TikToks"],
-      accent: "secondary"
+      accent: "secondary",
+      href: "/contenido"
     },
     {
       icon: Share2,
       title: "Content & Social Media",
       description: "Estrategia de contenido y gestión de redes sociales con enfoque en engagement y conversión.",
       features: ["Estrategia de contenido", "Community management", "Calendario editorial", "Reportes"],
-      accent: "secondary"
+      accent: "secondary",
+      href: "/contenido"
     },
     {
       icon: Search,
       title: "SEO",
       description: "Posicionamiento orgánico que genera tráfico cualificado y reduce dependencia del paid media.",
       features: ["SEO On-page", "SEO Técnico", "Link building", "Content SEO"],
-      accent: "primary"
+      accent: "primary",
+      href: "/seo"
     }
   ];
 
