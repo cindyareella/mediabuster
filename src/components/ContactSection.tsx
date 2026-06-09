@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MessageCircle, Mail, ArrowRight, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const SERVICES = ["Paid Media & Growth", "Contenido Multimedia", "Branding", "Content & Social Media", "SEO"];
+const SERVICES = ["Paid Media & Growth", "Contenido Multimedia", "Content & Social Media", "SEO"];
 
 const ContactSection = () => {
   const { toast } = useToast();

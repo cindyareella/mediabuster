@@ -67,18 +67,6 @@ const servicesSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Branding",
-    description: "Desarrollo de identidad de marca, naming y estrategia de posicionamiento.",
-    provider: {
-      "@type": "Organization",
-      name: SITE_NAME,
-    },
-    areaServed: "MX",
-    url: `${SITE_URL}/branding`,
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
     name: "Contenido & Social Media",
     description: "Estrategia de contenidos y community management profesional.",
     provider: {

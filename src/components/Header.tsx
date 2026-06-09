@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Zap, Search, Palette, Share2 } from "lucide-react";
+import { Menu, X, ChevronDown, Zap, Search, Share2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
   const services = [
     { name: "Paid Media", href: "/paid-media", icon: Zap },
     { name: "SEO", href: "/seo", icon: Search },
-    { name: "Branding", href: "/branding", icon: Palette },
+    
     { name: "Contenido", href: "/contenido", icon: Share2 },
   ];
 

@@ -25,11 +25,6 @@ export const seoData: Record<string, SEOData> = {
     description: "Servicios de SEO técnico y de contenido para empresas que buscan crecer de forma orgánica. Posicionamiento web con método y estrategia en México.",
     keywords: ["agencia SEO", "servicios de SEO", "posicionamiento web", "SEO para empresas", "SEO en México"],
   },
-  branding: {
-    title: "Agencia de Branding y Estrategia de Marca | Media Buster",
-    description: "Desarrollo de identidad de marca, naming y estrategia de posicionamiento. Construimos marcas sólidas con dirección clara para empresas en crecimiento.",
-    keywords: ["agencia de branding", "estrategia de marca", "identidad de marca", "desarrollo de marca", "naming y branding"],
-  },
   contenido: {
     title: "Agencia de Contenido Digital y Social Media | Media Buster",
     description: "Estrategia de contenidos y community management profesional. Contenido para redes sociales que conecta, posiciona y convierte.",
@@ -59,12 +54,6 @@ export const services = [
     name: "SEO",
     shortName: "SEO",
     description: "Posicionamiento orgánico que genera tráfico cualificado.",
-  },
-  {
-    slug: "branding",
-    name: "Branding",
-    shortName: "Branding",
-    description: "Construcción de marcas memorables con dirección estratégica.",
   },
   {
     slug: "contenido",
