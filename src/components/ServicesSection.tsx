@@ -90,7 +90,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Features */}
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className={`w-1.5 h-1.5 rounded-full ${
@@ -100,6 +100,13 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
+
+                <Button asChild variant="outline" size="sm" className="w-full group/btn">
+                  <Link to={service.href}>
+                    Ver más
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
+                </Button>
 
                 {/* Hover border effect */}
                 <div className={`absolute inset-0 rounded-2xl ${
