@@ -11,9 +11,11 @@ const HeroSection = () => {
       className="min-h-screen flex items-center relative overflow-hidden pt-28 lg:pt-32 pb-16"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-dark" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute inset-0 bg-[#1A2433]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse-slow" />
+
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
