@@ -56,14 +56,14 @@ const ProcessSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-background/90 text-primary font-bold text-xs uppercase tracking-widest mb-5 shadow-card">
               Nuestro proceso
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Método, no improvisación<span className="text-primary">.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Cada proyecto sigue un proceso estructurado que garantiza claridad, 
+            <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+              Cada proyecto sigue un proceso estructurado que garantiza claridad,
               eficiencia y resultados medibles en cada etapa.
             </p>
           </div>
