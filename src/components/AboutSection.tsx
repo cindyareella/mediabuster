@@ -25,8 +25,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="nosotros" className="py-24 lg:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-dark" />
+   <section id="nosotros" className="py-24 lg:py-32 relative bg-[#FFF5F0]">
+     <div className="absolute inset-0 opacity-60" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(210,93,56,0.08) 1px, transparent 0)", backgroundSize: "28px 28px" }} />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
