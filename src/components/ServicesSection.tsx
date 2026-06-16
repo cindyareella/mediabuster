@@ -44,27 +44,27 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicios" className="py-24 lg:py-32 relative">
+    <section id="servicios" className="py-16 lg:py-20 relative">
       <div className="absolute inset-0 bg-background" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">
+          <div className="text-center mb-10">
+            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-3 block">
               Servicios
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-5">
               Un ecosistema, no servicios sueltos<span className="text-secondary">.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Todos nuestros servicios funcionan como un sistema integrado bajo un mismo proceso. 
               La estrategia guía, la creatividad ejecuta, los datos optimizan.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {services.map((service, index) => (
               <div 
                 key={index}
