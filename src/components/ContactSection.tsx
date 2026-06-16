@@ -65,7 +65,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-28 lg:py-40 relative overflow-hidden bg-[#1A2433]">
+    <section id="contacto" className="py-16 lg:py-24 relative overflow-hidden bg-[#1A2433]">
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
@@ -73,20 +73,20 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-primary font-bold text-xs uppercase tracking-widest mb-5 border border-primary/20">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
               Contacto
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5">
               ¿Listo para crecer<span className="text-primary">?</span>
             </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
               Cuéntanos sobre tu proyecto. Sin compromiso, con claridad. Queremos entenderte antes de proponerte nada.
             </p>
           </div>
 
 
-          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-3">
               <form onSubmit={handleSubmit} className="space-y-6">
