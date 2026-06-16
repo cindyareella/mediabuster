@@ -1,28 +1,7 @@
-import { Target, Users, TrendingUp, Lightbulb } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 
 const AboutSection = () => {
-  const differentiators = [
-    {
-      icon: Target,
-      title: "Estrategia primero",
-      description: "No ejecutamos sin entender. Cada acción tiene un propósito claro y medible."
-    },
-    {
-      icon: Users,
-      title: "De emprendedores, para emprendedores",
-      description: "Entendemos tu realidad porque la vivimos. Sin burocracia, con resultados."
-    },
-    {
-      icon: TrendingUp,
-      title: "Crecimiento medible",
-      description: "No métricas de vanidad. Hablamos de ventas, leads y ROI real."
-    },
-    {
-      icon: Lightbulb,
-      title: "Creatividad con intención",
-      description: "Cada pieza creativa tiene un objetivo estratégico detrás."
-    }
-  ];
+
 
   return (
    <section id="nosotros" className="py-24 lg:py-32 relative bg-[#FFF5F0]">
@@ -103,25 +82,6 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Differentiators Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {differentiators.map((item, index) => (
-              <div 
-                key={index}
-                className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
-              >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h4 className="font-display font-semibold text-foreground mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-muted-foreground">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
