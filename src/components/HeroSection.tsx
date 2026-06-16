@@ -57,7 +57,7 @@ const HeroSection = () => {
               className="group"
               onClick={scrollToContact}
             >
-              Trabajemos juntos
+              Agendar consultoría
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Ver servicios
+              Auditar mis campañas
             </Button>
           </div>
 
