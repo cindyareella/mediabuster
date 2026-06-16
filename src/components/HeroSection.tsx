@@ -57,23 +57,6 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            {/* Trust strip */}
-            <div className="mt-12 pt-8 border-t border-border/60 flex flex-wrap items-center justify-center lg:justify-start gap-8 md:gap-10">
-              <div className="text-center lg:text-left">
-                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">+50</p>
-                <p className="text-xs lg:text-sm text-muted-foreground">Proyectos</p>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center lg:text-left">
-                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">100%</p>
-                <p className="text-xs lg:text-sm text-muted-foreground">Compromiso</p>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center lg:text-left">
-                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">Data</p>
-                <p className="text-xs lg:text-sm text-muted-foreground">Driven</p>
-              </div>
-            </div>
           </div>
 
           {/* Image */}
