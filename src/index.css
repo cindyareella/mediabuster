@@ -118,8 +118,20 @@
     background: var(--gradient-card);
   }
 
+  .bg-sage {
+    background-color: hsl(var(--sage));
+  }
+
+  .bg-gradient-sage {
+    background: var(--gradient-sage);
+  }
+
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
   }
 
   .shadow-glow-secondary {
