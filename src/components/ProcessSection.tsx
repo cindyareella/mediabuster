@@ -76,19 +76,19 @@ const ProcessSection = () => {
                   </div>
 
                   {/* Card */}
-                  <div className="flex-1 bg-white rounded-2xl p-6 lg:p-8 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.10)] border border-border/40 hover:shadow-[0_12px_30px_-10px_rgba(210,93,56,0.25)] transition-all duration-300">
-                    <div className="flex items-baseline gap-3 mb-2">
+                  <div className="flex-1 bg-white rounded-2xl p-5 lg:p-6 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.10)] border border-border/40 hover:shadow-[0_12px_30px_-10px_rgba(210,93,56,0.25)] transition-all duration-300">
+                    <div className="flex items-baseline gap-3 mb-1.5">
                       <span className="font-display text-sm font-bold text-primary tracking-widest">
                         {step.number}
                       </span>
-                      <h3 className="font-display text-xl lg:text-2xl font-bold text-foreground">
+                      <h3 className="font-display text-lg lg:text-xl font-bold text-foreground">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-foreground/70 mb-4 leading-relaxed">
+                    <p className="text-sm md:text-base text-foreground/70 mb-3 leading-relaxed">
                       {step.description}
                     </p>
-                    <ul className="grid sm:grid-cols-3 gap-2 pt-4 border-t border-border/50">
+                    <ul className="grid sm:grid-cols-3 gap-2 pt-3 border-t border-border/50">
                       {step.details.map((detail, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-sm text-foreground/65">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
