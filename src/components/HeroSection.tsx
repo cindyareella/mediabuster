@@ -34,7 +34,7 @@ const HeroSection = () => {
               <span className="text-gradient-secondary">crecimiento</span>
             </h1>
 
-            <p className="text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-9 animate-slide-up-delay leading-relaxed">
+            <p className="text-base lg:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-9 animate-slide-up-delay leading-relaxed">
               Somos la agencia que los emprendedores creamos para emprendedores.
               No vendemos humo, construimos sistemas de crecimiento real.
             </p>

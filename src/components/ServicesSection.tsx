@@ -44,53 +44,53 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicios" className="py-24 lg:py-32 relative">
+    <section id="servicios" className="py-16 lg:py-20 relative">
       <div className="absolute inset-0 bg-background" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">
+          <div className="text-center mb-10">
+            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-3 block">
               Servicios
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-5">
               Un ecosistema, no servicios sueltos<span className="text-secondary">.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Todos nuestros servicios funcionan como un sistema integrado bajo un mismo proceso. 
               La estrategia guía, la creatividad ejecuta, los datos optimizan.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className={`group relative p-8 rounded-2xl bg-gradient-card border border-border hover:border-${service.accent}/50 transition-all duration-300 hover-lift ${
+                className={`group relative p-6 rounded-2xl bg-gradient-card border border-border hover:border-${service.accent}/50 transition-all duration-300 hover-lift ${
                   index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
                 }`}
               >
                 {/* Icon */}
-                <div className={`w-14 h-14 rounded-xl ${
+                <div className={`w-12 h-12 rounded-xl ${
                   service.accent === 'primary' ? 'bg-primary/10' : 'bg-secondary/10'
-                } flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className={`w-7 h-7 ${
+                } flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className={`w-6 h-6 ${
                     service.accent === 'primary' ? 'text-primary' : 'text-secondary'
                   }`} />
                 </div>
 
                 {/* Content */}
-                <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {service.description}
                 </p>
 
                 {/* Features */}
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-1.5 mb-5">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className={`w-1.5 h-1.5 rounded-full ${
@@ -117,13 +117,13 @@ const ServicesSection = () => {
           </div>
 
           {/* Ecosystem CTA */}
-          <div className="relative p-8 md:p-12 rounded-2xl border-gradient">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="relative p-6 md:p-8 rounded-2xl border-gradient">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
                   ¿Necesitas un diagnóstico de tu marketing?
                 </h3>
-                <p className="text-muted-foreground max-w-xl">
+                <p className="text-sm md:text-base text-muted-foreground max-w-xl leading-relaxed">
                   Antes de cualquier propuesta, analizamos dónde estás y hacia dónde quieres ir. 
                   Sin compromiso, con claridad.
                 </p>
