@@ -149,5 +149,8 @@ const WhyUsSection = () => {
           </div>
         </div>
       </div>
+    </section>
+  );
+};
 
 export default WhyUsSection;
