@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Zap, Search, Share2 } from "lucide-react";
-import logo from "@/assets/logo.png";
+const logo = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
