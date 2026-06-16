@@ -115,7 +115,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button asChild variant="hero" size="lg">
-              <Link to="/contacto">Trabajemos juntos</Link>
+              <Link to="/contacto">Agendar consultoría</Link>
             </Button>
           </div>
 
@@ -179,7 +179,7 @@ const Header = () => {
               </Link>
 
               <Button asChild variant="hero" size="lg" className="mt-4 w-full">
-                <Link to="/contacto">Trabajemos juntos</Link>
+                <Link to="/contacto">Agendar consultoría</Link>
               </Button>
             </nav>
           </div>
