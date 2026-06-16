@@ -66,7 +66,7 @@ const ContactSection = () => {
 
   return (
     <section id="contacto" className="py-24 lg:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-dark" />
+      <div className="absolute inset-0 bg-gradient-sage" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
