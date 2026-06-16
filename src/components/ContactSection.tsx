@@ -228,7 +228,7 @@ const ContactSection = () => {
 
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
+              <div className="p-6 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-secondary" />
                 </div>
@@ -242,7 +242,7 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
+              <div className="p-6 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
