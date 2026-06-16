@@ -59,7 +59,7 @@ const Header = () => {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className="flex items-center gap-1 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                className="flex items-center gap-1 text-base font-medium text-foreground/80 hover:text-primary transition-colors"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
