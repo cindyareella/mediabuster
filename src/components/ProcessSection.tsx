@@ -40,21 +40,17 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-28 lg:py-40 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-sage" />
-      
+    <section id="proceso" className="py-28 lg:py-40 relative overflow-hidden bg-sage">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
+      <div className="absolute inset-0 opacity-[0.12] pointer-events-none">
         <div className="absolute inset-0" style={{
-          backgroundImage: `repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 50px,
-            rgba(43,43,43,0.3) 50px,
-            rgba(43,43,43,0.3) 51px
-          )`
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(43,43,43,0.4) 1px, transparent 0)`,
+          backgroundSize: '32px 32px'
         }} />
       </div>
+      <div className="absolute -top-32 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
