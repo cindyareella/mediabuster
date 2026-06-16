@@ -17,7 +17,7 @@ const ServiceCTA = ({
   };
 
   return (
-    <section className="py-24 lg:py-32 relative">
+    <section className="py-28 lg:py-36 relative">
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
