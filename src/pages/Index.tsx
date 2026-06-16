@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ProcessSection from "@/components/ProcessSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ContactSection from "@/components/ContactSection";
+import ServiceCTA from "@/components/ServiceCTA";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { SchemaOrg, AllServicesSchema } from "@/components/SchemaOrg";
