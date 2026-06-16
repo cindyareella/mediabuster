@@ -68,24 +68,24 @@ const ServicesSection = () => {
             {services.map((service, index) => (
               <div 
                 key={index}
-                className={`group relative p-8 rounded-2xl bg-gradient-card border border-border hover:border-${service.accent}/50 transition-all duration-300 hover-lift ${
+                className={`group relative p-6 rounded-2xl bg-gradient-card border border-border hover:border-${service.accent}/50 transition-all duration-300 hover-lift ${
                   index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
                 }`}
               >
                 {/* Icon */}
-                <div className={`w-14 h-14 rounded-xl ${
+                <div className={`w-12 h-12 rounded-xl ${
                   service.accent === 'primary' ? 'bg-primary/10' : 'bg-secondary/10'
-                } flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className={`w-7 h-7 ${
+                } flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className={`w-6 h-6 ${
                     service.accent === 'primary' ? 'text-primary' : 'text-secondary'
                   }`} />
                 </div>
 
                 {/* Content */}
-                <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {service.description}
                 </p>
 
