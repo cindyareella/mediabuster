@@ -65,22 +65,26 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-28 lg:py-40 relative">
-      <div className="absolute inset-0 bg-gradient-sage" />
+    <section id="contacto" className="py-28 lg:py-40 relative overflow-hidden bg-[#1A2433]">
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">Contacto</span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-primary font-bold text-xs uppercase tracking-widest mb-5 border border-primary/20">
+              Contacto
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               ¿Listo para crecer<span className="text-primary">?</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
               Cuéntanos sobre tu proyecto. Sin compromiso, con claridad. Queremos entenderte antes de proponerte nada.
             </p>
           </div>
+
 
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Contact Form */}
@@ -89,7 +93,7 @@ const ContactSection = () => {
                 {/* Row 1: Nombre + Apellidos */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-foreground">
+                    <label htmlFor="name" className="text-sm font-medium text-white/90">
                       Nombre *
                     </label>
                     <Input
@@ -99,11 +103,11 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="lastName" className="text-sm font-medium text-foreground">
+                    <label htmlFor="lastName" className="text-sm font-medium text-white/90">
                       Apellidos *
                     </label>
                     <Input
@@ -113,7 +117,7 @@ const ContactSection = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                 </div>
@@ -121,7 +125,7 @@ const ContactSection = () => {
                 {/* Row 2: Empresa + Email */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium text-foreground">
+                    <label htmlFor="company" className="text-sm font-medium text-white/90">
                       Empresa
                     </label>
                     <Input
@@ -130,11 +134,11 @@ const ContactSection = () => {
                       placeholder="Nombre de tu empresa"
                       value={formData.company}
                       onChange={handleChange}
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">
+                    <label htmlFor="email" className="text-sm font-medium text-white/90">
                       Email *
                     </label>
                     <Input
@@ -145,7 +149,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                 </div>
@@ -153,7 +157,7 @@ const ContactSection = () => {
                 {/* Row 3: Teléfono + Servicio */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                    <label htmlFor="phone" className="text-sm font-medium text-white/90">
                       Teléfono
                     </label>
                     <Input
@@ -163,16 +167,16 @@ const ContactSection = () => {
                       placeholder="Tu teléfono"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Servicio de interés</label>
+                    <label className="text-sm font-medium text-white/90">Servicio de interés</label>
                     <Select
                       value={formData.service}
                       onValueChange={(value) => setFormData((prev) => ({ ...prev, service: value }))}
                     >
-                      <SelectTrigger className="bg-card border-border focus:border-primary h-12">
+                      <SelectTrigger className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12">
                         <SelectValue placeholder="Selecciona un servicio" />
                       </SelectTrigger>
                       <SelectContent>
@@ -188,7 +192,7 @@ const ContactSection = () => {
 
                 {/* Row 4: Mensaje */}
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-foreground">
+                  <label htmlFor="message" className="text-sm font-medium text-white/90">
                     Mensaje *
                   </label>
                   <Textarea
@@ -199,7 +203,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="bg-card border-border focus:border-primary resize-none"
+                    className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary resize-none"
                   />
                 </div>
 
@@ -223,13 +227,13 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-8">
-              <div className="p-8 rounded-2xl bg-card border border-border/60 shadow-card">
+            <div className="lg:col-span-2 space-y-6">
+              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground mb-2">¿Prefieres WhatsApp?</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="font-display text-xl font-bold text-white mb-2">¿Prefieres WhatsApp?</h3>
+                <p className="text-white/70 mb-6 text-sm">
                   Escríbenos directamente y respondemos en menos de 24 horas.
                 </p>
                 <Button variant="whatsapp" size="lg" className="w-full group" onClick={handleWhatsApp}>
@@ -238,22 +242,23 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              <div className="p-8 rounded-2xl bg-card border border-border/60 shadow-card">
+              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground mb-2">Email directo</h3>
+                <h3 className="font-display text-xl font-bold text-white mb-2">Email directo</h3>
                 <a href="mailto:hola@mediabuster.com" className="text-primary hover:underline">
                   hola@mediabuster.com
                 </a>
               </div>
 
-              <div className="p-6 rounded-xl border border-border/50 bg-background/70 backdrop-blur-sm">
-                <p className="text-sm text-muted-foreground italic">
+              <div className="p-6 rounded-xl border border-white/10 bg-white/[0.03]">
+                <p className="text-sm text-white/60 italic">
                   "No te vamos a bombardear con emails ni llamadas. Respetamos tu tiempo como respetamos el nuestro."
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
