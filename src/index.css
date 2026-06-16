@@ -175,53 +175,27 @@
   .border-gradient {
     border: 1px solid transparent;
     background: linear-gradient(var(--gradient-card)) padding-box,
-                linear-gradient(135deg, hsl(0 63% 48% / 0.3), hsl(47 91% 55% / 0.3)) border-box;
+                linear-gradient(135deg, hsl(13 63% 52% / 0.4), hsl(40 76% 54% / 0.4)) border-box;
   }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: hsl(0 0% 7%);
-}
-
-::-webkit-scrollbar-thumb {
-  background: hsl(0 0% 25%);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(0 63% 48%);
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: hsl(40 40% 96%); }
+::-webkit-scrollbar-thumb { background: hsl(40 20% 80%); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(13 63% 52%); }
