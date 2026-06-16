@@ -50,7 +50,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-10">
             <Link
               to="/"
-              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
             >
               Inicio
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -59,7 +59,7 @@ const Header = () => {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className="flex items-center gap-1 text-base font-semibold text-foreground/85 hover:text-primary transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
@@ -91,7 +91,7 @@ const Header = () => {
 
             <Link
               to="/nosotros"
-              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
             >
               Nosotros
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -99,7 +99,7 @@ const Header = () => {
 
             <Link
               to="/contacto"
-              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
             >
               Contacto
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
