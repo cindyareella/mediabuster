@@ -31,18 +31,18 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/98 backdrop-blur-md border-b border-border shadow-card"
+          ? "bg-[#FFFBF7]/98 backdrop-blur-md border-b border-border/60 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.12)]"
           : "bg-background/85 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-20 lg:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src={logo}
               alt="Media Buster"
-              className="h-14 lg:h-20 w-auto transition-all duration-300"
+              className="h-16 lg:h-24 w-auto transition-all duration-300"
             />
           </Link>
 
