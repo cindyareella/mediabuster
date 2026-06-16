@@ -101,9 +101,9 @@ const ServicesSection = () => {
                   ))}
                 </ul>
 
-                <Button asChild variant="outline" size="sm" className="w-full group/btn">
+                <Button asChild variant="default" size="sm" className="w-full group/btn">
                   <Link to={service.href}>
-                    Ver más
+                    Cotizar este servicio
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
