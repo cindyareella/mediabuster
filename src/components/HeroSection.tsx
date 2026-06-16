@@ -17,10 +17,10 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-slow" />
       
       {/* Grid pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-[0.08]">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(43,43,43,0.4) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(43,43,43,0.4) 1px, transparent 1px)`,
           backgroundSize: '60px 60px'
         }} />
       </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
               className="group"
               onClick={scrollToContact}
             >
-              Trabajemos juntos
+              Agendar consultoría
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Ver servicios
+              Auditar mis campañas
             </Button>
           </div>
 

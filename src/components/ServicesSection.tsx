@@ -101,9 +101,9 @@ const ServicesSection = () => {
                   ))}
                 </ul>
 
-                <Button asChild variant="outline" size="sm" className="w-full group/btn">
+                <Button asChild variant="default" size="sm" className="w-full group/btn">
                   <Link to={service.href}>
-                    Ver más
+                    Cotizar este servicio
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
@@ -134,7 +134,7 @@ const ServicesSection = () => {
                 className="group shrink-0"
                 onClick={scrollToContact}
               >
-                Solicitar diagnóstico
+                Auditar mis campañas
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

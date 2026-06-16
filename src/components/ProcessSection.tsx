@@ -41,17 +41,17 @@ const ProcessSection = () => {
 
   return (
     <section id="proceso" className="py-24 lg:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-dark" />
+      <div className="absolute inset-0 bg-gradient-sage" />
       
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
+      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `repeating-linear-gradient(
             0deg,
             transparent,
             transparent 50px,
-            rgba(255,255,255,0.1) 50px,
-            rgba(255,255,255,0.1) 51px
+            rgba(43,43,43,0.3) 50px,
+            rgba(43,43,43,0.3) 51px
           )`
         }} />
       </div>
