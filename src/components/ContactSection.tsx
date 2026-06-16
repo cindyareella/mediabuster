@@ -65,34 +65,36 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-16 lg:py-24 relative overflow-hidden bg-[#1A2433]">
+    <section id="contacto" className="py-12 lg:py-16 relative overflow-hidden bg-[#1A2433]">
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
-              Contacto
-            </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5">
-              ¿Listo para crecer<span className="text-white">?</span>
-            </h2>
-            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
-              Cuéntanos sobre tu proyecto. Sin compromiso, con claridad. Queremos entenderte antes de proponerte nada.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-12 items-start">
+            {/* Side copy (left, no box) */}
+            <div className="lg:col-span-2 lg:sticky lg:top-24">
+              <span className="inline-block px-3 py-1 rounded-full bg-primary/15 text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
+                Contacto
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+                ¿Listo para crecer<span className="text-white">?</span>
+              </h2>
+              <p className="text-base text-white/70 leading-relaxed mb-4">
+                Cuéntanos tu proyecto y te enviamos una cotización personalizada. Sin compromiso, con claridad.
+              </p>
+              <p className="text-sm text-white/60 leading-relaxed">
+                Déjanos tus datos y uno de nuestros estrategas te contactará para entender tus objetivos y armar una propuesta hecha a la medida de tu marca.
+              </p>
+            </div>
 
-
-          <div className="grid lg:grid-cols-5 gap-10 lg:gap-12">
-            {/* Contact Form */}
+            {/* Contact Form (right) */}
             <div className="lg:col-span-3">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Row 1: Nombre + Apellidos */}
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
                     <label htmlFor="name" className="text-sm font-medium text-white/90">
                       Nombre *
                     </label>
@@ -103,10 +105,10 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10"
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <label htmlFor="lastName" className="text-sm font-medium text-white/90">
                       Apellidos *
                     </label>
@@ -117,14 +119,14 @@ const ContactSection = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10"
                     />
                   </div>
                 </div>
 
                 {/* Row 2: Empresa + Email */}
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
                     <label htmlFor="company" className="text-sm font-medium text-white/90">
                       Empresa
                     </label>
@@ -134,10 +136,10 @@ const ContactSection = () => {
                       placeholder="Nombre de tu empresa"
                       value={formData.company}
                       onChange={handleChange}
-                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10"
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <label htmlFor="email" className="text-sm font-medium text-white/90">
                       Email *
                     </label>
@@ -149,14 +151,14 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10"
                     />
                   </div>
                 </div>
 
                 {/* Row 3: Teléfono + Servicio */}
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
                     <label htmlFor="phone" className="text-sm font-medium text-white/90">
                       Teléfono
                     </label>
@@ -167,16 +169,16 @@ const ContactSection = () => {
                       placeholder="Tu teléfono"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10"
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <label className="text-sm font-medium text-white/90">Servicio de interés</label>
                     <Select
                       value={formData.service}
                       onValueChange={(value) => setFormData((prev) => ({ ...prev, service: value }))}
                     >
-                      <SelectTrigger className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12">
+                      <SelectTrigger className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-10">
                         <SelectValue placeholder="Selecciona un servicio" />
                       </SelectTrigger>
                       <SelectContent>
@@ -191,7 +193,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* Row 4: Mensaje */}
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <label htmlFor="message" className="text-sm font-medium text-white/90">
                     Mensaje *
                   </label>
@@ -202,7 +204,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows={5}
+                    rows={4}
                     className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary resize-none"
                   />
                 </div>
@@ -210,7 +212,7 @@ const ContactSection = () => {
                 <Button
                   type="submit"
                   variant="hero"
-                  size="xl"
+                  size="lg"
                   className="w-full sm:w-auto group"
                   disabled={isSubmitting}
                 >
@@ -225,22 +227,6 @@ const ContactSection = () => {
                 </Button>
               </form>
             </div>
-
-            {/* Side copy */}
-            <div className="lg:col-span-2 space-y-6">
-              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10">
-                <span className="inline-block px-3 py-1 rounded-full bg-primary/15 text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
-                  Cotización a medida
-                </span>
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
-                  Cuéntanos tu proyecto y te enviamos una cotización personalizada.
-                </h3>
-                <p className="text-white/70 leading-relaxed">
-                  Déjanos tus datos y uno de nuestros estrategas te contactará para entender tus objetivos y armar una propuesta hecha a la medida de tu marca.
-                </p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -249,3 +235,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+

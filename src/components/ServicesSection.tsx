@@ -54,7 +54,7 @@ const ServicesSection = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-3 block">
               Servicios
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-5">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground mb-5">
               Un ecosistema, no servicios sueltos<span className="text-secondary">.</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
