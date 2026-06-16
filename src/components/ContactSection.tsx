@@ -78,7 +78,7 @@ const ContactSection = () => {
               Contacto
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5">
-              ¿Listo para crecer<span className="text-primary">?</span>
+              ¿Listo para crecer<span className="text-white">?</span>
             </h2>
             <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
               Cuéntanos sobre tu proyecto. Sin compromiso, con claridad. Queremos entenderte antes de proponerte nada.
