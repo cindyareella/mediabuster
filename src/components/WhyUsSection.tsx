@@ -45,10 +45,9 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section id="porque" className="py-24 lg:py-32 relative">
-      <div className="absolute inset-0 bg-background" />
-      
+    <section id="porque" className="py-24 lg:py-32 relative bg-[#FDFBF7]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
+
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -67,9 +66,9 @@ const WhyUsSection = () => {
           {/* What We Are / What We Are Not */}
           <div className="grid md:grid-cols-2 gap-8 mb-20">
             {/* What We Are */}
-            <div className="p-8 rounded-2xl bg-gradient-card border border-primary/20">
+            <div className="p-8 rounded-2xl bg-[#FFF5F0] border border-primary/20 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.08)]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center">
                   <Check className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-foreground">
@@ -80,14 +79,14 @@ const WhyUsSection = () => {
                 {whatWeAre.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">{item}</span>
+                    <span className="text-foreground/75">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* What We Are Not */}
-            <div className="p-8 rounded-2xl bg-gradient-card border border-border">
+            <div className="p-8 rounded-2xl bg-white border border-border/60 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.08)]">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
                   <X className="w-5 h-5 text-muted-foreground" />
@@ -100,12 +99,13 @@ const WhyUsSection = () => {
                 {whatWeAreNot.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <X className="w-5 h-5 text-muted-foreground mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">{item}</span>
+                    <span className="text-foreground/75">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
+
 
           {/* What We Believe */}
           <div className="text-center mb-12">
@@ -122,24 +122,25 @@ const WhyUsSection = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {beliefs.map((belief, index) => (
-              <div 
+              <div
                 key={index}
-                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-secondary/30 transition-all duration-300 hover-lift"
+                className="group p-6 rounded-xl bg-[#FFF5F0] border border-border/40 hover:border-primary/30 hover:shadow-[0_8px_24px_-10px_rgba(210,93,56,0.20)] transition-all duration-300 hover-lift"
               >
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <span className="font-display font-bold text-secondary">
+                <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center mb-4 shadow-sm">
+                  <span className="font-display font-bold text-primary">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                 </div>
                 <h4 className="font-display font-semibold text-foreground mb-2">
                   {belief.title}
                 </h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-foreground/70 leading-relaxed">
                   {belief.description}
                 </p>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
