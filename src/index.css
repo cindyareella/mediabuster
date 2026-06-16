@@ -57,9 +57,9 @@
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(40 40% 97%) 100%);
     --gradient-sage: linear-gradient(180deg, hsl(157 11% 72%) 0%, hsl(157 11% 66%) 100%);
 
-    --shadow-glow: 0 12px 28px -12px hsl(13 63% 52% / 0.45);
-    --shadow-glow-secondary: 0 12px 28px -12px hsl(40 76% 54% / 0.45);
-    --shadow-card: 0 4px 20px -8px hsl(0 0% 17% / 0.12);
+    --shadow-glow: 0 18px 40px -14px hsl(13 63% 52% / 0.55), 0 6px 12px -6px hsl(13 63% 52% / 0.25);
+    --shadow-glow-secondary: 0 18px 40px -14px hsl(40 76% 54% / 0.55), 0 6px 12px -6px hsl(40 76% 54% / 0.25);
+    --shadow-card: 0 8px 28px -10px hsl(0 0% 17% / 0.14);
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 17%;

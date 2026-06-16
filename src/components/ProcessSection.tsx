@@ -40,7 +40,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-24 lg:py-32 relative overflow-hidden">
+    <section id="proceso" className="py-28 lg:py-40 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-sage" />
       
       {/* Background decoration */}
@@ -87,7 +87,7 @@ const ProcessSection = () => {
                 >
                   {/* Content Card */}
                   <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
-                    <div className={`inline-block p-8 rounded-2xl bg-gradient-card border border-border hover:border-primary/30 transition-all duration-300 hover-lift ${
+                    <div className={`inline-block p-8 rounded-2xl bg-card border border-border/60 shadow-card hover:shadow-glow hover:border-primary/40 transition-all duration-300 hover-lift ${
                       index % 2 === 0 ? 'lg:ml-auto' : 'lg:mr-auto'
                     } max-w-lg`}>
                       <div className={`flex items-center gap-4 mb-4 ${
@@ -121,7 +121,7 @@ const ProcessSection = () => {
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
                       index % 2 === 0 ? 'bg-gradient-primary shadow-glow' : 'bg-gradient-secondary shadow-glow-secondary'
                     }`}>
-                      <step.icon className="w-7 h-7 text-foreground" />
+                      <step.icon className={`w-7 h-7 ${index % 2 === 0 ? 'text-primary-foreground' : 'text-secondary-foreground'}`} />
                     </div>
                   </div>
 

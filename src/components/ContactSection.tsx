@@ -65,7 +65,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-24 lg:py-32 relative">
+    <section id="contacto" className="py-28 lg:py-40 relative">
       <div className="absolute inset-0 bg-gradient-sage" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
@@ -224,7 +224,7 @@ const ContactSection = () => {
 
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-8">
-              <div className="p-8 rounded-2xl bg-gradient-card border border-border">
+              <div className="p-8 rounded-2xl bg-card border border-border/60 shadow-card">
                 <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-secondary" />
                 </div>
@@ -238,7 +238,7 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              <div className="p-8 rounded-2xl bg-gradient-card border border-border">
+              <div className="p-8 rounded-2xl bg-card border border-border/60 shadow-card">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
@@ -248,7 +248,7 @@ const ContactSection = () => {
                 </a>
               </div>
 
-              <div className="p-6 rounded-xl border border-border/50 bg-muted/20">
+              <div className="p-6 rounded-xl border border-border/50 bg-background/70 backdrop-blur-sm">
                 <p className="text-sm text-muted-foreground italic">
                   "No te vamos a bombardear con emails ni llamadas. Respetamos tu tiempo como respetamos el nuestro."
                 </p>
