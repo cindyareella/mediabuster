@@ -107,40 +107,46 @@ const WhyUsSection = () => {
           </div>
 
 
-          {/* What We Believe */}
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Heart className="w-5 h-5 text-primary" />
-              <span className="text-primary font-semibold text-sm uppercase tracking-widest">
-                En qué creemos
-              </span>
-            </div>
-            <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground">
-              Nuestros principios de trabajo
-            </h3>
-          </div>
+        </div>
+      </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {beliefs.map((belief, index) => (
-              <div
-                key={index}
-                className="group p-6 rounded-xl bg-[#FFF5F0] border border-border/40 hover:border-primary/30 hover:shadow-[0_8px_24px_-10px_rgba(210,93,56,0.20)] transition-all duration-300 hover-lift"
-              >
-                <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center mb-4 shadow-sm">
-                  <span className="font-display font-bold text-primary">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                </div>
-                <h4 className="font-display font-semibold text-foreground mb-2">
-                  {belief.title}
-                </h4>
-                <p className="text-sm text-foreground/70 leading-relaxed">
-                  {belief.description}
-                </p>
+      {/* En qué creemos - distinct background */}
+      <div className="bg-[#FFF5F0] mt-24 lg:mt-32 -mb-24 lg:-mb-32 py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Heart className="w-5 h-5 text-primary" />
+                <span className="text-primary font-semibold text-sm uppercase tracking-widest">
+                  En qué creemos
+                </span>
               </div>
-            ))}
-          </div>
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground">
+                Nuestros principios de trabajo
+              </h3>
+            </div>
 
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {beliefs.map((belief, index) => (
+                <div
+                  key={index}
+                  className="group p-6 rounded-xl bg-white border border-border/40 hover:border-primary/30 hover:shadow-[0_8px_24px_-10px_rgba(210,93,56,0.20)] transition-all duration-300 hover-lift"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-[#FFF5F0] flex items-center justify-center mb-4 shadow-sm">
+                    <span className="font-display font-bold text-primary">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <h4 className="font-display font-semibold text-foreground mb-2">
+                    {belief.title}
+                  </h4>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {belief.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
