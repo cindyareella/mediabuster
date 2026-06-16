@@ -73,7 +73,7 @@ const AboutSection = () => {
 
             {/* Visual Element */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-card border border-border p-8 lg:p-12">
+              <div className="aspect-square rounded-2xl bg-card border border-border p-8 lg:p-12">
                 <div className="h-full flex flex-col justify-center items-center text-center space-y-6">
                   <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Lightbulb className="w-10 h-10 text-primary" />
@@ -108,7 +108,7 @@ const AboutSection = () => {
             {differentiators.map((item, index) => (
               <div 
                 key={index}
-                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
+                className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <item.icon className="w-6 h-6 text-primary" />
