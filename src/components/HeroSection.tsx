@@ -1,106 +1,103 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const heroImage = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-mediabuster-home.jpg";
 
 const HeroSection = () => {
-  const scrollToContact = () => {
-    const element = document.querySelector("#contacto");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background Elements */}
+    <section
+      id="inicio"
+      className="min-h-screen flex items-center relative overflow-hidden pt-28 lg:pt-32 pb-16"
+    >
+      {/* Background */}
       <div className="absolute inset-0 bg-gradient-dark" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-slow" />
-      
-      {/* Grid pattern */}
-      <div className="absolute inset-0 opacity-[0.08]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(43,43,43,0.4) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(43,43,43,0.4) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-      </div>
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse-slow" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm mb-8 animate-slide-up">
-            <Sparkles className="w-4 h-4 text-secondary" />
-            <span className="text-sm text-muted-foreground">
-              Marketing y crecimiento para emprendedores
-            </span>
-          </div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Copy */}
+          <div className="text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/70 backdrop-blur-sm mb-6 animate-slide-up">
+              <Sparkles className="w-4 h-4 text-secondary" />
+              <span className="text-sm font-medium text-muted-foreground">
+                Marketing y crecimiento para emprendedores
+              </span>
+            </div>
 
-          {/* Main Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-slide-up">
-            <span className="text-gradient-primary">Marketing estratégico</span>
-            <br />
-            <span className="text-foreground">para marcas en </span>
-            <span className="text-gradient-secondary">crecimiento</span>
-          </h1>
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6 animate-slide-up">
+              <span className="text-gradient-primary">Marketing estratégico</span>
+              <br />
+              <span className="text-foreground">para marcas en </span>
+              <span className="text-gradient-secondary">crecimiento</span>
+            </h1>
 
-          {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 animate-slide-up-delay">
-            Somos la agencia que los emprendedores creamos para emprendedores. 
-            No vendemos humo, construimos sistemas de crecimiento real.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up-delay-2">
-            <Button 
-              variant="hero" 
-              size="xl" 
-              className="group"
-              onClick={scrollToContact}
-            >
-              Agendar consultoría
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button 
-              variant="heroOutline" 
-              size="xl"
-              onClick={() => {
-                const element = document.querySelector("#servicios");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Auditar mis campañas
-            </Button>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="mt-16 pt-16 border-t border-border/50">
-            <p className="text-sm text-muted-foreground mb-6">
-              Marketing con mentalidad de negocio
+            <p className="text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-9 animate-slide-up-delay leading-relaxed">
+              Somos la agencia que los emprendedores creamos para emprendedores.
+              No vendemos humo, construimos sistemas de crecimiento real.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-              <div className="text-center">
-                <p className="font-display text-3xl font-bold text-foreground">+50</p>
-                <p className="text-sm text-muted-foreground">Proyectos</p>
+
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 animate-slide-up-delay-2">
+              <Button asChild variant="hero" size="xl" className="group">
+                <Link to="/contacto">
+                  Agendar consultoría
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+              <Button
+                variant="heroOutline"
+                size="xl"
+                onClick={() => {
+                  const element = document.querySelector("#servicios");
+                  if (element) element.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Auditar mis campañas
+              </Button>
+            </div>
+
+            {/* Trust strip */}
+            <div className="mt-12 pt-8 border-t border-border/60 flex flex-wrap items-center justify-center lg:justify-start gap-8 md:gap-10">
+              <div className="text-center lg:text-left">
+                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">+50</p>
+                <p className="text-xs lg:text-sm text-muted-foreground">Proyectos</p>
               </div>
-              <div className="w-px h-12 bg-border hidden md:block" />
-              <div className="text-center">
-                <p className="font-display text-3xl font-bold text-foreground">100%</p>
-                <p className="text-sm text-muted-foreground">Compromiso</p>
+              <div className="w-px h-10 bg-border" />
+              <div className="text-center lg:text-left">
+                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">100%</p>
+                <p className="text-xs lg:text-sm text-muted-foreground">Compromiso</p>
               </div>
-              <div className="w-px h-12 bg-border hidden md:block" />
-              <div className="text-center">
-                <p className="font-display text-3xl font-bold text-foreground">Data</p>
-                <p className="text-sm text-muted-foreground">Driven</p>
+              <div className="w-px h-10 bg-border" />
+              <div className="text-center lg:text-left">
+                <p className="font-display text-2xl lg:text-3xl font-bold text-foreground">Data</p>
+                <p className="text-xs lg:text-sm text-muted-foreground">Driven</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-muted-foreground/50 rounded-full animate-pulse" />
+          {/* Image */}
+          <div className="relative animate-fade-in-slow">
+            <div className="absolute -inset-6 bg-gradient-primary opacity-20 blur-3xl rounded-full" aria-hidden="true" />
+            <div className="relative rounded-3xl overflow-hidden shadow-glow border border-border/60 bg-card">
+              <img
+                src={heroImage}
+                alt="Equipo Media Buster trabajando en estrategia de marketing digital"
+                className="w-full h-full object-cover aspect-[4/5] lg:aspect-[5/6]"
+                loading="eager"
+              />
+            </div>
+            {/* Floating badge */}
+            <div className="hidden md:flex absolute -bottom-6 -left-6 items-center gap-3 bg-card border border-border rounded-2xl px-5 py-4 shadow-card">
+              <div className="w-10 h-10 rounded-xl bg-gradient-secondary flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-secondary-foreground" />
+              </div>
+              <div>
+                <p className="font-display font-bold text-foreground leading-tight">Estrategia + Data</p>
+                <p className="text-xs text-muted-foreground">Resultados medibles</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

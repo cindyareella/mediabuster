@@ -11,14 +11,11 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
@@ -27,36 +24,33 @@ const Header = () => {
   const services = [
     { name: "Paid Media", href: "/paid-media", icon: Zap },
     { name: "SEO", href: "/seo", icon: Search },
-    
     { name: "Contenido", href: "/contenido", icon: Share2 },
-  ];
-
-  const navItems = [
-    { name: "Inicio", href: "/" },
-    { name: "Nosotros", href: "/nosotros" },
-    { name: "Contacto", href: "/contacto" },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-card"
-          : "bg-background/80 backdrop-blur-sm"
+          ? "bg-background/98 backdrop-blur-md border-b border-border shadow-card"
+          : "bg-background/85 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Media Buster" className="h-32 w-auto" />
+            <img
+              src={logo}
+              alt="Media Buster"
+              className="h-14 lg:h-20 w-auto transition-all duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-10">
             <Link
               to="/"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
             >
               Inicio
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -65,7 +59,7 @@ const Header = () => {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center gap-1 text-base font-semibold text-foreground/85 hover:text-primary transition-colors"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
@@ -85,7 +79,7 @@ const Header = () => {
                     <Link
                       key={service.href}
                       to={service.href}
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-foreground/80 hover:text-foreground hover:bg-muted transition-colors"
                     >
                       <service.icon className="w-5 h-5 text-primary" />
                       <span className="font-medium">{service.name}</span>
@@ -97,7 +91,7 @@ const Header = () => {
 
             <Link
               to="/nosotros"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
             >
               Nosotros
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -105,7 +99,7 @@ const Header = () => {
 
             <Link
               to="/contacto"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className="text-base font-semibold text-foreground/85 hover:text-primary transition-colors relative group"
             >
               Contacto
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -123,6 +117,7 @@ const Header = () => {
           <button
             className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Abrir menú"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -130,20 +125,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-28 left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-slide-up">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-slide-up">
             <nav className="flex flex-col p-6 gap-2">
-              <Link
-                to="/"
-                className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Inicio
-              </Link>
+              <Link to="/" className="text-lg font-semibold text-foreground py-2">Inicio</Link>
 
-              {/* Mobile Services */}
               <div className="py-2">
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full text-lg font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center justify-between w-full text-lg font-semibold text-foreground"
                 >
                   Servicios
                   <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -154,7 +143,7 @@ const Header = () => {
                       <Link
                         key={service.href}
                         to={service.href}
-                        className="flex items-center gap-3 px-4 py-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                        className="flex items-center gap-3 px-4 py-2 rounded-lg text-foreground/80 hover:text-foreground hover:bg-muted transition-colors"
                       >
                         <service.icon className="w-4 h-4 text-primary" />
                         <span>{service.name}</span>
@@ -164,19 +153,8 @@ const Header = () => {
                 )}
               </div>
 
-              <Link
-                to="/nosotros"
-                className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Nosotros
-              </Link>
-
-              <Link
-                to="/contacto"
-                className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Contacto
-              </Link>
+              <Link to="/nosotros" className="text-lg font-semibold text-foreground py-2">Nosotros</Link>
+              <Link to="/contacto" className="text-lg font-semibold text-foreground py-2">Contacto</Link>
 
               <Button asChild variant="hero" size="lg" className="mt-4 w-full">
                 <Link to="/contacto">Agendar consultoría</Link>
