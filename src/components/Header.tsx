@@ -50,7 +50,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-10">
             <Link
               to="/"
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors relative group"
             >
               Inicio
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
