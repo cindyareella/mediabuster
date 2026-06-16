@@ -93,7 +93,7 @@ const ContactSection = () => {
                 {/* Row 1: Nombre + Apellidos */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-foreground">
+                    <label htmlFor="name" className="text-sm font-medium text-white/90">
                       Nombre *
                     </label>
                     <Input
@@ -103,11 +103,11 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="lastName" className="text-sm font-medium text-foreground">
+                    <label htmlFor="lastName" className="text-sm font-medium text-white/90">
                       Apellidos *
                     </label>
                     <Input
@@ -117,7 +117,7 @@ const ContactSection = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const ContactSection = () => {
                 {/* Row 2: Empresa + Email */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium text-foreground">
+                    <label htmlFor="company" className="text-sm font-medium text-white/90">
                       Empresa
                     </label>
                     <Input
@@ -134,11 +134,11 @@ const ContactSection = () => {
                       placeholder="Nombre de tu empresa"
                       value={formData.company}
                       onChange={handleChange}
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">
+                    <label htmlFor="email" className="text-sm font-medium text-white/90">
                       Email *
                     </label>
                     <Input
@@ -149,7 +149,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const ContactSection = () => {
                 {/* Row 3: Teléfono + Servicio */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                    <label htmlFor="phone" className="text-sm font-medium text-white/90">
                       Teléfono
                     </label>
                     <Input
@@ -167,16 +167,16 @@ const ContactSection = () => {
                       placeholder="Tu teléfono"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="bg-card border-border focus:border-primary h-12"
+                      className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Servicio de interés</label>
+                    <label className="text-sm font-medium text-white/90">Servicio de interés</label>
                     <Select
                       value={formData.service}
                       onValueChange={(value) => setFormData((prev) => ({ ...prev, service: value }))}
                     >
-                      <SelectTrigger className="bg-card border-border focus:border-primary h-12">
+                      <SelectTrigger className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary h-12">
                         <SelectValue placeholder="Selecciona un servicio" />
                       </SelectTrigger>
                       <SelectContent>
@@ -192,7 +192,7 @@ const ContactSection = () => {
 
                 {/* Row 4: Mensaje */}
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-foreground">
+                  <label htmlFor="message" className="text-sm font-medium text-white/90">
                     Mensaje *
                   </label>
                   <Textarea
@@ -203,7 +203,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="bg-card border-border focus:border-primary resize-none"
+                    className="bg-white border-white/10 text-foreground placeholder:text-foreground/40 focus:border-primary resize-none"
                   />
                 </div>
 
