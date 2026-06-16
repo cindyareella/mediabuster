@@ -233,7 +233,7 @@ const ContactSection = () => {
                   Escríbenos directamente y respondemos en menos de 24 horas.
                 </p>
                 <Button variant="whatsapp" size="lg" className="w-full group" onClick={handleWhatsApp}>
-                  Abrir WhatsApp
+                  Hablar por WhatsApp ahora
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </div>
