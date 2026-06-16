@@ -226,35 +226,17 @@ const ContactSection = () => {
               </form>
             </div>
 
-            {/* Contact Info */}
+            {/* Side copy */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="p-6 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
-                  <MessageCircle className="w-6 h-6 text-secondary" />
-                </div>
-                <h3 className="font-display text-xl font-bold text-white mb-2">¿Prefieres WhatsApp?</h3>
-                <p className="text-white/70 mb-6 text-sm">
-                  Escríbenos directamente y respondemos en menos de 24 horas.
-                </p>
-                <Button variant="whatsapp" size="lg" className="w-full group" onClick={handleWhatsApp}>
-                  Hablar por WhatsApp ahora
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
-                  <Mail className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display text-xl font-bold text-white mb-2">Email directo</h3>
-                <a href="mailto:hola@mediabuster.com" className="text-primary hover:underline">
-                  hola@mediabuster.com
-                </a>
-              </div>
-
-              <div className="p-6 rounded-xl border border-white/10 bg-white/[0.03]">
-                <p className="text-sm text-white/60 italic">
-                  "No te vamos a bombardear con emails ni llamadas. Respetamos tu tiempo como respetamos el nuestro."
+              <div className="p-8 rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10">
+                <span className="inline-block px-3 py-1 rounded-full bg-primary/15 text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
+                  Cotización a medida
+                </span>
+                <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                  Cuéntanos tu proyecto y te enviamos una cotización personalizada.
+                </h3>
+                <p className="text-white/70 leading-relaxed">
+                  Déjanos tus datos y uno de nuestros estrategas te contactará para entender tus objetivos y armar una propuesta hecha a la medida de tu marca.
                 </p>
               </div>
             </div>
