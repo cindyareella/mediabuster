@@ -134,7 +134,7 @@ const ServicesSection = () => {
                 className="group shrink-0"
                 onClick={scrollToContact}
               >
-                Solicitar diagnóstico
+                Auditar mis campañas
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
