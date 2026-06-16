@@ -23,6 +23,10 @@ const Index = () => {
         <AboutSection />
         <ServicesSection />
         <ProcessSection />
+        <ServiceCTA
+          title="¿Tu marketing está estancado?"
+          description="Detectemos juntos qué está frenando tu crecimiento. Auditoría sin compromiso, con plan de acción claro."
+        />
         <WhyUsSection />
         <ContactSection />
       </main>
