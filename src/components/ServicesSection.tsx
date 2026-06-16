@@ -90,7 +90,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Features */}
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-1.5 mb-5">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className={`w-1.5 h-1.5 rounded-full ${
