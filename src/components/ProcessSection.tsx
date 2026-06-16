@@ -40,21 +40,21 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-24 lg:py-32 relative overflow-hidden bg-[#FFF5F0]">
+    <section id="proceso" className="py-16 lg:py-20 relative overflow-hidden bg-[#FFF5F0]">
       <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">
+          <div className="text-center mb-10">
+            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-3 block">
               Nuestro proceso
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-5">
               Método, no improvisación<span className="text-primary">.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Cada proyecto sigue un proceso estructurado que garantiza claridad,
               eficiencia y resultados medibles en cada etapa.
             </p>
@@ -65,7 +65,7 @@ const ProcessSection = () => {
             {/* Vertical line */}
             <div className="absolute left-6 lg:left-8 top-0 bottom-0 w-px bg-primary/20 hidden sm:block" />
 
-            <div className="space-y-8">
+            <div className="space-y-5">
               {steps.map((step, index) => (
                 <div key={index} className="relative flex gap-6 lg:gap-10 group">
                   {/* Icon + number */}
