@@ -17,8 +17,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-16 border-t border-border relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FDFBF7] to-[#FDC19E]" />
+    <footer className="py-16 border-t border-border relative bg-background">
+
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
