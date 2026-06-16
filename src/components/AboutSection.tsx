@@ -4,26 +4,26 @@ const AboutSection = () => {
 
 
   return (
-   <section id="nosotros" className="py-24 lg:py-32 relative bg-[#FFF5F0]">
+   <section id="nosotros" className="py-16 lg:py-20 relative bg-[#FFF5F0]">
      <div className="absolute inset-0 opacity-60" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(210,93,56,0.08) 1px, transparent 0)", backgroundSize: "28px 28px" }} />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">
+          <div className="text-center mb-10">
+            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-3 block">
               Quiénes somos
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-5">
               Una agencia diferente<span className="text-primary">.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Porque las que existían no estaban hechas para nosotros.
             </p>
           </div>
 
           {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
