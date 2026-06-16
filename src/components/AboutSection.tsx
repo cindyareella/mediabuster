@@ -25,23 +25,23 @@ const AboutSection = () => {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Text Content */}
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-5">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 <span className="text-foreground font-semibold">Media Buster</span> nace de una frustración real: 
                 las agencias tradicionales son caras, rígidas y muchas veces desconectadas 
                 de la realidad de los negocios en crecimiento.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Somos emprendedores que construimos una agencia con la <span className="text-secondary font-semibold">mentalidad, 
                 rigor y calidad</span> de una agencia grande, pero con una estructura flexible, 
                 humana y eficiente.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 No hacemos marketing por partes. <span className="text-primary font-semibold">Diseñamos ecosistemas digitales</span> donde 
                 la estrategia, la creatividad y los datos trabajan juntos para generar 
                 crecimiento medible y sostenible.
               </p>
-              <div className="pt-4">
+              <div className="pt-2">
                 <div className="inline-flex items-center gap-3 border-l-4 border-primary pl-4">
                   <p className="text-xl font-display font-semibold text-foreground">
                     "Claridad, datos y marketing que tiene sentido para tu negocio."
