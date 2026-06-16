@@ -40,16 +40,16 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-28 lg:py-40 relative overflow-hidden bg-sage">
+    <section id="proceso" className="py-28 lg:py-40 relative overflow-hidden bg-[#FFF5F0]">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-[0.12] pointer-events-none">
+      <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(43,43,43,0.4) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(210,93,56,0.5) 1px, transparent 0)`,
           backgroundSize: '32px 32px'
         }} />
       </div>
-      <div className="absolute -top-32 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+      <div className="absolute -top-32 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
