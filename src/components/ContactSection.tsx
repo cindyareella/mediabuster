@@ -214,7 +214,7 @@ const ContactSection = () => {
                     "Enviando..."
                   ) : (
                     <>
-                      Enviar mensaje
+                      Agendar consultoría
                       <Send className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </>
                   )}
