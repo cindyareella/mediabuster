@@ -65,22 +65,26 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-28 lg:py-40 relative">
-      <div className="absolute inset-0 bg-gradient-sage" />
+    <section id="contacto" className="py-28 lg:py-40 relative overflow-hidden bg-[#1A2433]">
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-widest mb-4 block">Contacto</span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-primary font-bold text-xs uppercase tracking-widest mb-5 border border-primary/20">
+              Contacto
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               ¿Listo para crecer<span className="text-primary">?</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
               Cuéntanos sobre tu proyecto. Sin compromiso, con claridad. Queremos entenderte antes de proponerte nada.
             </p>
           </div>
+
 
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Contact Form */}
