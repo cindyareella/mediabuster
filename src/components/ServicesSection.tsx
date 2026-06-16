@@ -117,13 +117,13 @@ const ServicesSection = () => {
           </div>
 
           {/* Ecosystem CTA */}
-          <div className="relative p-8 md:p-12 rounded-2xl border-gradient">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="relative p-6 md:p-8 rounded-2xl border-gradient">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
                   ¿Necesitas un diagnóstico de tu marketing?
                 </h3>
-                <p className="text-muted-foreground max-w-xl">
+                <p className="text-sm md:text-base text-muted-foreground max-w-xl leading-relaxed">
                   Antes de cualquier propuesta, analizamos dónde estás y hacia dónde quieres ir. 
                   Sin compromiso, con claridad.
                 </p>
