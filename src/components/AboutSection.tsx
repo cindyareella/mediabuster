@@ -52,12 +52,12 @@ const AboutSection = () => {
 
             {/* Visual Element */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-card border border-border p-8 lg:p-12">
-                <div className="h-full flex flex-col justify-center items-center text-center space-y-6">
-                  <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
-                    <Lightbulb className="w-10 h-10 text-primary" />
+              <div className="aspect-square rounded-2xl bg-card border border-border p-6 lg:p-8">
+                <div className="h-full flex flex-col justify-center items-center text-center space-y-5">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                    <Lightbulb className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="font-display text-2xl font-bold text-foreground">
+                  <h3 className="font-display text-xl lg:text-2xl font-bold text-foreground">
                     La alternativa inteligente
                   </h3>
                   <p className="text-muted-foreground">
