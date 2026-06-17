@@ -8,13 +8,15 @@ interface SchemaOrgProps {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
   name: SITE_NAME,
-  url: SITE_URL,
+  url: `${SITE_URL}/`,
   logo: `${SITE_URL}/logo.png`,
-  description: "Agencia de marketing digital en México enfocada en estrategia, performance y crecimiento medible.",
+  description:
+    "Agencia de marketing digital creada por emprendedores. Especialistas en pauta publicitaria de alto rendimiento, SEO técnico y producción audiovisual 4K.",
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Ciudad de México",
     addressCountry: "MX",
   },
   contactPoint: {
