@@ -89,39 +89,49 @@ const SEOPage = () => {
       <main>
         {/* 1. HERO */}
         <section
-          className="pt-32 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden"
+          className="pt-28 pb-12 lg:pt-32 lg:pb-16 relative overflow-hidden"
           style={{ backgroundColor: CREAM }}
         >
           <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full blur-3xl opacity-30 bg-primary/30" />
           <div className="absolute bottom-0 -right-32 w-96 h-96 rounded-full blur-3xl opacity-20 bg-secondary/30" />
 
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-5">
-                SEO & Posicionamiento Orgánico
-              </p>
-              <h1
-                className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.05] tracking-tight"
-                style={{ color: CARBON }}
-              >
-                Dominamos el algoritmo. Construimos{" "}
-                <span className="text-primary">activos digitales que traen ventas</span>, no
-                solo visitas.
-              </h1>
-              <p
-                className="text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
-                style={{ color: "#4a4a4a" }}
-              >
-                Posicionamiento SEO técnico y estratégico. Reducimos tu dependencia de la
-                pauta publicitaria captando la demanda orgánica de tu mercado con precisión
-                estructural. Sin trucos, puro rendimiento a largo plazo.
-              </p>
-              <Button asChild variant="hero" size="xl" className="group">
-                <Link to="/contacto">
-                  Solicitar diagnóstico técnico
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
+              <div className="text-center lg:text-left">
+                <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
+                  SEO & Posicionamiento Orgánico
+                </p>
+                <h1
+                  className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-[1.05] tracking-tight"
+                  style={{ color: CARBON }}
+                >
+                  Dominamos el algoritmo. Construimos{" "}
+                  <span className="text-primary">activos digitales que traen ventas</span>, no
+                  solo visitas.
+                </h1>
+                <p
+                  className="text-base md:text-lg mb-7 leading-relaxed"
+                  style={{ color: "#4a4a4a" }}
+                >
+                  Posicionamiento SEO técnico y estratégico. Reducimos tu dependencia de la
+                  pauta publicitaria captando la demanda orgánica de tu mercado con precisión
+                  estructural. Sin trucos, puro rendimiento a largo plazo.
+                </p>
+                <Button asChild variant="hero" size="xl" className="group">
+                  <Link to="/contacto">
+                    Solicitar diagnóstico técnico
+                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="relative">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/SEO-hero.jpg"
+                  alt="SEO técnico Media Buster"
+                  className="w-full h-auto object-cover rounded-3xl"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </section>
