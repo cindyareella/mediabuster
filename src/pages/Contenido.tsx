@@ -95,8 +95,8 @@ const Contenido = () => {
           <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full blur-3xl opacity-30 bg-primary/30" />
           <div className="absolute bottom-0 -right-32 w-96 h-96 rounded-full blur-3xl opacity-20 bg-secondary/30" />
 
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
+          <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center max-w-6xl mx-auto">
               <div className="text-center lg:text-left">
                 <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
                   Contenido & Social Media

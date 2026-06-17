@@ -16,8 +16,8 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse-slow" />
 
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
           {/* Copy */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/70 backdrop-blur-sm mb-4 animate-slide-up">
@@ -69,16 +69,6 @@ const HeroSection = () => {
                 className="w-full h-full object-cover"
                 loading="eager"
               />
-            </div>
-            {/* Floating badge */}
-            <div className="hidden md:flex absolute -bottom-6 -left-6 items-center gap-3 bg-card border border-border rounded-2xl px-5 py-4 shadow-card">
-              <div className="w-10 h-10 rounded-xl bg-gradient-secondary flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-secondary-foreground" />
-              </div>
-              <div>
-                <p className="font-display font-bold text-foreground leading-tight">Estrategia + Data</p>
-                <p className="text-xs text-muted-foreground">Resultados medibles</p>
-              </div>
             </div>
           </div>
         </div>
