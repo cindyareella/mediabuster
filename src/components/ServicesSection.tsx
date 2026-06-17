@@ -45,7 +45,7 @@ const ServicesSection = () => {
 
   return (
     <section id="servicios" className="py-16 lg:py-20 relative">
-      <div className="absolute inset-0 bg-background" />
+      <div className="absolute inset-0 bg-[#FDF5EE]" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">

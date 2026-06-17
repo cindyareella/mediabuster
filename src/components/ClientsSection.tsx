@@ -44,12 +44,14 @@ const ClientsSection = () => {
                 key={i}
                 className="flex shrink-0 items-center justify-center basis-[calc(100vw/2-3rem)] md:basis-[calc(100vw/3-4rem)] lg:basis-[calc(100vw/5-4rem)]"
               >
-                <img
-                  src={src}
-                  alt="Logo cliente Media Buster"
-                  loading="lazy"
-                  className="max-h-20 md:max-h-24 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-                />
+                <div className="w-full h-28 md:h-32 bg-white rounded-2xl border border-border/40 shadow-[0_4px_20px_-8px_rgba(43,43,43,0.12)] flex items-center justify-center px-6">
+                  <img
+                    src={src}
+                    alt="Logo cliente Media Buster"
+                    loading="lazy"
+                    className="max-h-16 md:max-h-20 w-auto object-contain"
+                  />
+                </div>
               </div>
             ))}
           </div>
