@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StrategistCTA from "@/components/StrategistCTA";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -215,7 +216,12 @@ const SEOPage = () => {
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: "#5a5a5a" }}>
                     Una operación técnica end-to-end pensada para que tu sitio sea
-                    rastreable, relevante y autoritativo.
+                    rastreable, relevante y autoritativo, con un posicionamiento
+                    impulsado por{" "}
+                    <Link to="/contenido" className="text-primary font-semibold underline-offset-4 hover:underline">
+                      producción audiovisual de alta autoridad
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -413,6 +419,7 @@ const SEOPage = () => {
             </div>
           </div>
         </section>
+        <StrategistCTA />
       </main>
 
       <Footer />

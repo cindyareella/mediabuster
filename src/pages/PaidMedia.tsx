@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StrategistCTA from "@/components/StrategistCTA";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -235,7 +236,12 @@ const PaidMedia = () => {
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: "#5a5a5a" }}>
                     Una operación end-to-end pensada para marcas que ya venden y quieren
-                    escalar con previsibilidad.
+                    escalar con previsibilidad. Para reducir tu costo de adquisición a
+                    largo plazo, combínalo con nuestra{" "}
+                    <Link to="/seo" className="text-primary font-semibold underline-offset-4 hover:underline">
+                      estrategia SEO
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -436,6 +442,7 @@ const PaidMedia = () => {
             </div>
           </div>
         </section>
+        <StrategistCTA />
       </main>
 
       <Footer />

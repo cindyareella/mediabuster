@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StrategistCTA from "@/components/StrategistCTA";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -212,7 +213,12 @@ const Contenido = () => {
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: "#5a5a5a" }}>
                     Un sistema integral de producción y distribución pensado para convertir
-                    cada pieza en un activo de autoridad para tu marca.
+                    cada pieza en un activo de autoridad para tu marca, con contenido
+                    diseñado para convertir en tus{" "}
+                    <Link to="/paid-media" className="text-primary font-semibold underline-offset-4 hover:underline">
+                      campañas de Pauta Digital
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -409,6 +415,7 @@ const Contenido = () => {
             </div>
           </div>
         </section>
+        <StrategistCTA />
       </main>
 
       <Footer />
