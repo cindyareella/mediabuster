@@ -80,47 +80,25 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Bottom Bar */}
+          {/* Bottom Bar: socials left, copyright right */}
           <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-5">
+              {socials.map(({ name, href, Icon }) => (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                  className="text-gray-600 hover:text-black transition-colors"
+                >
+                  <Icon size={26} />
+                </a>
+              ))}
+            </div>
             <p className="text-base text-muted-foreground">
               © {currentYear} Media Buster. Todos los derechos reservados.
             </p>
-            <div className="flex items-center gap-6">
-              <Link
-                to="/"
-                className="text-base text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Inicio
-              </Link>
-              <Link
-                to="/nosotros"
-                className="text-base text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Nosotros
-              </Link>
-              <Link
-                to="/contacto"
-                className="text-base text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Contacto
-              </Link>
-            </div>
-          </div>
-
-          {/* Social Row */}
-          <div className="pt-8 mt-8 border-t border-border flex items-center justify-start gap-5">
-            {socials.map(({ name, href, Icon }) => (
-              <a
-                key={name}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={name}
-                className="text-gray-600 hover:text-black transition-colors"
-              >
-                <Icon size={26} />
-              </a>
-            ))}
           </div>
         </div>
       </div>
