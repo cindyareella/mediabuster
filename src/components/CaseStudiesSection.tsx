@@ -18,7 +18,7 @@ const CaseStudiesSection = () => {
   ];
 
   return (
-    <section className="bg-[#FDFBF7] py-12 lg:py-16">
+    <section className="bg-[#fffdf5] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-[#D25D38] font-semibold text-sm uppercase tracking-widest mb-3 block">
@@ -39,7 +39,7 @@ const CaseStudiesSection = () => {
               <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#2B2B2B]/60 mb-5">
                 {c.tag}
               </span>
-              <p className="font-display text-2xl lg:text-3xl font-bold text-[#D25D38] mb-4 leading-tight">
+              <p className="font-display text-2xl lg:text-3xl font-bold text-[#E3A830] mb-4 leading-tight">
                 {c.metric}
               </p>
               <p className="text-base text-[#2B2B2B] leading-relaxed">{c.text}</p>
