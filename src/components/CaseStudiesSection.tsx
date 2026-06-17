@@ -18,34 +18,33 @@ const CaseStudiesSection = () => {
   ];
 
   return (
-    <section className="bg-[#0F172A] py-20 lg:py-28">
-      <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <span className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3 block">
-              Casos de éxito
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
-              No vendemos promesas. <span className="text-secondary">Entregamos rentabilidad.</span>
-            </h2>
-          </div>
+    <section className="bg-[#FDFBF7] py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <span className="text-[#D25D38] font-semibold text-sm uppercase tracking-widest mb-3 block">
+            Casos de éxito
+          </span>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#2B2B2B]">
+            No vendemos promesas.{" "}
+            <span className="text-[#D25D38]">Entregamos rentabilidad.</span>
+          </h2>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {cases.map((c) => (
-              <div
-                key={c.tag}
-                className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-secondary/40 hover:bg-white/[0.04] transition-all duration-300"
-              >
-                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-white/60 mb-5">
-                  {c.tag}
-                </span>
-                <p className="font-display text-2xl lg:text-3xl font-bold text-secondary mb-4 leading-tight">
-                  {c.metric}
-                </p>
-                <p className="text-base text-white/70 leading-relaxed">{c.text}</p>
-              </div>
-            ))}
-          </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {cases.map((c) => (
+            <div
+              key={c.tag}
+              className="p-8 rounded-2xl bg-white border border-gray-100 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#2B2B2B]/60 mb-5">
+                {c.tag}
+              </span>
+              <p className="font-display text-2xl lg:text-3xl font-bold text-[#D25D38] mb-4 leading-tight">
+                {c.metric}
+              </p>
+              <p className="text-base text-[#2B2B2B] leading-relaxed">{c.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

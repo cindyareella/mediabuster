@@ -6,18 +6,9 @@ const heroImage = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/her
 
 const HeroSection = () => {
   return (
-    <section
-      id="inicio"
-      className="flex items-center relative overflow-hidden pt-24 pb-10 lg:pt-28 lg:pb-12"
-    >
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FDFBF7] to-[#FDC19E]" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse-slow" />
-
-
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
+    <section id="inicio" className="bg-[#FDFBF7] pt-20 lg:pt-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div className="text-center lg:text-left">
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-4 animate-slide-up">
@@ -50,19 +41,16 @@ const HeroSection = () => {
                 Auditar mis campañas
               </Button>
             </div>
-
           </div>
 
           {/* Image */}
-          <div className="relative animate-fade-in-slow">
-            <div className="relative rounded-3xl overflow-hidden aspect-video">
-              <img
-                src={heroImage}
-                alt="Equipo Media Buster trabajando en estrategia de marketing digital"
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden animate-fade-in-slow">
+            <img
+              src={heroImage}
+              alt="Equipo Media Buster trabajando en estrategia de marketing digital"
+              className="w-full h-auto object-cover rounded-2xl"
+              loading="eager"
+            />
           </div>
         </div>
       </div>
