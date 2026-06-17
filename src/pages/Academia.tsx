@@ -49,7 +49,7 @@ const Academia = () => {
 
       <main className="pt-20 lg:pt-28">
         {/* 1. Hero */}
-        <section className="py-12 lg:py-16">
+        <section className="pt-8 pb-12 lg:pt-12 lg:pb-16">
           <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="text-center lg:text-left">
