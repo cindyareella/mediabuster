@@ -1,4 +1,4 @@
-import { Zap, Video, Share2, Search, ArrowRight } from "lucide-react";
+import { Zap, Search, Video, GraduationCap, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -7,35 +7,35 @@ const ServicesSection = () => {
     {
       icon: Zap,
       title: "Paid Media & Growth",
-      description: "Campañas de performance en Meta, Google y TikTok. Estrategias de adquisición y retención basadas en datos.",
-      features: ["Meta Ads", "Google Ads", "TikTok Ads", "Analytics avanzado"],
+      description: "Campañas en Google y Meta orientadas 100% a traer prospectos y ventas.",
+      features: ["Meta Ads", "Google Ads", "Tracking de conversiones", "Optimización por ROAS"],
       accent: "primary",
-      href: "/paid-media"
-    },
-    {
-      icon: Video,
-      title: "Contenido Multimedia",
-      description: "Producción de contenido visual y audiovisual que conecta con tu audiencia y comunica tu propuesta de valor.",
-      features: ["Video marketing", "Fotografía", "Motion graphics", "Reels & TikToks"],
-      accent: "secondary",
-      href: "/contenido"
-    },
-    {
-      icon: Share2,
-      title: "Content & Social Media",
-      description: "Estrategia de contenido y gestión de redes sociales con enfoque en engagement y conversión.",
-      features: ["Estrategia de contenido", "Community management", "Calendario editorial", "Reportes"],
-      accent: "secondary",
-      href: "/contenido"
+      href: "/paid-media",
     },
     {
       icon: Search,
-      title: "SEO",
-      description: "Posicionamiento orgánico que genera tráfico cualificado y reduce dependencia del paid media.",
-      features: ["SEO On-page", "SEO Técnico", "Link building", "Content SEO"],
+      title: "SEO Técnico y Contenido",
+      description: "Posicionamiento para que te encuentren cuando ya están listos para comprar.",
+      features: ["SEO técnico", "Contenido por intención", "Keyword research", "Autoridad de dominio"],
       accent: "primary",
-      href: "/seo"
-    }
+      href: "/seo",
+    },
+    {
+      icon: Video,
+      title: "Producción Audiovisual 4K",
+      description: "Contenido estratégico que educa a tu cliente y lo convence de elegirte.",
+      features: ["Video 4K", "Podcast & entrevistas", "Reels & shorts", "Dirección creativa"],
+      accent: "secondary",
+      href: "/contenido",
+    },
+    {
+      icon: GraduationCap,
+      title: "Media Buster Academy",
+      description: "Cursos presenciales para dejar de operar y aprender a dirigir.",
+      features: ["Formación presencial", "Casos reales", "Networking", "Mentoría directa"],
+      accent: "secondary",
+      href: "/academia",
+    },
   ];
 
   const scrollToContact = () => {
@@ -58,13 +58,13 @@ const ServicesSection = () => {
               Un ecosistema, no servicios sueltos<span className="text-secondary">.</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Todos nuestros servicios funcionan como un sistema integrado bajo un mismo proceso. 
+              Todos nuestros servicios funcionan como un sistema integrado bajo un mismo proceso.
               La estrategia guía, la creatividad ejecuta, los datos optimizan.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {services.map((service, index) => (
               <div 
                 key={index}
