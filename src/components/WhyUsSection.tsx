@@ -45,7 +45,7 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section id="porque" className="py-16 lg:py-20 relative bg-[#FDF5EE]">
+    <section id="porque" className="py-10 lg:py-14 relative bg-[#FDF5EE]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
 
         <div className="max-w-6xl mx-auto">
@@ -111,7 +111,7 @@ const WhyUsSection = () => {
       </div>
 
       {/* En qué creemos - distinct background */}
-      <div className="bg-white mt-16 lg:mt-20 -mb-16 lg:-mb-20 py-16 lg:py-20">
+      <div className="bg-white mt-16 lg:mt-20 -mb-16 lg:-mb-20 py-10 lg:py-14">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">

@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StrategistCTA from "@/components/StrategistCTA";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -147,7 +148,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 2. EL PROBLEMA */}
-        <section className="py-20 lg:py-28 relative" style={{ backgroundColor: NIGHT }}>
+        <section className="py-12 lg:py-16 relative" style={{ backgroundColor: NIGHT }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <div
@@ -177,7 +178,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 3. METODOLOGÍA */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
@@ -219,7 +220,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 4. QUÉ INCLUYE */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -235,7 +236,12 @@ const PaidMedia = () => {
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: "#5a5a5a" }}>
                     Una operación end-to-end pensada para marcas que ya venden y quieren
-                    escalar con previsibilidad.
+                    escalar con previsibilidad. Para reducir tu costo de adquisición a
+                    largo plazo, combínalo con nuestra{" "}
+                    <Link to="/seo" className="text-primary font-semibold underline-offset-4 hover:underline">
+                      estrategia SEO
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -258,7 +264,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 5. BENEFICIOS */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-14">
               <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
@@ -294,7 +300,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 6. SERVICIOS COMPLEMENTARIOS */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
@@ -363,7 +369,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 7. FAQ */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
@@ -406,7 +412,7 @@ const PaidMedia = () => {
 
         {/* 8. CTA FINAL */}
         <section
-          className="py-20 lg:py-28 relative overflow-hidden"
+          className="py-12 lg:py-16 relative overflow-hidden"
           style={{ backgroundColor: NIGHT }}
         >
           <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl pointer-events-none" />
@@ -436,6 +442,7 @@ const PaidMedia = () => {
             </div>
           </div>
         </section>
+        <StrategistCTA />
       </main>
 
       <Footer />

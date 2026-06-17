@@ -86,7 +86,7 @@ const Academia = () => {
         </section>
 
         {/* 2. Diferenciador (dark) */}
-        <section className="py-20 lg:py-24" style={{ backgroundColor: "#0F172A" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#0F172A" }}>
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FDFBF7" }}>
               El 90% de los cursos online fracasan por falta de ejecución.
@@ -98,7 +98,7 @@ const Academia = () => {
         </section>
 
         {/* 3. Programas */}
-        <section className="py-20 lg:py-24">
+        <section className="py-12 lg:py-16">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-14">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Programas activos</h2>
@@ -128,7 +128,7 @@ const Academia = () => {
         </section>
 
         {/* 4. Modalidad */}
-        <section className="py-20 lg:py-24" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Modalidad</h2>
@@ -156,7 +156,7 @@ const Academia = () => {
         </section>
 
         {/* 5. FAQ */}
-        <section className="py-20 lg:py-24">
+        <section className="py-12 lg:py-16">
           <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Preguntas frecuentes</h2>
@@ -185,7 +185,7 @@ const Academia = () => {
         </section>
 
         {/* 6. CTA Final (dark) */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: "#0F172A" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#0F172A" }}>
           <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FDFBF7" }}>
               Tu crecimiento profesional no puede esperar a la siguiente pestaña.

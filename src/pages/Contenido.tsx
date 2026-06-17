@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StrategistCTA from "@/components/StrategistCTA";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -125,7 +126,7 @@ const Contenido = () => {
         </section>
 
         {/* 2. EL PROBLEMA */}
-        <section className="py-20 lg:py-28 relative" style={{ backgroundColor: NIGHT }}>
+        <section className="py-12 lg:py-16 relative" style={{ backgroundColor: NIGHT }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <div
@@ -154,7 +155,7 @@ const Contenido = () => {
         </section>
 
         {/* 3. METODOLOGÍA */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
@@ -196,7 +197,7 @@ const Contenido = () => {
         </section>
 
         {/* 4. QUÉ INCLUYE */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -212,7 +213,12 @@ const Contenido = () => {
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: "#5a5a5a" }}>
                     Un sistema integral de producción y distribución pensado para convertir
-                    cada pieza en un activo de autoridad para tu marca.
+                    cada pieza en un activo de autoridad para tu marca, con contenido
+                    diseñado para convertir en tus{" "}
+                    <Link to="/paid-media" className="text-primary font-semibold underline-offset-4 hover:underline">
+                      campañas de Pauta Digital
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -235,7 +241,7 @@ const Contenido = () => {
         </section>
 
         {/* 5. BENEFICIOS */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
@@ -259,7 +265,7 @@ const Contenido = () => {
         </section>
 
         {/* 6. SERVICIOS COMPLEMENTARIOS */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
@@ -328,7 +334,7 @@ const Contenido = () => {
         </section>
 
         {/* 7. FAQ */}
-        <section className="py-20 lg:py-28" style={{ backgroundColor: CREAM }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: CREAM }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
@@ -371,7 +377,7 @@ const Contenido = () => {
 
         {/* 8. CTA FINAL */}
         <section
-          className="py-20 lg:py-28 relative overflow-hidden"
+          className="py-12 lg:py-16 relative overflow-hidden"
           style={{ backgroundColor: NIGHT }}
         >
           <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl pointer-events-none" />
@@ -409,6 +415,7 @@ const Contenido = () => {
             </div>
           </div>
         </section>
+        <StrategistCTA />
       </main>
 
       <Footer />

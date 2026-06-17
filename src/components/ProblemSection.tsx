@@ -1,6 +1,6 @@
 const ProblemSection = () => {
   return (
-    <section className="py-16 lg:py-24 relative bg-[#0F172A]">
+    <section className="py-12 lg:py-16 relative bg-[#0F172A]">
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">

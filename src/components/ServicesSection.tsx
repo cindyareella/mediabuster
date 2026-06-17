@@ -44,7 +44,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicios" className="py-16 lg:py-20 relative">
+    <section id="servicios" className="py-10 lg:py-14 relative">
       <div className="absolute inset-0 bg-[#FDF5EE]" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">

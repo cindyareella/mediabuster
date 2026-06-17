@@ -2,7 +2,7 @@ const AboutSection = () => {
 
 
   return (
-   <section id="nosotros" className="py-16 lg:py-20 relative bg-[#FFF5F0]">
+   <section id="nosotros" className="py-10 lg:py-14 relative bg-[#FFF5F0]">
      <div className="absolute inset-0 opacity-60" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(210,93,56,0.08) 1px, transparent 0)", backgroundSize: "28px 28px" }} />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
