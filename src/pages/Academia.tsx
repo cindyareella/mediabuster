@@ -55,6 +55,12 @@ const Academia = () => {
               style={{ backgroundColor: "#0F172A", color: "#FDFBF7" }}>
               Media Buster Academy
             </span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBusterAcademy-logo.png"
+              alt="Media Buster Academy"
+              loading="lazy"
+              className="mx-auto mb-8 h-24 md:h-32 w-auto object-contain"
+            />
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6" style={{ color: "#2B2B2B" }}>
               Formación presencial para estrategas, no para espectadores.
             </h1>
