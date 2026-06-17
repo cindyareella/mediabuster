@@ -59,6 +59,10 @@ export default {
           DEFAULT: "hsl(var(--sage))",
           foreground: "hsl(var(--sage-foreground))",
         },
+        electric: {
+          DEFAULT: "hsl(var(--electric))",
+          foreground: "hsl(var(--electric-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

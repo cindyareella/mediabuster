@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import StrategistCTA from "@/components/StrategistCTA";
+import ContactSection from "@/components/ContactSection";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
@@ -24,9 +24,10 @@ import {
 } from "@/components/ui/accordion";
 import { seoData, SITE_URL } from "@/lib/seoData";
 
-const CREAM = "#FDFBF7";
+const CREAM = "#fffdf5";
+const CARBON_BG = "#2B2B2B";
+const ZEBRA = "#fff5d2";
 const CARBON = "#2B2B2B";
-const NIGHT = "#0F172A";
 
 const methodology = [
   {
@@ -111,7 +112,7 @@ const PaidMedia = () => {
 
       <main>
         {/* 1. HERO */}
-        <section className="bg-[#FDFBF7] pt-24 lg:pt-28">
+        <section className="bg-[#fffdf5] pt-24 lg:pt-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="text-center lg:text-left">
@@ -148,14 +149,14 @@ const PaidMedia = () => {
         </section>
 
         {/* 2. EL PROBLEMA */}
-        <section className="py-12 lg:py-16 relative" style={{ backgroundColor: NIGHT }}>
+        <section className="py-12 lg:py-16 relative" style={{ backgroundColor: CARBON_BG }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <div
                 className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-6"
-                style={{ backgroundColor: "rgba(210,93,56,0.15)" }}
+                style={{ backgroundColor: "rgba(124,58,237,0.15)" }}
               >
-                <AlertTriangle className="w-7 h-7 text-primary" />
+                <AlertTriangle className="w-7 h-7 text-electric" />
               </div>
               <h2
                 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
@@ -199,10 +200,10 @@ const PaidMedia = () => {
                   className="p-7 rounded-2xl bg-white border border-border/60 shadow-[0_8px_28px_-12px_rgba(43,43,43,0.12)] hover:shadow-[0_16px_40px_-16px_rgba(210,93,56,0.25)] transition-all hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <step.icon className="w-5 h-5 text-primary" />
+                    <div className="w-11 h-11 rounded-xl bg-electric/10 flex items-center justify-center">
+                      <step.icon className="w-5 h-5 text-electric" />
                     </div>
-                    <span className="text-xs font-bold text-primary/70">0{i + 1}</span>
+                    <span className="text-xs font-bold text-electric/80">0{i + 1}</span>
                   </div>
                   <h3
                     className="font-display text-xl font-bold mb-3"
@@ -220,7 +221,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 4. QUÉ INCLUYE */}
-        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: ZEBRA }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -251,7 +252,7 @@ const PaidMedia = () => {
                       key={item}
                       className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/60"
                     >
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-electric shrink-0 mt-0.5" />
                       <span className="text-base" style={{ color: CARBON }}>
                         {item}
                       </span>
@@ -300,7 +301,7 @@ const PaidMedia = () => {
         </section>
 
         {/* 6. SERVICIOS COMPLEMENTARIOS */}
-        <section className="py-12 lg:py-16" style={{ backgroundColor: "#FDF5EE" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: ZEBRA }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
@@ -410,39 +411,8 @@ const PaidMedia = () => {
           </div>
         </section>
 
-        {/* 8. CTA FINAL */}
-        <section
-          className="py-12 lg:py-16 relative overflow-hidden"
-          style={{ backgroundColor: NIGHT }}
-        >
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2
-                className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight"
-                style={{ color: CREAM }}
-              >
-                ¿Listo para dejar de gastar y empezar a invertir?
-              </h2>
-              <p
-                className="text-lg md:text-xl mb-10 leading-relaxed"
-                style={{ color: "rgba(253,251,247,0.75)" }}
-              >
-                Analizamos tu inversión actual y te mostramos exactamente dónde se está
-                fugando presupuesto y cuánto puedes recuperar.
-              </p>
-              <Button asChild variant="hero" size="xl" className="group">
-                <Link to="/contacto">
-                  Agendar consultoría
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-        <StrategistCTA />
+        {/* 8. FORMULARIO DE CONTACTO (cierre único) */}
+        <ContactSection />
       </main>
 
       <Footer />

@@ -49,6 +49,10 @@
     --sage: 157 11% 69%;
     --sage-foreground: 0 0% 17%;
 
+    /* Electric / Ultravioleta tech accent #7C3AED */
+    --electric: 262 83% 58%;
+    --electric-foreground: 0 0% 100%;
+
     --primary-light: 25 75% 60%;
 
     --gradient-primary: linear-gradient(135deg, hsl(13 63% 52%) 0%, hsl(25 75% 60%) 100%);
