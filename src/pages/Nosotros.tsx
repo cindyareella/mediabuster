@@ -80,7 +80,7 @@ const Nosotros = () => {
         </section>
 
         {/* Qué es Media Buster */}
-        <section className="py-24 lg:py-32 relative">
+        <section className="py-12 lg:py-16 relative">
           <div className="absolute inset-0 bg-background" />
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-6xl mx-auto">
@@ -144,7 +144,7 @@ const Nosotros = () => {
         </section>
 
         {/* Cómo trabajamos */}
-        <section className="py-24 lg:py-32 relative">
+        <section className="py-12 lg:py-16 relative">
           <div className="absolute inset-0 bg-gradient-dark" />
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-6xl mx-auto">
@@ -202,7 +202,7 @@ const Nosotros = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-24 lg:py-32 relative">
+        <section className="py-12 lg:py-16 relative">
           <div className="absolute inset-0 bg-background" />
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 

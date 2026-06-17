@@ -20,7 +20,7 @@ const DifferentiatorSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-20 relative bg-[#FDFBF7]">
+    <section className="py-10 lg:py-14 relative bg-[#FDFBF7]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">

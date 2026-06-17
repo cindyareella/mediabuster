@@ -16,7 +16,7 @@ const RelatedServices = ({ currentSlug }: RelatedServicesProps) => {
   const otherServices = services.filter((s) => s.slug !== currentSlug);
 
   return (
-    <section className="py-24 lg:py-32 relative">
+    <section className="py-12 lg:py-16 relative">
       <div className="absolute inset-0 bg-background" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
