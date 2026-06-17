@@ -45,7 +45,7 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section id="porque" className="py-16 lg:py-20 relative bg-[#FDFBF7]">
+    <section id="porque" className="py-16 lg:py-20 relative bg-[#FDF5EE]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
 
         <div className="max-w-6xl mx-auto">
