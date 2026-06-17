@@ -23,20 +23,21 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/70 backdrop-blur-sm mb-6 animate-slide-up">
               <Sparkles className="w-4 h-4 text-secondary" />
               <span className="text-sm font-medium text-muted-foreground">
-                Marketing y crecimiento para emprendedores
+                Estrategia, pauta, SEO y producción audiovisual
               </span>
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6 animate-slide-up">
-              <span className="text-gradient-primary">Marketing estratégico</span>
-              <br />
-              <span className="text-foreground">para marcas en </span>
-              <span className="text-gradient-secondary">crecimiento</span>
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-6 animate-slide-up">
+              <span className="text-foreground">Marketing estratégico para </span>
+              <span className="text-gradient-primary">dueños de negocio</span>
+              <span className="text-foreground"> que quieren dejar de adivinar y empezar a </span>
+              <span className="text-gradient-secondary">crecer.</span>
             </h1>
 
             <p className="text-base lg:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-9 animate-slide-up-delay leading-relaxed">
-              Somos la agencia que los emprendedores creamos para emprendedores.
-              No vendemos humo, construimos sistemas de crecimiento real.
+              Somos la agencia creada por emprendedores, pero operada con rigor técnico.
+              Gestionamos tu pauta publicitaria, SEO y producción audiovisual para que cada peso
+              que inviertas regrese multiplicado.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 animate-slide-up-delay-2">

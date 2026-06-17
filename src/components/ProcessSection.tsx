@@ -1,41 +1,34 @@
-import { Search, Target, Lightbulb, Rocket, BarChart3 } from "lucide-react";
+import { Search, Target, Rocket, BarChart3 } from "lucide-react";
 
 const ProcessSection = () => {
   const steps = [
     {
       number: "01",
       icon: Search,
-      title: "Diagnóstico",
-      description: "Entendemos tu negocio, tu mercado y tus objetivos. Analizamos lo que funciona y lo que no.",
-      details: ["Análisis de competencia", "Auditoría de canales", "Identificación de oportunidades"],
+      title: "Diagnóstico de tu negocio",
+      description: "Entendemos tu modelo, tu mercado y dónde se está fugando el dinero antes de proponer nada.",
+      details: ["Auditoría de canales", "Análisis de competencia", "Detección de oportunidades"],
     },
     {
       number: "02",
       icon: Target,
-      title: "Objetivos",
-      description: "Definimos metas claras, medibles y alineadas con tu realidad de negocio.",
-      details: ["KPIs definidos", "Métricas de éxito", "Plazos realistas"],
+      title: "Objetivos y Estrategia",
+      description: "Definimos metas reales de venta y el plan claro para llegar a ellas. Sin métricas de vanidad.",
+      details: ["KPIs de negocio", "Roadmap accionable", "Presupuesto optimizado"],
     },
     {
       number: "03",
-      icon: Lightbulb,
-      title: "Estrategia",
-      description: "Diseñamos el camino. Canales, mensajes, tácticas y recursos necesarios.",
-      details: ["Plan de acción", "Roadmap de implementación", "Presupuesto optimizado"],
+      icon: Rocket,
+      title: "Ejecución Directa",
+      description: "Operamos nosotros: pauta, contenido y SEO con foco en mover el negocio, no en quedar bien.",
+      details: ["Implementación ágil", "Comunicación constante", "Ejecución sin becarios"],
     },
     {
       number: "04",
-      icon: Rocket,
-      title: "Ejecución",
-      description: "Implementamos con precisión. Cada acción tiene un propósito claro.",
-      details: ["Implementación ágil", "Comunicación constante", "Ajustes en tiempo real"],
-    },
-    {
-      number: "05",
       icon: BarChart3,
-      title: "Optimización",
-      description: "Medimos, aprendemos, mejoramos. El crecimiento es un proceso continuo.",
-      details: ["Reportes de performance", "Tests A/B", "Escalamiento"],
+      title: "Optimización de Ventas",
+      description: "Medimos qué genera ingresos y qué no, y reinvertimos donde el retorno es real.",
+      details: ["Reportes de performance", "Tests A/B", "Escalamiento por ROAS"],
     },
   ];
 
