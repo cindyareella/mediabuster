@@ -127,16 +127,14 @@ const PaidMedia = () => {
                   className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-[1.05] tracking-tight"
                   style={{ color: CARBON }}
                 >
-                  Escalamos tus ventas,{" "}
-                  <span className="text-primary">no tus métricas de vanidad.</span>
+                  Escalamos <span className="text-primary">ventas</span>, no tus likes.
                 </h1>
                 <p
                   className="text-base md:text-lg mb-7 leading-relaxed"
                   style={{ color: "#4a4a4a" }}
                 >
-                  Gestión de Paid Media de alto rendimiento. Operamos tu inversión publicitaria
-                  con precisión matemática para maximizar tu retorno, sin intermediarios ni
-                  cuentas delegadas a ejecutivos junior.
+                  Operamos tu inversión publicitaria en Meta y Google Ads con precisión
+                  matemática para reducir tu costo de adquisición.
                 </p>
                 <Button asChild variant="hero" size="xl" className="group">
                   <Link to="/contacto">
@@ -146,12 +144,14 @@ const PaidMedia = () => {
                 </Button>
               </div>
               <div className="relative">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-paid-media.png"
-                  alt="Paid Media performance Media Buster"
-                  className="w-full h-auto object-cover rounded-3xl"
-                  loading="eager"
-                />
+                <div className="relative rounded-3xl overflow-hidden aspect-video">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-paid-media.png"
+                    alt="Paid Media performance Media Buster"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                </div>
               </div>
             </div>
           </div>
