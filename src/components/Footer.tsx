@@ -23,16 +23,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-16 border-t border-border relative bg-background">
+    <footer className="py-10 lg:py-12 border-t border-border relative bg-background">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Logo & Tagline */}
             <div className="md:col-span-2">
-              <Link to="/" className="inline-block mb-4">
-                <img src={logo} alt="Media Buster" className="h-48 w-auto" />
+              <Link to="/" className="inline-block mb-3">
+                <img src={logo} alt="Media Buster" className="h-16 w-auto" />
               </Link>
-              <p className="text-lg text-muted-foreground max-w-sm">
+              <p className="text-sm text-muted-foreground max-w-sm">
                 Marketing estratégico para marcas en crecimiento. Agencia de marketing digital estratégico en México.
               </p>
             </div>
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar: socials left, copyright right */}
-          <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="pt-5 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-5">
               {socials.map(({ name, href, Icon }) => (
                 <a

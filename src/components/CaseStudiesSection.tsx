@@ -18,7 +18,7 @@ const CaseStudiesSection = () => {
   ];
 
   return (
-    <section className="bg-[#fffdf5] py-12 lg:py-16">
+    <section className="bg-[#fff5d2] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-[#D25D38] font-semibold text-sm uppercase tracking-widest mb-3 block">
