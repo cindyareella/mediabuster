@@ -30,6 +30,7 @@ const App = () => (
             <Route path="/seo" element={<SEOPage />} />
             
             <Route path="/contenido" element={<Contenido />} />
+            <Route path="/academia" element={<Academia />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
