@@ -105,16 +105,14 @@ const Contenido = () => {
                   className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-[1.05] tracking-tight"
                   style={{ color: CARBON }}
                 >
-                  Tu marca no necesita más publicaciones. Necesita{" "}
-                  <span className="text-primary">autoridad audiovisual</span>.
+                  Producimos tu <span className="text-primary">autoridad audiovisual</span>.
                 </h1>
                 <p
                   className="text-base md:text-lg mb-7 leading-relaxed"
                   style={{ color: "#4a4a4a" }}
                 >
-                  Estrategia de contenidos y producción de alto rendimiento. Elevamos tu mensaje
-                  con nuestro set de grabación 4K in-house y formatos de producción remota para
-                  posicionarte como el referente indiscutible.
+                  Elevamos tu mensaje con nuestro set de grabación 4K in-house y producción
+                  remota para convertirte en el referente de tu industria.
                 </p>
                 <Button asChild variant="hero" size="xl" className="group">
                   <Link to="/contacto">
@@ -124,12 +122,14 @@ const Contenido = () => {
                 </Button>
               </div>
               <div className="relative">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-content.png"
-                  alt="Producción de contenido Media Buster"
-                  className="w-full h-auto object-cover rounded-3xl"
-                  loading="eager"
-                />
+                <div className="relative rounded-3xl overflow-hidden aspect-video">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-content.png"
+                    alt="Producción de contenido Media Buster"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                </div>
               </div>
             </div>
           </div>
