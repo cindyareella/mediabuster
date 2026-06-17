@@ -111,7 +111,7 @@ const WhyUsSection = () => {
       </div>
 
       {/* En qué creemos - distinct background */}
-      <div className="bg-[#FFF5F0] mt-16 lg:mt-20 -mb-16 lg:-mb-20 py-16 lg:py-20">
+      <div className="bg-white mt-16 lg:mt-20 -mb-16 lg:-mb-20 py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">
