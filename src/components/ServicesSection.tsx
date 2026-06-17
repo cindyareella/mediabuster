@@ -44,9 +44,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicios" className="py-10 lg:py-14 relative">
-      <div className="absolute inset-0 bg-[#FDF5EE]" />
-      
+    <section id="servicios" className="py-10 lg:py-14 relative bg-[#fff5d2]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -68,17 +66,13 @@ const ServicesSection = () => {
             {services.map((service, index) => (
               <div 
                 key={index}
-                className={`group relative p-6 rounded-2xl bg-gradient-card border border-border hover:border-${service.accent}/50 transition-all duration-300 hover-lift ${
+                className={`group relative p-6 rounded-2xl bg-white border border-border hover:border-electric/50 transition-all duration-300 hover-lift ${
                   index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
                 }`}
               >
                 {/* Icon */}
-                <div className={`w-12 h-12 rounded-xl ${
-                  service.accent === 'primary' ? 'bg-primary/10' : 'bg-secondary/10'
-                } flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className={`w-6 h-6 ${
-                    service.accent === 'primary' ? 'text-primary' : 'text-secondary'
-                  }`} />
+                <div className="w-12 h-12 rounded-xl bg-electric/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="w-6 h-6 text-electric" />
                 </div>
 
                 {/* Content */}
@@ -93,20 +87,19 @@ const ServicesSection = () => {
                 <ul className="space-y-1.5 mb-5">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span className={`w-1.5 h-1.5 rounded-full ${
-                        service.accent === 'primary' ? 'bg-primary' : 'bg-secondary'
-                      }`} />
+                      <span className="w-1.5 h-1.5 rounded-full bg-electric" />
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <Button asChild variant="default" size="sm" className="w-full group/btn">
+                <Button asChild variant="hero" size="sm" className="w-full group/btn">
                   <Link to={service.href}>
                     Cotizar este servicio
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
+
 
                 {/* Hover border effect */}
                 <div className={`absolute inset-0 rounded-2xl ${

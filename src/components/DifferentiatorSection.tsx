@@ -20,7 +20,7 @@ const DifferentiatorSection = () => {
   ];
 
   return (
-    <section className="py-10 lg:py-14 relative bg-[#FDFBF7]">
+    <section className="py-10 lg:py-14 relative bg-[#fff5d2]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -42,8 +42,8 @@ const DifferentiatorSection = () => {
                 <div className="absolute -top-4 left-7 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-sm shadow-glow">
                   {idx + 1}
                 </div>
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 mt-2">
-                  <item.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-electric/10 flex items-center justify-center mb-4 mt-2">
+                  <item.icon className="w-6 h-6 text-electric" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-2">
                   {item.title}

@@ -33,9 +33,8 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-10 lg:py-14 relative overflow-hidden bg-white">
-      <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
+    <section id="proceso" className="py-10 lg:py-14 relative overflow-hidden bg-[#fffdf5]">
+
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -63,7 +62,7 @@ const ProcessSection = () => {
                 <div key={index} className="relative flex gap-6 lg:gap-10 group">
                   {/* Icon + number */}
                   <div className="relative shrink-0">
-                    <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-primary flex items-center justify-center shadow-[0_8px_20px_-6px_rgba(210,93,56,0.45)] z-10 relative">
+                    <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-electric flex items-center justify-center shadow-[0_8px_20px_-6px_rgba(124,58,237,0.45)] z-10 relative">
                       <step.icon className="w-5 h-5 lg:w-7 lg:h-7 text-white" />
                     </div>
                   </div>
@@ -84,7 +83,7 @@ const ProcessSection = () => {
                     <ul className="grid sm:grid-cols-3 gap-2 pt-3 border-t border-border/50">
                       {step.details.map((detail, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-sm text-foreground/65">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-electric shrink-0" />
                           {detail}
                         </li>
                       ))}
