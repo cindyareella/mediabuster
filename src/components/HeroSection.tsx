@@ -62,11 +62,11 @@ const HeroSection = () => {
 
           {/* Image */}
           <div className="relative animate-fade-in-slow">
-            <div className="relative rounded-3xl overflow-hidden">
+            <div className="relative rounded-3xl overflow-hidden aspect-video">
               <img
                 src={heroImage}
                 alt="Equipo Media Buster trabajando en estrategia de marketing digital"
-                className="w-full h-auto object-cover aspect-[4/5] lg:aspect-[5/6]"
+                className="w-full h-full object-cover"
                 loading="eager"
               />
             </div>

@@ -105,17 +105,14 @@ const SEOPage = () => {
                   className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-[1.05] tracking-tight"
                   style={{ color: CARBON }}
                 >
-                  Dominamos el algoritmo. Construimos{" "}
-                  <span className="text-primary">activos digitales que traen ventas</span>, no
-                  solo visitas.
+                  SEO que trae <span className="text-primary">ventas</span>, no visitas.
                 </h1>
                 <p
                   className="text-base md:text-lg mb-7 leading-relaxed"
                   style={{ color: "#4a4a4a" }}
                 >
-                  Posicionamiento SEO técnico y estratégico. Reducimos tu dependencia de la
-                  pauta publicitaria captando la demanda orgánica de tu mercado con precisión
-                  estructural. Sin trucos, puro rendimiento a largo plazo.
+                  Dominamos el algoritmo. Construimos activos digitales técnicos que reducen
+                  tu dependencia de la pauta y captan demanda orgánica a largo plazo.
                 </p>
                 <Button asChild variant="hero" size="xl" className="group">
                   <Link to="/contacto">
@@ -125,12 +122,14 @@ const SEOPage = () => {
                 </Button>
               </div>
               <div className="relative">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/SEO-hero.jpg"
-                  alt="SEO técnico Media Buster"
-                  className="w-full h-auto object-cover rounded-3xl"
-                  loading="eager"
-                />
+                <div className="relative rounded-3xl overflow-hidden aspect-video">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/SEO-hero.jpg"
+                    alt="SEO técnico Media Buster"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                </div>
               </div>
             </div>
           </div>
