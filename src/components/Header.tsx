@@ -90,6 +90,14 @@ const Header = () => {
             </div>
 
             <Link
+              to="/academia"
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+            >
+              Academy
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
+
+            <Link
               to="/nosotros"
               className="text-base font-medium text-foreground/80 hover:text-primary transition-colors relative group"
             >
@@ -153,6 +161,7 @@ const Header = () => {
                 )}
               </div>
 
+              <Link to="/academia" className="text-lg font-semibold text-foreground py-2">Academy</Link>
               <Link to="/nosotros" className="text-lg font-semibold text-foreground py-2">Nosotros</Link>
               <Link to="/contacto" className="text-lg font-semibold text-foreground py-2">Contacto</Link>
 

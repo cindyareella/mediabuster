@@ -9,6 +9,7 @@ import PaidMedia from "./pages/PaidMedia";
 import SEOPage from "./pages/SEOPage";
 
 import Contenido from "./pages/Contenido";
+import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import NotFound from "./pages/NotFound";
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/seo" element={<SEOPage />} />
             
             <Route path="/contenido" element={<Contenido />} />
+            <Route path="/academia" element={<Academia />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
