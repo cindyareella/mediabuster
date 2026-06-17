@@ -28,16 +28,15 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-6 animate-slide-up">
-              <span className="text-foreground">Marketing estratégico para </span>
-              <span className="text-gradient-primary">dueños de negocio</span>
-              <span className="text-foreground"> que quieren dejar de adivinar y empezar a </span>
-              <span className="text-gradient-secondary">crecer.</span>
+              <span className="text-foreground">Marketing que </span>
+              <span className="text-gradient-primary">multiplica</span>
+              <span className="text-foreground"> tu </span>
+              <span className="text-gradient-secondary">inversión.</span>
             </h1>
 
             <p className="text-base lg:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-9 animate-slide-up-delay leading-relaxed">
-              Somos la agencia creada por emprendedores, pero operada con rigor técnico.
-              Gestionamos tu pauta publicitaria, SEO y producción audiovisual para que cada peso
-              que inviertas regrese multiplicado.
+              Pauta, SEO y producción audiovisual para emprendedores. Operamos tu ecosistema digital
+              con rigor técnico para garantizar tu máxima rentabilidad.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 animate-slide-up-delay-2">
