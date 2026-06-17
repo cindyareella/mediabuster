@@ -49,34 +49,39 @@ const Academia = () => {
 
       <main className="pt-20 lg:pt-28">
         {/* 1. Hero */}
-        <section className="py-20 lg:py-28">
-          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
-              style={{ backgroundColor: "#0F172A", color: "#FDFBF7" }}>
-              Media Buster Academy
-            </span>
-            <img
-              src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBusterAcademy-logo.png"
-              alt="Media Buster Academy"
-              loading="lazy"
-              className="mx-auto mb-8 h-24 md:h-32 w-auto object-contain"
-            />
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6" style={{ color: "#2B2B2B" }}>
-              Formación presencial para estrategas, no para espectadores.
-            </h1>
-            <p className="text-lg md:text-xl text-foreground/70 mb-10 max-w-2xl mx-auto">
-              Olvídate de los cursos pregrabados. Abrimos convocatorias cerradas y presenciales para entrenarte con el rigor técnico de una agencia en activo.
-            </p>
-            <Button asChild variant="whatsapp" size="xl">
-              <a
-                href={waLink("Hola Media Buster, quiero consultar las próximas fechas de Academy.")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Consultar próximas fechas
-              </a>
-            </Button>
+        <section className="py-12 lg:py-16">
+          <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+              <div className="text-center lg:text-left">
+                <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
+                  style={{ backgroundColor: "#0F172A", color: "#FDFBF7" }}>
+                  Media Buster Academy
+                </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: "#2B2B2B" }}>
+                  Formación presencial para estrategas, no para espectadores.
+                </h1>
+                <p className="text-lg md:text-xl text-foreground/70 mb-8">
+                  Olvídate de los cursos pregrabados. Abrimos convocatorias cerradas y presenciales para entrenarte con el rigor técnico de una agencia en activo.
+                </p>
+                <Button asChild variant="whatsapp" size="xl">
+                  <a
+                    href={waLink("Hola Media Buster, quiero consultar las próximas fechas de Academy.")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Consultar próximas fechas
+                  </a>
+                </Button>
+              </div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBusterAcademy-logo.png"
+                  alt="Media Buster Academy"
+                  className="w-full max-w-md lg:max-w-lg h-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
