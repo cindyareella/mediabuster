@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const heroImage = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-home-mediabuster.jpg";
@@ -20,13 +20,6 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
           {/* Copy */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/70 backdrop-blur-sm mb-4 animate-slide-up">
-              <Sparkles className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-muted-foreground">
-                Estrategia, pauta, SEO y producción audiovisual
-              </span>
-            </div>
-
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-4 animate-slide-up">
               <span className="text-foreground">Marketing que </span>
               <span className="text-gradient-primary">multiplica</span>

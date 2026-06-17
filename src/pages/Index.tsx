@@ -4,6 +4,8 @@ import ClientsSection from "@/components/ClientsSection";
 import ProblemSection from "@/components/ProblemSection";
 import DifferentiatorSection from "@/components/DifferentiatorSection";
 import ServicesSection from "@/components/ServicesSection";
+import MidCTASection from "@/components/MidCTASection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ProcessSection from "@/components/ProcessSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";

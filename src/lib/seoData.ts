@@ -1,4 +1,4 @@
-export const SITE_URL = "https://mediabuster.com";
+export const SITE_URL = "https://mediabustermarketing.com";
 export const SITE_NAME = "Media Buster";
 
 export interface SEOData {
