@@ -9,6 +9,7 @@ import PaidMedia from "./pages/PaidMedia";
 import SEOPage from "./pages/SEOPage";
 
 import Contenido from "./pages/Contenido";
+import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import NotFound from "./pages/NotFound";
