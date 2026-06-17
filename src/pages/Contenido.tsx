@@ -88,15 +88,9 @@ const Contenido = () => {
 
       <main>
         {/* 1. HERO */}
-        <section
-          className="pt-28 pb-12 lg:pt-32 lg:pb-16 relative overflow-hidden"
-          style={{ backgroundColor: CREAM }}
-        >
-          <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full blur-3xl opacity-30 bg-primary/30" />
-          <div className="absolute bottom-0 -right-32 w-96 h-96 rounded-full blur-3xl opacity-20 bg-secondary/30" />
-
-          <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center max-w-6xl mx-auto">
+        <section className="bg-[#FDFBF7] pt-24 lg:pt-28">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="text-center lg:text-left">
                 <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-4">
                   Contenido & Social Media
@@ -107,10 +101,7 @@ const Contenido = () => {
                 >
                   Producimos tu <span className="text-primary">autoridad audiovisual</span>.
                 </h1>
-                <p
-                  className="text-base md:text-lg mb-7 leading-relaxed"
-                  style={{ color: "#4a4a4a" }}
-                >
+                <p className="text-base md:text-lg mb-7 leading-relaxed" style={{ color: "#4a4a4a" }}>
                   Elevamos tu mensaje con nuestro set de grabación 4K in-house y producción
                   remota para convertirte en el referente de tu industria.
                 </p>
@@ -121,15 +112,13 @@ const Contenido = () => {
                   </Link>
                 </Button>
               </div>
-              <div className="relative">
-                <div className="relative rounded-3xl overflow-hidden aspect-video">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-content.png"
-                    alt="Producción de contenido Media Buster"
-                    className="w-full h-full object-cover"
-                    loading="eager"
-                  />
-                </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-content.png"
+                  alt="Producción de contenido Media Buster"
+                  className="w-full h-auto object-cover rounded-2xl"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
