@@ -6,7 +6,7 @@ const logos = [
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-clinica-animal.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-concibe.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-conieco.png",
-  "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-dysa",
+  "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-dysa.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-flow.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-pozzeidon-png-111.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-DEM.png",
@@ -18,7 +18,7 @@ const ClientsSection = () => {
   const items = [...logos, ...logos];
 
   return (
-    <section id="clientes" className="py-10 lg:py-14 bg-[#fffdf5]">
+    <section id="clientes" className="py-10 lg:py-14 bg-[#fff5d2]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground mb-3">
@@ -49,6 +49,9 @@ const ClientsSection = () => {
                     src={src}
                     alt="Logo cliente Media Buster"
                     loading="lazy"
+                    onError={(e) => {
+                      (e.currentTarget.parentElement?.parentElement as HTMLElement | null)?.style.setProperty("display", "none");
+                    }}
                     className="max-h-16 md:max-h-20 w-auto object-contain"
                   />
                 </div>
