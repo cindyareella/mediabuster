@@ -1,14 +1,11 @@
 import { MessageCircle } from "lucide-react";
 
-const PHONE = "525635406982"; // 52 + 56 3540 6982
-const MESSAGE = "Hola Media Buster, me gustaría agendar una consultoría.";
+const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 
 const FloatingWhatsApp = () => {
-  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`;
-
   return (
     <a
-      href={href}
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chatear por WhatsApp"
@@ -19,7 +16,7 @@ const FloatingWhatsApp = () => {
         <MessageCircle className="w-7 h-7 md:w-8 md:h-8" strokeWidth={2.2} />
       </span>
       <span className="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-foreground text-background text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-card">
-        ¿Hablamos? +52 56 3540 6982
+        ¿Hablamos por WhatsApp?
       </span>
     </a>
   );
