@@ -44,9 +44,9 @@ const pillars = [
   },
   {
     icon: Share2,
-    title: "Distribución y Community",
+    title: "Community Management y Distribución",
     description:
-      "Recortamos tu contenido en múltiples formatos ágiles y gestionamos tu comunidad para convertir comentarios en ventas.",
+      "No solo publicamos tus videos; operamos tus canales de forma activa. Gestionamos tu comunidad y transformamos las interacciones diarias en prospectos calificados, llevando a los usuarios desde un comentario hasta tu embudo de ventas.",
   },
 ];
 
@@ -55,7 +55,7 @@ const includes = [
   "Grabación en set 4K o dirección remota.",
   "Edición de programas y formatos cortos (Reels/TikToks).",
   "Copywriting persuasivo.",
-  "Gestión activa de comunidad.",
+  "Community Management estratégico e interacción diaria con tus seguidores.",
 ];
 
 const faqs = [
