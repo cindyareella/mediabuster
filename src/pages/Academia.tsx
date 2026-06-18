@@ -179,24 +179,12 @@ const Academia = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Preguntas frecuentes</h2>
             </div>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="q1">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Cuál es el costo?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  Varía por convocatoria, pide informes por WhatsApp para recibir el dossier actualizado.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q2">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Entregan diploma?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  Sí, entregamos constancia de participación, pero el verdadero valor es el plan de acción con el que sales.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q3">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Puedo tomarlo online?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  No, el formato es estrictamente presencial para garantizar la ejecución práctica y el networking de alto nivel.
-                </AccordionContent>
-              </AccordionItem>
+              {faqs.map((f, i) => (
+                <AccordionItem key={i} value={`q${i + 1}`}>
+                  <AccordionTrigger className="text-left text-lg font-semibold">{f.q}</AccordionTrigger>
+                  <AccordionContent className="text-base text-foreground/75">{f.a}</AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </section>
