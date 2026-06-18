@@ -86,6 +86,7 @@ const DesarrolloWeb = () => {
         keywords={["desarrollo web", "diseño web CRO", "sitios web que convierten", "agencia desarrollo web"]}
       />
       <BreadcrumbSchema items={breadcrumbs} />
+      <FAQSchema faqs={faqs} />
       <Header />
 
       <main>
