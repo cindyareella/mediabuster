@@ -5,9 +5,12 @@ interface SEOProps extends SEOData {
   path?: string;
 }
 
+const TWITTER_DOMAIN = "mediabustermarketing.com";
+
 const SEO = ({ title, description, keywords, canonical, ogImage, path = "" }: SEOProps) => {
   const fullUrl = `${SITE_URL}${path}`;
   const defaultOgImage = `${SITE_URL}/og-image.png`;
+  const imageUrl = ogImage || defaultOgImage;
 
   return (
     <Helmet>
@@ -25,14 +28,16 @@ const SEO = ({ title, description, keywords, canonical, ogImage, path = "" }: SE
       <meta property="og:url" content={fullUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:image" content={ogImage || defaultOgImage} />
+      <meta property="og:image" content={imageUrl} />
       <meta property="og:locale" content="es_MX" />
 
-      {/* Twitter Cards */}
+      {/* Twitter Cards — absolute URLs forced to mediabustermarketing.com */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:domain" content={TWITTER_DOMAIN} />
+      <meta name="twitter:url" content={fullUrl} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage || defaultOgImage} />
+      <meta name="twitter:image" content={imageUrl} />
 
       {/* Additional SEO */}
       <meta name="robots" content="index, follow" />
