@@ -61,6 +61,7 @@ const Academia = () => {
         description="Programas presenciales de marketing, estrategia y liderazgo en grupos reducidos. Convocatorias cerradas en Ciudad de México."
         path="/academia"
       />
+      <FAQSchema faqs={faqs} />
       <Header />
 
       <main className="pt-20 lg:pt-28">
