@@ -34,19 +34,19 @@ const pillars = [
     icon: Code2,
     title: "SEO Técnico y Arquitectura",
     description:
-      "Auditamos y reestructuramos el código de tu sitio. Optimizamos Core Web Vitals, limpiamos el DOM, aseguramos indexación perfecta y creamos una arquitectura de URLs lógica sin cuellos de botella para los rastreadores.",
+      "Optimizamos la velocidad de carga y estructuramos tu sitio para que Google lo lea sin bloqueos. Una web ultrarrápida y sin errores técnicos es el primer paso indispensable para dominar los resultados.",
   },
   {
     icon: FileSearch,
     title: "SEO On-Page y Semántica",
     description:
-      "Alineamos cada página con la intención de búsqueda exacta. Optimizamos jerarquías (H1-H6), metaetiquetas para CTR y estructuramos clústeres temáticos sin saturar de palabras clave basura.",
+      "Alineamos cada página con la intención de compra real de tu cliente. No rellenamos con palabras clave vacías; creamos jerarquías de contenido claras que responden exactamente a lo que tu mercado busca cuando está listo para comprar.",
   },
   {
     icon: Link2,
     title: "SEO de Autoridad / Off-Page",
     description:
-      "Construimos la confianza de tu dominio mediante link building de alta calidad y E-E-A-T. Conseguimos que sitios relevantes apunten hacia ti, dándote el respaldo que exige el algoritmo.",
+      "Construimos la reputación de tu dominio. Logramos que otros sitios relevantes de tu sector te respalden, enviando a Google la señal definitiva de que tu marca es la autoridad indiscutible en tu industria.",
   },
 ];
 
@@ -226,19 +226,30 @@ const SEOPage = () => {
                   </p>
                 </div>
 
-                <ul className="space-y-4">
-                  {includes.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/60"
+                <div>
+                  <ul className="space-y-4">
+                    {includes.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/60"
+                      >
+                        <CheckCircle2 className="w-5 h-5 text-electric shrink-0 mt-0.5" />
+                        <span className="text-base" style={{ color: CARBON }}>
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-8 flex justify-center">
+                    <a
+                      href="#contacto"
+                      className="inline-flex items-center gap-2 bg-[#6D28D9] hover:bg-[#5b21b6] text-white font-semibold px-8 py-3 rounded-md shadow-glow transition-all"
                     >
-                      <CheckCircle2 className="w-5 h-5 text-electric shrink-0 mt-0.5" />
-                      <span className="text-base" style={{ color: CARBON }}>
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                      Quiero una auditoría SEO
+                      <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -264,6 +275,15 @@ const SEOPage = () => {
                 y blindando tu rentabilidad contra los aumentos de costo en los anuncios
                 pagados.
               </p>
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] hover:bg-[#5b21b6] text-white font-semibold px-8 py-3 rounded-md shadow-glow transition-all"
+                >
+                  Empezar a captar demanda orgánica
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
