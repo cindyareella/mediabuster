@@ -33,7 +33,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="proceso" className="py-10 lg:py-14 relative overflow-hidden bg-[#fffdf5]">
+    <section id="proceso" className="py-10 lg:py-14 relative overflow-hidden bg-[#FFFFFF]">
 
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">

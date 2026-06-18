@@ -1,6 +1,6 @@
 const ProblemSection = () => {
   return (
-    <section className="py-12 lg:py-16 relative bg-[#2B2B2B]">
+    <section className="py-12 lg:py-16 relative bg-[#1E1B4B]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <span className="inline-block px-3 py-1 rounded-full bg-electric/15 text-electric font-bold text-xs uppercase tracking-widest mb-5 border border-electric/30">

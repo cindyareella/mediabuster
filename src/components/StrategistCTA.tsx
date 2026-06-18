@@ -5,7 +5,7 @@ const STRATEGIST_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 
 const StrategistCTA = () => {
   return (
-    <section className="py-10 lg:py-14 bg-[#1A2433]">
+    <section className="py-10 lg:py-14 bg-[#1E1B4B]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <h3 className="font-display text-2xl md:text-3xl font-bold text-white leading-tight">

@@ -24,10 +24,10 @@ import {
 } from "@/components/ui/accordion";
 import { seoData, SITE_URL } from "@/lib/seoData";
 
-const CREAM = "#fffdf5";
-const CARBON_BG = "#2B2B2B";
-const ZEBRA = "#fff5d2";
-const CARBON = "#2B2B2B";
+const CREAM = "#FFFFFF";
+const CARBON_BG = "#1E1B4B";
+const ZEBRA = "#F9F8FF";
+const CARBON = "#1E1B4B";
 
 const methodology = [
   {
@@ -112,7 +112,7 @@ const PaidMedia = () => {
 
       <main>
         {/* 1. HERO */}
-        <section className="bg-[#fffdf5] pt-24 lg:pt-28">
+        <section className="bg-[#FFFFFF] pt-24 lg:pt-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="text-center lg:text-left">
