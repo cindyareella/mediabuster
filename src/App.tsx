@@ -9,6 +9,7 @@ import PaidMedia from "./pages/PaidMedia";
 import SEOPage from "./pages/SEOPage";
 
 import Contenido from "./pages/Contenido";
+import DesarrolloWeb from "./pages/DesarrolloWeb";
 import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/seo" element={<SEOPage />} />
             
             <Route path="/contenido" element={<Contenido />} />
+            <Route path="/desarrollo-web" element={<DesarrolloWeb />} />
             <Route path="/academia" element={<Academia />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
