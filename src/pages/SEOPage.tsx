@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
+import FAQSchema from "@/components/FAQSchema";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -86,6 +87,7 @@ const SEOPage = () => {
     <div className="min-h-screen" style={{ backgroundColor: CREAM, color: CARBON }}>
       <SEO {...seoData.seo} path="/seo" />
       <BreadcrumbSchema items={breadcrumbs} />
+      <FAQSchema faqs={faqs} />
       <Header />
 
       <main>
