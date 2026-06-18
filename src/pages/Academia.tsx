@@ -39,7 +39,7 @@ const programs = [
 
 const Academia = () => {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#FDFBF7", color: "#2B2B2B" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#FFFFFF", color: "#1E1B4B" }}>
       <SEO
         title="Media Buster Academy | Formación Presencial de Marketing"
         description="Programas presenciales de marketing, estrategia y liderazgo en grupos reducidos. Convocatorias cerradas en Ciudad de México."
@@ -54,10 +54,10 @@ const Academia = () => {
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="text-center lg:text-left">
                 <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
-                  style={{ backgroundColor: "#0F172A", color: "#FDFBF7" }}>
+                  style={{ backgroundColor: "#1E1B4B", color: "#FFFFFF" }}>
                   Media Buster Academy
                 </span>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: "#2B2B2B" }}>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: "#1E1B4B" }}>
                   Formación presencial para estrategas, no para espectadores.
                 </h1>
                 <p className="text-lg md:text-xl text-foreground/70 mb-8">
@@ -86,12 +86,12 @@ const Academia = () => {
         </section>
 
         {/* 2. Diferenciador (dark) */}
-        <section className="py-12 lg:py-16" style={{ backgroundColor: "#0F172A" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#1E1B4B" }}>
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FDFBF7" }}>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FFFFFF" }}>
               El 90% de los cursos online fracasan por falta de ejecución.
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "#FDFBF7", opacity: 0.85 }}>
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "#FFFFFF", opacity: 0.85 }}>
               Nuestro modelo es 100% presencial en grupos reducidos. Vienes a arrastrar el lápiz y llevarte un plan listo para implementar bajo supervisión directa.
             </p>
           </div>
@@ -110,14 +110,14 @@ const Academia = () => {
                   key={p.title}
                   className="flex flex-col bg-white rounded-2xl p-7 border border-foreground/10 shadow-sm hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-xl font-bold mb-3" style={{ color: "#2B2B2B" }}>{p.title}</h3>
+                  <h3 className="text-xl font-bold mb-3" style={{ color: "#1E1B4B" }}>{p.title}</h3>
                   <p className="text-foreground/70 mb-6 flex-1">{p.desc}</p>
                   <a
                     href={waLink(p.msg)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors hover:gap-2"
-                    style={{ color: "#D25D38" }}
+                    style={{ color: "#6D28D9" }}
                   >
                     Pedir temario <ArrowRight className="w-4 h-4" />
                   </a>
@@ -143,7 +143,7 @@ const Academia = () => {
                 <div key={title} className="text-center">
                   <div
                     className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-5"
-                    style={{ backgroundColor: "#D25D38", color: "#FDFBF7" }}
+                    style={{ backgroundColor: "#6D28D9", color: "#FFFFFF" }}
                   >
                     <Icon className="w-8 h-8" />
                   </div>
@@ -185,12 +185,12 @@ const Academia = () => {
         </section>
 
         {/* 6. CTA Final (dark) */}
-        <section className="py-12 lg:py-16" style={{ backgroundColor: "#0F172A" }}>
+        <section className="py-12 lg:py-16" style={{ backgroundColor: "#1E1B4B" }}>
           <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FDFBF7" }}>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "#FFFFFF" }}>
               Tu crecimiento profesional no puede esperar a la siguiente pestaña.
             </h2>
-            <p className="text-lg md:text-xl mb-10" style={{ color: "#FDFBF7", opacity: 0.85 }}>
+            <p className="text-lg md:text-xl mb-10" style={{ color: "#FFFFFF", opacity: 0.85 }}>
               Únete a la próxima generación de líderes. Los lugares se agotan rápido en cada apertura.
             </p>
             <Button asChild variant="whatsapp" size="xl">

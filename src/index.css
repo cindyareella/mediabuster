@@ -6,38 +6,39 @@
 
 @layer base {
   :root {
-    /* Media Buster - Cream / Carbon / Terracotta / Mustard / Sage */
-    /* Cream background #FDFBF7 */
-    --background: 40 60% 98%;
-    /* Carbon foreground #2B2B2B */
-    --foreground: 0 0% 17%;
+    /* Media Buster - Creative Studio B2B: White / Midnight Indigo / Ultraviolet / Marigold */
+    /* White background #FFFFFF */
+    --background: 0 0% 100%;
+    /* Midnight Indigo foreground #1E1B4B */
+    --foreground: 243 47% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 17%;
+    --card-foreground: 243 47% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 17%;
+    --popover-foreground: 243 47% 20%;
 
-    /* Terracotta #D25D38 */
-    --primary: 13 63% 52%;
+    /* Ultraviolet #6D28D9 */
+    --primary: 263 70% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Mustard #E3A830 */
-    --secondary: 40 76% 54%;
-    --secondary-foreground: 0 0% 17%;
+    /* Marigold #F59E0B */
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 243 47% 20%;
 
-    --muted: 40 30% 94%;
-    --muted-foreground: 0 0% 35%;
+    /* Lavender ultra pale #F9F8FF */
+    --muted: 247 100% 99%;
+    --muted-foreground: 243 20% 40%;
 
-    --accent: 40 76% 54%;
-    --accent-foreground: 0 0% 17%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 243 47% 20%;
 
-    --destructive: 13 63% 52%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 13 63% 52%;
+    --border: 247 30% 92%;
+    --input: 247 30% 92%;
+    --ring: 263 70% 50%;
 
     --radius: 0.5rem;
 
@@ -45,34 +46,34 @@
     --whatsapp: 142 70% 38%;
     --whatsapp-foreground: 0 0% 100%;
 
-    /* Sage section background #A8B8B2 */
-    --sage: 157 11% 69%;
-    --sage-foreground: 0 0% 17%;
+    /* Midnight indigo authority surface */
+    --sage: 243 47% 20%;
+    --sage-foreground: 0 0% 100%;
 
-    /* Electric / Ultravioleta tech accent #7C3AED */
-    --electric: 262 83% 58%;
+    /* Electric / Ultravioleta tech accent (aligned with primary) */
+    --electric: 263 70% 50%;
     --electric-foreground: 0 0% 100%;
 
-    --primary-light: 25 75% 60%;
+    --primary-light: 263 70% 62%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(13 63% 52%) 0%, hsl(25 75% 60%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(40 76% 54%) 0%, hsl(40 76% 46%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(40 60% 98%) 0%, hsl(40 40% 96%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(40 40% 97%) 100%);
-    --gradient-sage: linear-gradient(180deg, hsl(157 11% 72%) 0%, hsl(157 11% 66%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%) 0%, hsl(263 70% 62%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(38 92% 42%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(247 100% 99%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(247 100% 99%) 100%);
+    --gradient-sage: linear-gradient(180deg, hsl(243 47% 22%) 0%, hsl(243 47% 18%) 100%);
 
-    --shadow-glow: 0 18px 40px -14px hsl(13 63% 52% / 0.55), 0 6px 12px -6px hsl(13 63% 52% / 0.25);
-    --shadow-glow-secondary: 0 18px 40px -14px hsl(40 76% 54% / 0.55), 0 6px 12px -6px hsl(40 76% 54% / 0.25);
-    --shadow-card: 0 8px 28px -10px hsl(0 0% 17% / 0.14);
+    --shadow-glow: 0 18px 40px -14px hsl(263 70% 50% / 0.45), 0 6px 12px -6px hsl(263 70% 50% / 0.22);
+    --shadow-glow-secondary: 0 18px 40px -14px hsl(38 92% 50% / 0.45), 0 6px 12px -6px hsl(38 92% 50% / 0.22);
+    --shadow-card: 0 8px 28px -10px hsl(243 47% 20% / 0.10);
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 17%;
-    --sidebar-primary: 13 63% 52%;
+    --sidebar-foreground: 243 47% 20%;
+    --sidebar-primary: 263 70% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 40 30% 94%;
-    --sidebar-accent-foreground: 0 0% 17%;
-    --sidebar-border: 40 20% 88%;
-    --sidebar-ring: 13 63% 52%;
+    --sidebar-accent: 247 100% 99%;
+    --sidebar-accent-foreground: 243 47% 20%;
+    --sidebar-border: 247 30% 92%;
+    --sidebar-ring: 263 70% 50%;
   }
 }
 
@@ -200,6 +201,6 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: hsl(40 40% 96%); }
-::-webkit-scrollbar-thumb { background: hsl(40 20% 80%); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: hsl(13 63% 52%); }
+::-webkit-scrollbar-track { background: hsl(247 100% 99%); }
+::-webkit-scrollbar-thumb { background: hsl(247 30% 85%); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(263 70% 50%); }

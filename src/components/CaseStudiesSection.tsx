@@ -18,15 +18,15 @@ const CaseStudiesSection = () => {
   ];
 
   return (
-    <section className="bg-[#fff5d2] py-12 lg:py-16">
+    <section className="bg-[#F9F8FF] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#D25D38] font-semibold text-sm uppercase tracking-widest mb-3 block">
+          <span className="text-[#6D28D9] font-semibold text-sm uppercase tracking-widest mb-3 block">
             Casos de éxito
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#2B2B2B]">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1E1B4B]">
             No vendemos promesas.{" "}
-            <span className="text-[#D25D38]">Entregamos rentabilidad.</span>
+            <span className="text-[#6D28D9]">Entregamos rentabilidad.</span>
           </h2>
         </div>
 
@@ -36,13 +36,13 @@ const CaseStudiesSection = () => {
               key={c.tag}
               className="p-8 rounded-2xl bg-white border border-gray-100 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
-              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#2B2B2B]/60 mb-5">
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#1E1B4B]/60 mb-5">
                 {c.tag}
               </span>
-              <p className="font-display text-2xl lg:text-3xl font-bold text-[#E3A830] mb-4 leading-tight">
+              <p className="font-display text-2xl lg:text-3xl font-bold text-[#F59E0B] mb-4 leading-tight">
                 {c.metric}
               </p>
-              <p className="text-base text-[#2B2B2B] leading-relaxed">{c.text}</p>
+              <p className="text-base text-[#1E1B4B] leading-relaxed">{c.text}</p>
             </div>
           ))}
         </div>

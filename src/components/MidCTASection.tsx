@@ -4,7 +4,7 @@ const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 
 const MidCTASection = () => {
   return (
-    <section className="bg-[#fffdf5] border-y border-border/60">
+    <section className="bg-[#FFFFFF] border-y border-border/60">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-10 lg:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
           <p className="font-display text-xl md:text-2xl font-semibold text-foreground max-w-3xl leading-snug">

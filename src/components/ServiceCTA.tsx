@@ -17,7 +17,7 @@ const ServiceCTA = ({
   };
 
   return (
-    <section className="py-10 lg:py-14 relative bg-[#1A2433]">
+    <section className="py-10 lg:py-14 relative bg-[#1E1B4B]">
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />

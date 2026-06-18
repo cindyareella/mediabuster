@@ -44,7 +44,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicios" className="py-10 lg:py-14 relative bg-[#fff5d2]">
+    <section id="servicios" className="py-10 lg:py-14 relative bg-[#F9F8FF]">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}

@@ -18,7 +18,7 @@ const ClientsSection = () => {
   const items = [...logos, ...logos];
 
   return (
-    <section id="clientes" className="py-10 lg:py-14 bg-[#fff5d2]">
+    <section id="clientes" className="py-10 lg:py-14 bg-[#F9F8FF]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground mb-3">

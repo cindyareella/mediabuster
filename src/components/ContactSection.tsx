@@ -65,7 +65,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-12 lg:py-16 relative overflow-hidden bg-[#2B2B2B]">
+    <section id="contacto" className="py-12 lg:py-16 relative overflow-hidden bg-[#1E1B4B]">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-electric/50 to-transparent" />
 
 
@@ -77,14 +77,14 @@ const ContactSection = () => {
               <span className="inline-block px-3 py-1 rounded-full bg-primary/15 text-primary font-bold text-xs uppercase tracking-widest mb-4 border border-primary/20">
                 Contacto
               </span>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#FDFBF7] mb-4 leading-tight">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#FFFFFF] mb-4 leading-tight">
                 ¿Listo para un marketing que sí funcione<span className="text-primary">?</span>
               </h2>
-              <p className="text-base text-[#FDFBF7]/75 leading-relaxed mb-4">
+              <p className="text-base text-[#FFFFFF]/75 leading-relaxed mb-4">
                 Déjanos tus datos. Analizaremos tu situación actual y te propondremos un camino claro
                 hacia tus objetivos de venta.
               </p>
-              <p className="text-sm text-[#FDFBF7]/60 leading-relaxed">
+              <p className="text-sm text-[#FFFFFF]/60 leading-relaxed">
                 Sin compromiso, con claridad. Uno de nuestros estrategas te contactará directamente.
               </p>
             </div>
