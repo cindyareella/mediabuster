@@ -7,6 +7,7 @@ import ServicesSection from "@/components/ServicesSection";
 import MidCTASection from "@/components/MidCTASection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ProcessSection from "@/components/ProcessSection";
+import AcademyBanner from "@/components/AcademyBanner";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
