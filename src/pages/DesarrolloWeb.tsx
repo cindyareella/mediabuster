@@ -271,7 +271,33 @@ const DesarrolloWeb = () => {
           </div>
         </section>
 
-        {/* 5. FORMULARIO DE CIERRE */}
+        {/* 5. FAQ */}
+        <section className="py-12 lg:py-16" style={{ backgroundColor: LAVENDER }}>
+          <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
+            <div className="text-center mb-12">
+              <p className="font-semibold text-sm uppercase tracking-widest mb-4" style={{ color: ULTRA }}>
+                Preguntas frecuentes
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: CARBON }}>
+                Lo que debes saber antes de empezar
+              </h2>
+            </div>
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((f, i) => (
+                <AccordionItem key={i} value={`q${i + 1}`}>
+                  <AccordionTrigger className="text-left text-lg font-semibold" style={{ color: CARBON }}>
+                    {f.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base" style={{ color: "#5a5a5a" }}>
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+        {/* 6. FORMULARIO DE CIERRE */}
         <ContactSection />
       </main>
 
