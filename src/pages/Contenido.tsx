@@ -44,9 +44,9 @@ const pillars = [
   },
   {
     icon: Share2,
-    title: "Distribución y Community",
+    title: "Community Management y Distribución",
     description:
-      "Recortamos tu contenido en múltiples formatos ágiles y gestionamos tu comunidad para convertir comentarios en ventas.",
+      "No solo publicamos tus videos; operamos tus canales de forma activa. Gestionamos tu comunidad y transformamos las interacciones diarias en prospectos calificados, llevando a los usuarios desde un comentario hasta tu embudo de ventas.",
   },
 ];
 
@@ -55,7 +55,7 @@ const includes = [
   "Grabación en set 4K o dirección remota.",
   "Edición de programas y formatos cortos (Reels/TikToks).",
   "Copywriting persuasivo.",
-  "Gestión activa de comunidad.",
+  "Community Management estratégico e interacción diaria con tus seguidores.",
 ];
 
 const faqs = [
@@ -151,6 +151,15 @@ const Contenido = () => {
                 que retenga la atención,{" "}
                 <strong style={{ color: CREAM }}>tu mensaje es solo ruido</strong>.
               </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] text-white font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-[#5b21b6] transition-all"
+                >
+                  Quiero dejar de publicar por publicar
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -237,6 +246,16 @@ const Contenido = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] text-white font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-[#5b21b6] transition-all"
+                >
+                  Delegar mi contenido y redes
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -261,6 +280,15 @@ const Contenido = () => {
                 construye un activo digital que te posiciona por encima de la competencia,
                 independientemente del presupuesto en pauta.
               </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] text-white font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-[#5b21b6] transition-all"
+                >
+                  Construir mi autoridad audiovisual hoy
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
