@@ -30,6 +30,7 @@ const Index = () => {
         <MidCTASection />
         <ProcessSection />
         <CaseStudiesSection />
+        <AcademyBanner />
         <ContactSection />
       </main>
       <Footer />
