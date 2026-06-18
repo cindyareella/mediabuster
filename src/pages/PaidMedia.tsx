@@ -168,12 +168,24 @@ const PaidMedia = () => {
                 className="text-lg md:text-xl leading-relaxed"
                 style={{ color: "rgba(253,251,247,0.75)" }}
               >
-                La mayoría de las agencias optimiza para clics baratos, alcance e impresiones,
-                métricas que se ven bien en un reporte pero no pagan tu nómina. El verdadero
-                problema no es el costo por clic, es la falta de un sistema enfocado en{" "}
-                <strong style={{ color: CREAM }}>rentabilidad, CPA controlado y ROAS</strong>.
-                Sin eso, cada peso invertido en pauta es una apuesta, no una inversión.
+                La mayoría de las agencias optimiza para clics baratos, alcance e
+                impresiones; métricas que se ven bien en un reporte pero no pagan tu
+                nómina. El verdadero problema no es el costo por clic, es la falta de un
+                sistema enfocado en{" "}
+                <strong style={{ color: CREAM }}>
+                  rentabilidad, conseguir clientes reales y multiplicar cada peso que
+                  inviertes
+                </strong>
+                . Sin esto, cada campaña es una apuesta, no una inversión.
               </p>
+              <div className="mt-8 flex justify-center">
+                <Button asChild size="xl" className="group bg-[#6D28D9] text-white hover:bg-[#5b21b6] hover:opacity-100 px-8">
+                  <a href="#contacto">
+                    Quiero dejar de quemar dinero
+                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -246,19 +258,29 @@ const PaidMedia = () => {
                   </p>
                 </div>
 
-                <ul className="space-y-4">
-                  {includes.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/60"
-                    >
-                      <CheckCircle2 className="w-5 h-5 text-electric shrink-0 mt-0.5" />
-                      <span className="text-base" style={{ color: CARBON }}>
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <div>
+                  <ul className="space-y-4">
+                    {includes.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/60"
+                      >
+                        <CheckCircle2 className="w-5 h-5 text-electric shrink-0 mt-0.5" />
+                        <span className="text-base" style={{ color: CARBON }}>
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-8 flex justify-center lg:justify-start">
+                    <Button asChild size="xl" className="group bg-[#6D28D9] text-white hover:bg-[#5b21b6] hover:opacity-100 px-8">
+                      <a href="#contacto">
+                        Implementar este sistema en mi negocio
+                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -296,6 +318,14 @@ const PaidMedia = () => {
                   </p>
                 </div>
               ))}
+            </div>
+            <div className="mt-12 flex justify-center">
+              <Button asChild size="xl" className="group bg-[#6D28D9] text-white hover:bg-[#5b21b6] hover:opacity-100 px-8">
+                <a href="#contacto">
+                  Hablar con un estratega
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
             </div>
           </div>
         </section>
