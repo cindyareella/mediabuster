@@ -4,9 +4,35 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import SEO from "@/components/SEO";
+import FAQSchema from "@/components/FAQSchema";
 import { BreadcrumbSchema } from "@/components/SchemaOrg";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { SITE_URL } from "@/lib/seoData";
+
+const faqs = [
+  {
+    q: "¿Cuánto tarda el desarrollo de un sitio web?",
+    a: "Un sitio corporativo o landing optimizada para conversión toma entre 3 y 6 semanas, dependiendo del alcance, integraciones y volumen de contenido.",
+  },
+  {
+    q: "¿Trabajan sobre WordPress o desarrollan a medida?",
+    a: "Desarrollamos a medida con stack moderno (React + Vite) para máxima velocidad, seguridad y escalabilidad. No usamos plantillas.",
+  },
+  {
+    q: "¿El sitio queda optimizado para SEO y campañas de pauta?",
+    a: "Sí. Cada proyecto se entrega con Core Web Vitals optimizados, marcado semántico, integración con analítica y pixeles listos para tus campañas.",
+  },
+  {
+    q: "¿Puedo administrar el contenido yo mismo?",
+    a: "Sí. Integramos un panel de administración o CMS headless según las necesidades del proyecto para que actualices contenido sin depender del equipo técnico.",
+  },
+];
 
 const CARBON = "#1E1B4B";
 const WHITE = "#FFFFFF";
