@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mediabuster.com/</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mediabuster.com/paid-media</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/paid-media</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mediabuster.com/seo</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/seo</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mediabuster.com/contenido</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/contenido</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mediabuster.com/nosotros</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/desarrollo-web</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mediabustermarketing.lovable.app/academia</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediabuster.com/contacto</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://mediabustermarketing.lovable.app/nosotros</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mediabustermarketing.lovable.app/contacto</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
