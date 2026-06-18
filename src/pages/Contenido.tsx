@@ -246,6 +246,16 @@ const Contenido = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] text-white font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-[#5b21b6] transition-all"
+                >
+                  Delegar mi contenido y redes
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
