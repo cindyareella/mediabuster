@@ -95,9 +95,12 @@ const DesarrolloWeb = () => {
                   </a>
                 </Button>
               </div>
-              <div className="rounded-2xl overflow-hidden bg-[#F9F8FF] aspect-[4/3] flex items-center justify-center border border-border/60">
-                <Code2 className="w-32 h-32" style={{ color: ULTRA, opacity: 0.4 }} />
-              </div>
+              <img
+                src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-desarrollo-web.jpg"
+                alt="Desarrollo Web a medida orientado a conversión"
+                className="object-cover rounded-2xl shadow-xl w-full aspect-[4/3]"
+                loading="eager"
+              />
             </div>
           </div>
         </section>

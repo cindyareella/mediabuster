@@ -1,4 +1,4 @@
-import { Zap, Search, Video, GraduationCap, ArrowRight } from "lucide-react";
+import { Zap, Search, Video, Code2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -29,12 +29,12 @@ const ServicesSection = () => {
       href: "/contenido",
     },
     {
-      icon: GraduationCap,
-      title: "Media Buster Academy",
-      description: "Cursos presenciales para dejar de operar y aprender a dirigir.",
-      features: ["Formación presencial", "Casos reales", "Networking", "Mentoría directa"],
+      icon: Code2,
+      title: "Desarrollo Web & CRO",
+      description: "Construimos ecosistemas rápidos, limpios y diseñados exclusivamente para convertir clics en clientes.",
+      features: ["Arquitectura en React", "Diseño UX/UI (CRO)", "Optimización de velocidad"],
       accent: "secondary",
-      href: "/academia",
+      href: "/desarrollo-web",
     },
   ];
 
