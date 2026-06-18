@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import FAQSchema from "@/components/FAQSchema";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -13,6 +14,21 @@ import { Users, MapPin, CalendarCheck, MessageCircle, ArrowRight } from "lucide-
 const PHONE = "525635406982";
 const waLink = (msg: string) =>
   `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+
+const faqs = [
+  {
+    q: "¿Cuál es el costo?",
+    a: "Varía por convocatoria, pide informes por WhatsApp para recibir el dossier actualizado.",
+  },
+  {
+    q: "¿Entregan diploma?",
+    a: "Sí, entregamos constancia de participación, pero el verdadero valor es el plan de acción con el que sales.",
+  },
+  {
+    q: "¿Puedo tomarlo online?",
+    a: "No, el formato es estrictamente presencial para garantizar la ejecución práctica y el networking de alto nivel.",
+  },
+];
 
 const programs = [
   {
@@ -45,6 +61,7 @@ const Academia = () => {
         description="Programas presenciales de marketing, estrategia y liderazgo en grupos reducidos. Convocatorias cerradas en Ciudad de México."
         path="/academia"
       />
+      <FAQSchema faqs={faqs} />
       <Header />
 
       <main className="pt-20 lg:pt-28">
@@ -162,24 +179,12 @@ const Academia = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Preguntas frecuentes</h2>
             </div>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="q1">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Cuál es el costo?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  Varía por convocatoria, pide informes por WhatsApp para recibir el dossier actualizado.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q2">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Entregan diploma?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  Sí, entregamos constancia de participación, pero el verdadero valor es el plan de acción con el que sales.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q3">
-                <AccordionTrigger className="text-left text-lg font-semibold">¿Puedo tomarlo online?</AccordionTrigger>
-                <AccordionContent className="text-base text-foreground/75">
-                  No, el formato es estrictamente presencial para garantizar la ejecución práctica y el networking de alto nivel.
-                </AccordionContent>
-              </AccordionItem>
+              {faqs.map((f, i) => (
+                <AccordionItem key={i} value={`q${i + 1}`}>
+                  <AccordionTrigger className="text-left text-lg font-semibold">{f.q}</AccordionTrigger>
+                  <AccordionContent className="text-base text-foreground/75">{f.a}</AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </section>
