@@ -22,9 +22,9 @@ const ServicesSection = () => {
     },
     {
       icon: Video,
-      title: "Producción Audiovisual 4K",
-      description: "Contenido estratégico que educa a tu cliente y lo convence de elegirte.",
-      features: ["Video 4K", "Podcast & entrevistas", "Reels & shorts", "Dirección creativa"],
+      title: "Producción Audiovisual & CM",
+      description: "Creamos contenido de alta calidad y operamos tus redes sociales de forma estratégica para retener la atención y convertir interacciones en clientes.",
+      features: ["Set propio 4K y dirección remota", "Estrategia editorial de contenido", "Community Management activo"],
       accent: "secondary",
       href: "/contenido",
     },
