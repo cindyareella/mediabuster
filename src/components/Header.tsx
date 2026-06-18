@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Zap, Search, Share2 } from "lucide-react";
+import { Menu, X, ChevronDown, Zap, Search, Share2, Code2 } from "lucide-react";
 const logo = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
 const Header = () => {
@@ -25,6 +25,7 @@ const Header = () => {
     { name: "Paid Media", href: "/paid-media", icon: Zap },
     { name: "SEO", href: "/seo", icon: Search },
     { name: "Contenido", href: "/contenido", icon: Share2 },
+    { name: "Desarrollo Web", href: "/desarrollo-web", icon: Code2 },
   ];
 
   return (
