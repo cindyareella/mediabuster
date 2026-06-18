@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import FAQSchema from "@/components/FAQSchema";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -13,6 +14,21 @@ import { Users, MapPin, CalendarCheck, MessageCircle, ArrowRight } from "lucide-
 const PHONE = "525635406982";
 const waLink = (msg: string) =>
   `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+
+const faqs = [
+  {
+    q: "¿Cuál es el costo?",
+    a: "Varía por convocatoria, pide informes por WhatsApp para recibir el dossier actualizado.",
+  },
+  {
+    q: "¿Entregan diploma?",
+    a: "Sí, entregamos constancia de participación, pero el verdadero valor es el plan de acción con el que sales.",
+  },
+  {
+    q: "¿Puedo tomarlo online?",
+    a: "No, el formato es estrictamente presencial para garantizar la ejecución práctica y el networking de alto nivel.",
+  },
+];
 
 const programs = [
   {
