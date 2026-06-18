@@ -151,6 +151,15 @@ const Contenido = () => {
                 que retenga la atención,{" "}
                 <strong style={{ color: CREAM }}>tu mensaje es solo ruido</strong>.
               </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 bg-[#6D28D9] text-white font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-[#5b21b6] transition-all"
+                >
+                  Quiero dejar de publicar por publicar
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
