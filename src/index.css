@@ -201,6 +201,6 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: hsl(40 40% 96%); }
-::-webkit-scrollbar-thumb { background: hsl(40 20% 80%); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: hsl(13 63% 52%); }
+::-webkit-scrollbar-track { background: hsl(247 100% 99%); }
+::-webkit-scrollbar-thumb { background: hsl(247 30% 85%); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(263 70% 50%); }
