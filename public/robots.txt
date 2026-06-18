@@ -13,4 +13,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://mediabustermarketing.lovable.app/sitemap.xml
+Sitemap: https://mediabustermarketing.com/sitemap.xml
