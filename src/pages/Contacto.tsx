@@ -62,10 +62,12 @@ const Contacto = () => {
 
       if (!response.ok) throw new Error("Error al enviar");
 
+      setIsSuccess(true);
       toast({
         title: "¡Mensaje enviado!",
         description: "Nos pondremos en contacto contigo pronto.",
       });
+      setTimeout(() => setIsSuccess(false), 6000);
 
       setFormData({ name: "", lastName: "", email: "", company: "", phone: "", service: "", message: "" });
     } catch (error) {
