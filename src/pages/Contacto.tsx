@@ -30,6 +30,7 @@ const Contacto = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -49,22 +50,24 @@ const Contacto = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nombre: formData.name,
-          apellidos: formData.lastName,
+          nombre: `${formData.name} ${formData.lastName}`.trim(),
           email: formData.email,
-          empresa: formData.company,
           telefono: formData.phone,
-          servicio: formData.service,
+          empresa: formData.company,
+          servicio_interes: formData.service,
           mensaje: formData.message,
+          origen: "pagina_contacto",
         }),
       });
 
       if (!response.ok) throw new Error("Error al enviar");
 
+      setIsSuccess(true);
       toast({
         title: "¡Mensaje enviado!",
         description: "Nos pondremos en contacto contigo pronto.",
       });
+      setTimeout(() => setIsSuccess(false), 6000);
 
       setFormData({ name: "", lastName: "", email: "", company: "", phone: "", service: "", message: "" });
     } catch (error) {
@@ -131,6 +134,16 @@ const Contacto = () => {
                 {/* Contact Form */}
                 <div className="lg:col-span-3">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {isSuccess && (
+                      <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
+                        <p className="text-sm font-medium text-foreground">
+                          ¡Mensaje enviado con éxito!
+                        </p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Nos pondremos en contacto contigo pronto.
+                        </p>
+                      </div>
+                    )}
                     {/* Fila 1: Nombre + Apellidos */}
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
