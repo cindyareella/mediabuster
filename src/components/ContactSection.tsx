@@ -78,7 +78,7 @@ const ContactSection = () => {
                 Contacto
               </span>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#FFFFFF] mb-4 leading-tight">
-                ¿Listo para un marketing que sí funcione<span className="text-primary">?</span>
+                ¿Listo para un marketing que sí funcione<span className="text-white">?</span>
               </h2>
               <p className="text-base text-[#FFFFFF]/75 leading-relaxed mb-4">
                 Déjanos tus datos. Analizaremos tu situación actual y te propondremos un camino claro
