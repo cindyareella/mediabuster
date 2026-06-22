@@ -50,13 +50,13 @@ const Contacto = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nombre: formData.name,
-          apellidos: formData.lastName,
+          nombre: `${formData.name} ${formData.lastName}`.trim(),
           email: formData.email,
-          empresa: formData.company,
           telefono: formData.phone,
-          servicio: formData.service,
+          empresa: formData.company,
+          servicio_interes: formData.service,
           mensaje: formData.message,
+          origen: "pagina_contacto",
         }),
       });
 
