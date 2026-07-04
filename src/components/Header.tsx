@@ -134,7 +134,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-slide-up">
+          <div className="lg:hidden fixed top-20 left-0 right-0 z-[99] w-full bg-[#FDFBF7] shadow-lg border-b border-border animate-slide-up">
             <nav className="flex flex-col p-6 gap-2">
               <Link to="/" className="text-lg font-semibold text-foreground py-2">Inicio</Link>
 
