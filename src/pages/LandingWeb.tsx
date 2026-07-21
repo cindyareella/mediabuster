@@ -76,7 +76,7 @@ const LandingWeb = () => {
           <img
             src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png"
             alt="Media Buster"
-            className="h-10 w-auto"
+            className="h-16 w-auto"
           />
         </div>
       </header>
@@ -88,7 +88,7 @@ const LandingWeb = () => {
           className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: "url('https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-desarrollo-web.jpg')" }}
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background/70" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/50 to-background/85" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
