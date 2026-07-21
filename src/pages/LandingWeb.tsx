@@ -76,18 +76,8 @@ const LandingWeb = () => {
           <img
             src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png"
             alt="Media Buster"
-            className="h-8 w-auto"
-            onError={(e) => {
-              (e.currentTarget as HTMLImageElement).style.display = "none";
-              const sib = e.currentTarget.nextElementSibling as HTMLElement | null;
-              if (sib) sib.style.display = "inline-block";
-            }}
+            className="h-10 w-auto"
           />
-          <span
-            className="hidden font-display font-extrabold tracking-tight text-lg text-foreground"
-          >
-            Media <span className="text-primary">Buster</span>
-          </span>
         </div>
       </header>
 
