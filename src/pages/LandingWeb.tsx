@@ -74,7 +74,7 @@ const LandingWeb = () => {
       <header className="w-full border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center">
           <img
-            src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-media-buster.png"
+            src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png"
             alt="Media Buster"
             className="h-8 w-auto"
             onError={(e) => {
@@ -92,8 +92,14 @@ const LandingWeb = () => {
       </header>
 
       {/* HERO — White */}
-      <section id="top" className="bg-background">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section id="top" className="relative bg-background overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-desarrollo-web.jpg')" }}
+        />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
             <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-primary">
