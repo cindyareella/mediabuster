@@ -13,11 +13,19 @@ import DesarrolloWeb from "./pages/DesarrolloWeb";
 import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
+import LandingWeb from "./pages/LandingWeb";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
+import { useLocation } from "react-router-dom";
 
 const queryClient = new QueryClient();
+
+const ConditionalWhatsApp = () => {
+  const { pathname } = useLocation();
+  if (pathname.startsWith("/landing-web")) return null;
+  return <FloatingWhatsApp />;
+};
 
 const App = () => (
   <HelmetProvider>
@@ -37,10 +45,11 @@ const App = () => (
             <Route path="/academia" element={<Academia />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/landing-web" element={<LandingWeb />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <FloatingWhatsApp />
+          <ConditionalWhatsApp />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
