@@ -76,18 +76,8 @@ const LandingWeb = () => {
           <img
             src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png"
             alt="Media Buster"
-            className="h-8 w-auto"
-            onError={(e) => {
-              (e.currentTarget as HTMLImageElement).style.display = "none";
-              const sib = e.currentTarget.nextElementSibling as HTMLElement | null;
-              if (sib) sib.style.display = "inline-block";
-            }}
+            className="h-10 w-auto"
           />
-          <span
-            className="hidden font-display font-extrabold tracking-tight text-lg text-foreground"
-          >
-            Media <span className="text-primary">Buster</span>
-          </span>
         </div>
       </header>
 
@@ -95,10 +85,10 @@ const LandingWeb = () => {
       <section id="top" className="relative bg-background overflow-hidden">
         <div
           aria-hidden
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: "url('https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-desarrollo-web.jpg')" }}
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background/70" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
