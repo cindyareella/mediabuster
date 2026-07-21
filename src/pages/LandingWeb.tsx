@@ -109,13 +109,12 @@ const LandingWeb = () => {
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Construimos ecosistemas web ultrarrápidos, optimizados para conversión (CRO) y
-              diseñados para posicionar tu negocio como líder en su industria.
+              Construimos ecosistemas web ultrarrápidos, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio web para que tenga una ruta clara de compra y comiences a vender.&nbsp;
             </p>
 
             <div className="mt-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               <span className="h-px w-10 bg-border" />
-              15 min · Sin costo · Cupos limitados
+              {"\n"}
             </div>
           </div>
 
@@ -166,7 +165,7 @@ const LandingWeb = () => {
                   </div>
                   <div>
                     <label htmlFor="reto" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      ¿Cuál es tu principal reto digital hoy?
+                      ¿QUÉ NECESITAS RESOLVER CON TU PÁGINA WEB?
                     </label>
                     <textarea id="reto" name="reto" required rows={3} value={form.reto} onChange={handleChange} placeholder="Cuéntanos qué necesitas resolver..." className={`${inputClass} resize-none`} />
                   </div>
@@ -239,7 +238,7 @@ const LandingWeb = () => {
           <div className="mt-14 grid md:grid-cols-3 gap-6">
             {[
               { icon: Gauge, title: "Velocidad Extrema", copy: "Desarrollo con tecnología de punta para carga en milisegundos.", tag: "01 / Performance" },
-              { icon: Target, title: "Optimización CRO", copy: "Cada botón diseñado para que el usuario compre.", tag: "02 / CRO" },
+              { icon: Target, title: "Ruta de compra clara (CRO)", copy: "Cada botón diseñado para que el usuario compre.", tag: "02 / CRO" },
               { icon: ShieldCheck, title: "Seguridad y Escalabilidad", copy: "Alojamiento de grado empresarial. Cero caídas.", tag: "03 / Infra" },
             ].map(({ icon: Icon, title, copy, tag }) => (
               <div
