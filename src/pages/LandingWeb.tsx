@@ -76,9 +76,9 @@ const LandingWeb = () => {
       <header className="w-full border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-3 flex items-center">
           <img
-            src={logoAsset.url}
+            src={LOGO_URL}
             alt="Media Buster"
-            className="h-20 md:h-24 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain"
           />
         </div>
       </header>
