@@ -37,6 +37,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <MetaPixelTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/paid-media" element={<PaidMedia />} />
