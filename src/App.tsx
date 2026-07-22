@@ -24,7 +24,7 @@ const queryClient = new QueryClient();
 
 const ConditionalWhatsApp = () => {
   const { pathname } = useLocation();
-  if (pathname.startsWith("/diseno-web-ventas")) return null;
+  if (pathname.startsWith("/diseno-web-ventas") || pathname.startsWith("/produccion-podcast-redes")) return null;
   return <FloatingWhatsApp />;
 };
 
