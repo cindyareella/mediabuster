@@ -14,6 +14,7 @@ import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import LandingWeb from "./pages/LandingWeb";
+import ProduccionPodcastRedes from "./pages/ProduccionPodcastRedes";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
