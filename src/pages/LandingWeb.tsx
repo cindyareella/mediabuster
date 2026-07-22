@@ -259,14 +259,25 @@ const LandingWeb = () => {
             ].map(({ icon: Icon, title, copy, tag }) => (
               <div
                 key={title}
-                className="rounded-3xl border border-border bg-card p-8 shadow-card transition-all duration-300 hover:-translate-y-1"
+                onMouseMove={(e) => {
+                  const t = e.currentTarget as HTMLDivElement;
+                  const r = t.getBoundingClientRect();
+                  t.style.setProperty("--mx", `${e.clientX - r.left}px`);
+                  t.style.setProperty("--my", `${e.clientY - r.top}px`);
+                }}
+                className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-card transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#6D28D9] hover:shadow-lg hover:shadow-[#6D28D9]/20"
               >
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">{tag}</p>
-                <div className="mt-4 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/30">
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  style={{ background: "radial-gradient(400px circle at var(--mx) var(--my), rgba(109,40,217,0.15), transparent 40%)" }}
+                />
+                <p className="relative text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">{tag}</p>
+                <div className="relative mt-4 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/30">
                   <Icon className="w-7 h-7 text-primary" strokeWidth={2} />
                 </div>
-                <h3 className="font-display mt-6 font-bold text-xl text-foreground">{title}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{copy}</p>
+                <h3 className="relative font-display mt-6 font-bold text-xl text-foreground">{title}</h3>
+                <p className="relative mt-3 text-muted-foreground leading-relaxed">{copy}</p>
               </div>
             ))}
           </div>
