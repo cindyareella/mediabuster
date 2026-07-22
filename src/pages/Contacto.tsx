@@ -16,6 +16,7 @@ const SERVICES = [
   "Contenido Multimedia",
   "Content & Social Media",
   "SEO",
+  "Diseño Web & CRO",
 ];
 
 const Contacto = () => {
