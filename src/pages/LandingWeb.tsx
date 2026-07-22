@@ -106,7 +106,7 @@ const LandingWeb = () => {
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Construimos ecosistemas web ultrarrápidos, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio web para que tenga una ruta clara de compra y comiences a vender.&nbsp;
+              En Media Buster Marketing construimos páginas web ultrarrápidas, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio para que tenga una ruta clara de compra y comiences a vender.&nbsp;
             </p>
 
             <div className="mt-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
