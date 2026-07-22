@@ -110,9 +110,16 @@ const LandingWeb = () => {
               En Media Buster Marketing construimos páginas web ultrarrápidas, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio para que tenga una ruta clara de compra y comiences a vender.&nbsp;
             </p>
 
-            <div className="mt-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              <span className="h-px w-10 bg-border" />
-              {"\n"}
+            <div className="mt-8">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold bg-whatsapp text-whatsapp-foreground shadow-glow hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <MessageCircle className="w-5 h-5" strokeWidth={2.2} />
+                Cotiza ahora por WhatsApp
+              </a>
             </div>
           </div>
 
