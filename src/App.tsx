@@ -14,6 +14,7 @@ import Academia from "./pages/Academia";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import LandingWeb from "./pages/LandingWeb";
+import ProduccionPodcastRedes from "./pages/ProduccionPodcastRedes";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
@@ -23,7 +24,7 @@ const queryClient = new QueryClient();
 
 const ConditionalWhatsApp = () => {
   const { pathname } = useLocation();
-  if (pathname.startsWith("/diseno-web-ventas")) return null;
+  if (pathname.startsWith("/diseno-web-ventas") || pathname.startsWith("/produccion-podcast-redes")) return null;
   return <FloatingWhatsApp />;
 };
 
@@ -46,6 +47,7 @@ const App = () => (
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/diseno-web-ventas" element={<LandingWeb />} />
+            <Route path="/produccion-podcast-redes" element={<ProduccionPodcastRedes />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
