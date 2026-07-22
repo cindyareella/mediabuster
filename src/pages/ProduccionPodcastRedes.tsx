@@ -165,7 +165,7 @@ const ProduccionPodcastRedes = () => {
                   </div>
                   <div>
                     <label htmlFor="redes" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      Link a tus redes
+                      LINK A TUS REDES (OPCIONAL)
                     </label>
                     <input id="redes" name="redes" value={form.redes} onChange={handleChange} placeholder="instagram.com/tumarca" className={inputClass} />
                   </div>
