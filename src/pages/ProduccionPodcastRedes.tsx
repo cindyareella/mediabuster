@@ -85,6 +85,12 @@ const ProduccionPodcastRedes = () => {
 
       {/* HERO — Lavender */}
       <section id="top" className="relative bg-muted overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/hero-content.png')" }}
+        />
+        <div aria-hidden className="absolute inset-0 bg-muted/75" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
