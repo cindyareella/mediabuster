@@ -107,7 +107,7 @@ const LandingWeb = () => {
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              En Media Buster Marketing construimos páginas web ultrarrápidas, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio para que tenga una ruta clara de compra y comiences a vender.&nbsp;
+              En <strong className="font-semibold text-foreground">Media Buster Marketing</strong> construimos <strong className="font-semibold text-foreground">páginas web ultrarrápidas</strong>, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio para que tenga una <strong className="font-semibold text-foreground">ruta clara de compra</strong> y <strong className="font-semibold text-foreground">comiences a vender</strong>.&nbsp;
             </p>
 
             <div className="mt-8">
