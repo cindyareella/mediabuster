@@ -304,21 +304,40 @@ const LandingWeb = () => {
       </footer>
 
       {/* Floating WhatsApp */}
-      <a
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Habla con un estratega"
-        className="group fixed bottom-6 right-6 z-[60]"
-      >
-        <span className="absolute inset-0 rounded-full bg-whatsapp/40 animate-ping" aria-hidden />
-        <span className="relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-whatsapp text-whatsapp-foreground shadow-glow hover:scale-110 transition-transform duration-300">
-          <MessageCircle className="w-7 h-7 md:w-8 md:h-8" strokeWidth={2.2} />
-        </span>
-        <span className="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-foreground text-background text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-card">
-          Habla con un estratega
-        </span>
-      </a>
+      <div className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
+        {showWaTooltip && (
+          <div className="relative animate-fade-in mb-2 rounded-2xl bg-foreground text-background text-sm font-semibold px-4 py-3 pr-9 shadow-card max-w-[200px]">
+            Pide cotización rápida
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                setShowWaTooltip(false);
+              }}
+              aria-label="Cerrar mensaje"
+              className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-background/70 hover:text-background hover:bg-background/10 transition"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+            <span
+              aria-hidden
+              className="absolute -bottom-1.5 right-6 w-3 h-3 rotate-45 bg-foreground"
+            />
+          </div>
+        )}
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pide cotización rápida por WhatsApp"
+          className="relative"
+        >
+          <span className="absolute inset-0 rounded-full bg-whatsapp/40 animate-ping" aria-hidden />
+          <span className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-whatsapp text-whatsapp-foreground shadow-glow hover:scale-110 transition-transform duration-300">
+            <MessageCircle className="w-10 h-10 md:w-12 md:h-12" strokeWidth={2.2} />
+          </span>
+        </a>
+      </div>
     </div>
   );
 };
