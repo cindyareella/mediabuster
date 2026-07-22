@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logoAsset from "@/assets/mediabuster-logo.png.asset.json";
 import { Helmet } from "react-helmet-async";
 import {
   Zap,
@@ -13,17 +12,19 @@ import {
   Instagram,
   Linkedin,
   Facebook,
+  X,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const WEBHOOK_URL = "https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18";
 const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
-const LOGO_URL = "https://cdn.jsdelivr.net/gh/mediabustermarketing/assets@main/logo-media-buster-white.png";
+const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
 const LandingWeb = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [showWaTooltip, setShowWaTooltip] = useState(true);
   const [form, setForm] = useState({ nombre: "", whatsapp: "", url: "", reto: "" });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -75,9 +76,9 @@ const LandingWeb = () => {
       <header className="w-full border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-3 flex items-center">
           <img
-            src={logoAsset.url}
+            src={LOGO_URL}
             alt="Media Buster"
-            className="h-20 md:h-24 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain"
           />
         </div>
       </header>
@@ -109,9 +110,16 @@ const LandingWeb = () => {
               En Media Buster Marketing construimos páginas web ultrarrápidas, diseñados para transformar cada clic en una oportunidad de venta real. Optimizamos tu sitio para que tenga una ruta clara de compra y comiences a vender.&nbsp;
             </p>
 
-            <div className="mt-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              <span className="h-px w-10 bg-border" />
-              {"\n"}
+            <div className="mt-8">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold bg-whatsapp text-whatsapp-foreground shadow-glow hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <MessageCircle className="w-5 h-5" strokeWidth={2.2} />
+                Cotiza ahora por WhatsApp
+              </a>
             </div>
           </div>
 
@@ -296,21 +304,40 @@ const LandingWeb = () => {
       </footer>
 
       {/* Floating WhatsApp */}
-      <a
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Habla con un estratega"
-        className="group fixed bottom-6 right-6 z-[60]"
-      >
-        <span className="absolute inset-0 rounded-full bg-whatsapp/40 animate-ping" aria-hidden />
-        <span className="relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-whatsapp text-whatsapp-foreground shadow-glow hover:scale-110 transition-transform duration-300">
-          <MessageCircle className="w-7 h-7 md:w-8 md:h-8" strokeWidth={2.2} />
-        </span>
-        <span className="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-foreground text-background text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-card">
-          Habla con un estratega
-        </span>
-      </a>
+      <div className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
+        {showWaTooltip && (
+          <div className="relative animate-fade-in mb-2 rounded-2xl bg-foreground text-background text-sm font-semibold px-4 py-3 pr-9 shadow-card max-w-[200px]">
+            Pide cotización rápida
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                setShowWaTooltip(false);
+              }}
+              aria-label="Cerrar mensaje"
+              className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-background/70 hover:text-background hover:bg-background/10 transition"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+            <span
+              aria-hidden
+              className="absolute -bottom-1.5 right-6 w-3 h-3 rotate-45 bg-foreground"
+            />
+          </div>
+        )}
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pide cotización rápida por WhatsApp"
+          className="relative"
+        >
+          <span className="absolute inset-0 rounded-full bg-whatsapp/40 animate-ping" aria-hidden />
+          <span className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-whatsapp text-whatsapp-foreground shadow-glow hover:scale-110 transition-transform duration-300">
+            <MessageCircle className="w-10 h-10 md:w-12 md:h-12" strokeWidth={2.2} />
+          </span>
+        </a>
+      </div>
     </div>
   );
 };
