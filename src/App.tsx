@@ -23,7 +23,7 @@ const queryClient = new QueryClient();
 
 const ConditionalWhatsApp = () => {
   const { pathname } = useLocation();
-  if (pathname.startsWith("/landing-web")) return null;
+  if (pathname.startsWith("/diseno-web-ventas")) return null;
   return <FloatingWhatsApp />;
 };
 
@@ -45,7 +45,7 @@ const App = () => (
             <Route path="/academia" element={<Academia />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
-            <Route path="/landing-web" element={<LandingWeb />} />
+            <Route path="/diseno-web-ventas" element={<LandingWeb />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
