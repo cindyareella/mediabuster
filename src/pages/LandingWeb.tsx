@@ -18,7 +18,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const WEBHOOK_URL = "https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18";
 const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
-const LOGO_URL = "https://cdn.jsdelivr.net/gh/mediabustermarketing/assets@main/logo-media-buster-white.png";
+const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
 const LandingWeb = () => {
   const { toast } = useToast();
