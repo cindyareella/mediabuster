@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoAsset from "@/assets/mediabuster-logo.png.asset.json";
 import { Helmet } from "react-helmet-async";
 import {
   Zap,
