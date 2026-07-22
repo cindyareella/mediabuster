@@ -214,13 +214,24 @@ const LandingWeb = () => {
             ].map(({ icon: Icon, title, copy }) => (
               <div
                 key={title}
-                className="group rounded-3xl border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
+                onMouseMove={(e) => {
+                  const t = e.currentTarget as HTMLDivElement;
+                  const r = t.getBoundingClientRect();
+                  t.style.setProperty("--mx", `${e.clientX - r.left}px`);
+                  t.style.setProperty("--my", `${e.clientY - r.top}px`);
+                }}
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#6D28D9] hover:shadow-lg hover:shadow-[#6D28D9]/30 hover:bg-white/[0.06]"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/20 border border-primary/40">
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  style={{ background: "radial-gradient(400px circle at var(--mx) var(--my), rgba(109,40,217,0.25), transparent 40%)" }}
+                />
+                <div className="relative inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/20 border border-primary/40">
                   <Icon className="w-6 h-6 text-primary-foreground" strokeWidth={2.2} />
                 </div>
-                <h3 className="font-display mt-6 font-bold text-xl">{title}</h3>
-                <p className="mt-3 text-white/70 leading-relaxed">{copy}</p>
+                <h3 className="relative font-display mt-6 font-bold text-xl">{title}</h3>
+                <p className="relative mt-3 text-white/70 leading-relaxed">{copy}</p>
               </div>
             ))}
           </div>
