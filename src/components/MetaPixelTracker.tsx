@@ -38,24 +38,9 @@ const MetaPixelTracker = () => {
     document.addEventListener("click", onClick, true);
     document.addEventListener("submit", onSubmit, true);
 
-    // Backup: track Lead on webhook fetch calls
-    const originalFetch = window.fetch;
-    window.fetch = function (input: RequestInfo | URL, init?: RequestInit) {
-      try {
-        const url = typeof input === "string" ? input : input instanceof URL ? input.href : (input as Request).url;
-        if (url && url.includes(WEBHOOK_HOST)) {
-          trackLead();
-        }
-      } catch {
-        /* noop */
-      }
-      return originalFetch.call(this, input as RequestInfo, init);
-    };
-
     return () => {
       document.removeEventListener("click", onClick, true);
       document.removeEventListener("submit", onSubmit, true);
-      window.fetch = originalFetch;
     };
   }, []);
 
