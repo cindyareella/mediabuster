@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { trackContact, trackLead } from "@/lib/fbpixel";
 
-const WEBHOOK_HOST = "hook.us2.make.com";
-
 /**
  * Global Meta Pixel tracker:
  * - Fires `Contact` on any click that targets a WhatsApp link or a
