@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoAsset from "@/assets/mediabuster-logo.png.asset.json";
 import { Helmet } from "react-helmet-async";
 import {
   Zap,
@@ -72,11 +73,11 @@ const LandingWeb = () => {
 
       {/* HEADER */}
       <header className="w-full border-b border-border bg-background">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-3 flex items-center">
           <img
-            src="https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png"
+            src={logoAsset.url}
             alt="Media Buster"
-            className="h-16 w-auto"
+            className="h-20 md:h-24 w-auto object-contain"
           />
         </div>
       </header>

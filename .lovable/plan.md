@@ -1,41 +1,21 @@
+# Fix: logo del header en /landing-web
 
-# Plan: Actualizar campos del formulario de contacto
+## Diagnóstico
 
-## Resumen
-Actualizar el formulario de contacto en `ContactSection.tsx` y `Contacto.tsx` para incluir los nuevos campos solicitados y un selector desplegable de servicio de interes.
+- El archivo `MediaBuster-logo.png` que sirve jsdelivr responde 200, pero es un PNG cuadrado de 1254×1254 con ~40% de padding transparente. Con `className="h-16"` (64px de contenedor), el texto real del logo se renderiza a ~25px — visualmente parece "no estar".
+- No hay errores en consola ni requests fallidos registrados, así que no es un problema de red ni de CSP: es una limitación del propio asset.
+- En el header del sitio principal (`Header.tsx`) el mismo archivo se ve porque va acompañado de otros elementos y con un contexto compacto, pero la landing usa un header dedicado sin más contenido.
 
-## Campos del formulario (nuevo)
-1. Nombre (texto, obligatorio)
-2. Apellidos (texto, obligatorio)
-3. Empresa (texto, opcional)
-4. Email (email, obligatorio)
-5. Telefono (texto, opcional)
-6. Servicio de interes (selector desplegable)
-7. Mensaje (texto largo, obligatorio)
+## Plan
 
-## Opciones del selector "Servicio de interes"
-- Paid Media & Growth
-- Contenido Multimedia
-- Branding
-- Content & Social Media
-- SEO
+1. Subir el PNG del logo a Lovable Assets (`lovable-assets create`) para tener un pointer estable y evitar cachés colgados de jsdelivr.
+2. En `src/pages/LandingWeb.tsx`, reemplazar la etiqueta `<img>` del header por el asset importado y subir el contenedor a un tamaño que compense el padding del PNG:
+   - `className="h-20 md:h-24 w-auto object-contain"`
+   - Ajustar el padding del header a `py-3` para que la altura total quede equilibrada con el logo más grande.
+3. Verificar visualmente que el logo se aprecia con claridad sobre el fondo crema del header, sin desbordar y sin agrandar la altura del header más de lo necesario.
 
-## Cambios tecnicos
+## Alcance
 
-### 1. `src/components/ContactSection.tsx`
-- Agregar nuevos campos al estado: `lastName`, `phone`, `service`
-- Actualizar el `handleChange` para soportar tambien `<select>`
-- Reorganizar el formulario:
-  - Fila 1: Nombre + Apellidos (2 columnas)
-  - Fila 2: Empresa + Email (2 columnas)
-  - Fila 3: Telefono + Servicio de interes (2 columnas)
-  - Fila 4: Mensaje (ancho completo)
-- Usar el componente `Select` de shadcn/ui para el desplegable de servicio
-- Actualizar el body del webhook para enviar los nuevos campos (`apellidos`, `telefono`, `servicio`)
-
-### 2. `src/pages/Contacto.tsx`
-- Aplicar los mismos cambios de campos y estructura que en `ContactSection.tsx`
-- Mantener la integracion con el webhook (o simular envio si no la tiene)
-
-## Resultado
-Ambos formularios de contacto (seccion en Index y pagina /contacto) tendran los 7 campos solicitados con el selector desplegable de servicios.
+- Solo se modifica el bloque `<header>` de `src/pages/LandingWeb.tsx`.
+- No se tocan el hero, el overlay, el formulario ni ninguna otra sección.
+- No se cambia el logo del resto del sitio.
