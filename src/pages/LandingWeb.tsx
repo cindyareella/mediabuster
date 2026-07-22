@@ -20,14 +20,32 @@ const WEBHOOK_URL = "https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18"
 const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
+const SERVICES = [
+  "Diseño Web & CRO",
+  "Paid Media & Growth",
+  "Contenido Multimedia",
+  "Content & Social Media",
+  "SEO",
+];
+
 const LandingWeb = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showWaTooltip, setShowWaTooltip] = useState(true);
-  const [form, setForm] = useState({ nombre: "", whatsapp: "", url: "", reto: "" });
+  const [form, setForm] = useState({
+    name: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+    service: "Diseño Web & CRO",
+    message: "",
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
   };
 
@@ -39,17 +57,18 @@ const LandingWeb = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nombre: form.nombre,
-          telefono: form.whatsapp,
-          url_actual: form.url,
-          mensaje: form.reto,
-          servicio_interes: "Auditoría Web",
-          origen: "Landing Web CRO",
+          nombre: `${form.name} ${form.lastName}`.trim(),
+          email: form.email,
+          telefono: form.phone,
+          empresa: form.company,
+          servicio_interes: form.service,
+          mensaje: form.message,
+          origen: "landing_diseno_web_ventas",
         }),
       });
       if (!res.ok) throw new Error("fail");
       setSuccess(true);
-      setForm({ nombre: "", whatsapp: "", url: "", reto: "" });
+      setForm({ name: "", lastName: "", company: "", email: "", phone: "", service: "Diseño Web & CRO", message: "" });
       toast({ title: "Solicitud enviada", description: "Te contactaremos en breve." });
     } catch {
       toast({ title: "Error al enviar", description: "Inténtalo nuevamente.", variant: "destructive" });
