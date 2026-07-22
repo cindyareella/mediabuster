@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logoAsset from "@/assets/mediabuster-logo.png.asset.json";
 import { Helmet } from "react-helmet-async";
 import {
   Zap,
@@ -13,6 +12,7 @@ import {
   Instagram,
   Linkedin,
   Facebook,
+  X,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
