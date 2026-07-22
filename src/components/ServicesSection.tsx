@@ -1,17 +1,10 @@
-import { Zap, Search, Video, Code2, ArrowRight } from "lucide-react";
+import { Search, Video, Code2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
-    {
-      icon: Zap,
-      title: "Paid Media & Growth",
-      description: "Campañas en Google y Meta orientadas 100% a traer prospectos y ventas.",
-      features: ["Meta Ads", "Google Ads", "Tracking de conversiones", "Optimización por ROAS"],
-      accent: "primary",
-      href: "/paid-media",
-    },
+
     {
       icon: Search,
       title: "SEO Técnico y Contenido",
@@ -62,7 +55,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {services.map((service, index) => (
               <div 
                 key={index}

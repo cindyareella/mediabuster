@@ -22,11 +22,11 @@ const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/Medi
 
 const SERVICES = [
   "Diseño Web & CRO",
-  "Paid Media & Growth",
   "Contenido Multimedia",
   "Content & Social Media",
   "SEO",
 ];
+
 
 const LandingWeb = () => {
   const { toast } = useToast();

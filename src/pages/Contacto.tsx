@@ -12,12 +12,12 @@ import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, Mail, ArrowRight, Send, MapPin } from "lucide-react";
 
 const SERVICES = [
-  "Paid Media & Growth",
   "Contenido Multimedia",
   "Content & Social Media",
   "SEO",
   "Diseño Web & CRO",
 ];
+
 
 const Contacto = () => {
   const { toast } = useToast();

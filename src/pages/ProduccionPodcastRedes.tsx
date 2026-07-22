@@ -23,8 +23,8 @@ const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/Medi
 const SERVICES = [
   "Contenido Multimedia",
   "Content & Social Media",
-  "Paid Media & Growth",
   "SEO",
+
   "Diseño Web & CRO",
 ];
 
