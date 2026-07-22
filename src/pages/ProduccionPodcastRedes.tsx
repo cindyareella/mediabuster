@@ -20,14 +20,32 @@ const WEBHOOK_URL = "https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18"
 const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
 
+const SERVICES = [
+  "Contenido Multimedia",
+  "Content & Social Media",
+  "Paid Media & Growth",
+  "SEO",
+  "Diseño Web & CRO",
+];
+
 const ProduccionPodcastRedes = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showWaTooltip, setShowWaTooltip] = useState(true);
-  const [form, setForm] = useState({ nombre: "", whatsapp: "", redes: "", meta: "" });
+  const [form, setForm] = useState({
+    name: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+    service: "Contenido Multimedia",
+    message: "",
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
   };
 
@@ -39,17 +57,18 @@ const ProduccionPodcastRedes = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nombre: form.nombre,
-          telefono: form.whatsapp,
-          redes: form.redes,
-          mensaje: form.meta,
-          servicio_interes: "Producción Podcast & Redes",
-          origen: "Landing Producción Podcast Redes",
+          nombre: `${form.name} ${form.lastName}`.trim(),
+          email: form.email,
+          telefono: form.phone,
+          empresa: form.company,
+          servicio_interes: form.service,
+          mensaje: form.message,
+          origen: "landing_produccion_podcast_redes",
         }),
       });
       if (!res.ok) throw new Error("fail");
       setSuccess(true);
-      setForm({ nombre: "", whatsapp: "", redes: "", meta: "" });
+      setForm({ name: "", lastName: "", company: "", email: "", phone: "", service: "Contenido Multimedia", message: "" });
       toast({ title: "Solicitud enviada", description: "Te contactaremos en breve." });
     } catch {
       toast({ title: "Error al enviar", description: "Inténtalo nuevamente.", variant: "destructive" });
