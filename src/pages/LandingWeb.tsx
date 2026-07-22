@@ -24,6 +24,7 @@ const LandingWeb = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [showWaTooltip, setShowWaTooltip] = useState(true);
   const [form, setForm] = useState({ nombre: "", whatsapp: "", url: "", reto: "" });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
