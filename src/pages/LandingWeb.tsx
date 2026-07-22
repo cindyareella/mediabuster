@@ -169,29 +169,57 @@ const LandingWeb = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-3.5">
-                  <div>
-                    <label htmlFor="nombre" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      Nombre completo
-                    </label>
-                    <input id="nombre" name="nombre" required value={form.nombre} onChange={handleChange} placeholder="Tu nombre" className={inputClass} />
+                  <div className="grid sm:grid-cols-2 gap-3.5">
+                    <div>
+                      <label htmlFor="name" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Nombre *
+                      </label>
+                      <input id="name" name="name" required value={form.name} onChange={handleChange} placeholder="Tu nombre" className={inputClass} />
+                    </div>
+                    <div>
+                      <label htmlFor="lastName" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Apellidos *
+                      </label>
+                      <input id="lastName" name="lastName" required value={form.lastName} onChange={handleChange} placeholder="Tus apellidos" className={inputClass} />
+                    </div>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-3.5">
+                    <div>
+                      <label htmlFor="company" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Empresa
+                      </label>
+                      <input id="company" name="company" value={form.company} onChange={handleChange} placeholder="Nombre de tu empresa" className={inputClass} />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Email *
+                      </label>
+                      <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} placeholder="tu@email.com" className={inputClass} />
+                    </div>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-3.5">
+                    <div>
+                      <label htmlFor="phone" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Teléfono
+                      </label>
+                      <input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+52 55 0000 0000" className={inputClass} />
+                    </div>
+                    <div>
+                      <label htmlFor="service" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                        Servicio de interés
+                      </label>
+                      <select id="service" name="service" value={form.service} onChange={handleChange} className={inputClass}>
+                        {SERVICES.map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </select>
+                    </div>
                   </div>
                   <div>
-                    <label htmlFor="whatsapp" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      WhatsApp
+                    <label htmlFor="message" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
+                      Mensaje *
                     </label>
-                    <input id="whatsapp" name="whatsapp" type="tel" required value={form.whatsapp} onChange={handleChange} placeholder="+52 55 0000 0000" className={inputClass} />
-                  </div>
-                  <div>
-                    <label htmlFor="url" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      URL actual <span className="normal-case text-muted-foreground/60">(opcional)</span>
-                    </label>
-                    <input id="url" name="url" value={form.url} onChange={handleChange} placeholder="https://tuempresa.com" className={inputClass} />
-                  </div>
-                  <div>
-                    <label htmlFor="reto" className="block text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      ¿QUÉ NECESITAS RESOLVER CON TU PÁGINA WEB?
-                    </label>
-                    <textarea id="reto" name="reto" required rows={3} value={form.reto} onChange={handleChange} placeholder="Cuéntanos qué necesitas resolver..." className={`${inputClass} resize-none`} />
+                    <textarea id="message" name="message" required rows={3} value={form.message} onChange={handleChange} placeholder="Cuéntanos brevemente sobre tu proyecto..." className={`${inputClass} resize-none`} />
                   </div>
 
                   <button
