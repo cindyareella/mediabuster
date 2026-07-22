@@ -18,6 +18,7 @@ import ProduccionPodcastRedes from "./pages/ProduccionPodcastRedes";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
+import MetaPixelTracker from "./components/MetaPixelTracker";
 import { useLocation } from "react-router-dom";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <MetaPixelTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/paid-media" element={<PaidMedia />} />
