@@ -432,7 +432,7 @@ const ProduccionPodcastRedes = () => {
           >
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/UdlAzxagUQ4?start=3&rel=0"
+              src="https://www.youtube.com/embed/UdlAzxagUQ4?start=3&rel=0&autoplay=1&mute=1&playsinline=1"
               title="Demo Reel Media Buster"
               frameBorder={0}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
