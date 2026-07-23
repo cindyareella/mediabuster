@@ -416,6 +416,8 @@ const LandingWeb = () => {
                 price: "Desde $28,000 + IVA",
                 ideal: "Para negocios que necesitan más secciones o funcionalidades",
                 featured: false,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Sitio%20Premium*",
                 benefits: [
                   "Secciones y páginas ilimitadas",
                   "Funcionalidades avanzadas a medida",
