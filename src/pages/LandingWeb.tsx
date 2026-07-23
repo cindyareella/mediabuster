@@ -471,7 +471,7 @@ const LandingWeb = () => {
       </section>
 
       {/* FAQ — White */}
-      <section className="bg-background">
+      <section id="faq" className="bg-background scroll-mt-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
           <div className="text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
