@@ -247,7 +247,7 @@ const LandingWeb = () => {
       </section>
 
       {/* BANNER */}
-      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-background">
+      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-muted">
         <img
           src={bannerDisenoWeb}
           alt="Diseñamos páginas web nuevas y optimizamos las existentes para que generen ventas reales."
@@ -303,7 +303,7 @@ const LandingWeb = () => {
       </section>
 
       {/* SOLUTION — Lavender */}
-      <section className="bg-muted">
+      <section className="bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
@@ -384,6 +384,8 @@ const LandingWeb = () => {
                 price: "Desde $12,000 + IVA",
                 ideal: "Ideal para campañas de Google Ads o Meta Ads",
                 featured: false,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Landing%20de%20Alta%20Conversi%C3%B3n*",
                 benefits: [
                   "1 página optimizada para conversión",
                   "Diseño responsive premium",
@@ -398,6 +400,8 @@ const LandingWeb = () => {
                 price: "Desde $18,000 – $22,000 + IVA",
                 ideal: "Ideal para la mayoría de negocios",
                 featured: true,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Sitio%20Web%20Completo*",
                 benefits: [
                   "Hasta 6 secciones o páginas",
                   "Diseño a medida orientado a ventas",
@@ -412,6 +416,8 @@ const LandingWeb = () => {
                 price: "Desde $28,000 + IVA",
                 ideal: "Para negocios que necesitan más secciones o funcionalidades",
                 featured: false,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Sitio%20Premium*",
                 benefits: [
                   "Secciones y páginas ilimitadas",
                   "Funcionalidades avanzadas a medida",
@@ -445,11 +451,9 @@ const LandingWeb = () => {
                   ))}
                 </ul>
                 <a
-                  href="#top"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
+                  href={plan.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold bg-primary text-primary-foreground hover:bg-[hsl(258,90%,66%)] transition-all duration-300"
                 >
                   Solicitar este plan
