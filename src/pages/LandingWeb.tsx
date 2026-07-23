@@ -243,6 +243,18 @@ const LandingWeb = () => {
         </div>
       </section>
 
+      {/* BANNER */}
+      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-background">
+        <img
+          src={bannerDisenoWeb}
+          alt="Diseñamos páginas web nuevas y optimizamos las existentes para que generen ventas reales."
+          className="w-full h-auto block"
+          width={1920}
+          height={640}
+          loading="lazy"
+        />
+      </section>
+
       {/* PROBLEM — Midnight Indigo */}
       <section className="bg-sage text-sage-foreground">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
