@@ -451,11 +451,9 @@ const LandingWeb = () => {
                   ))}
                 </ul>
                 <a
-                  href="#top"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
+                  href={plan.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold bg-primary text-primary-foreground hover:bg-[hsl(258,90%,66%)] transition-all duration-300"
                 >
                   Solicitar este plan
