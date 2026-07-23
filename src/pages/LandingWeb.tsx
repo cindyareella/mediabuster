@@ -556,7 +556,7 @@ const LandingWeb = () => {
       </footer>
 
       {/* Floating WhatsApp */}
-      <div className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
+      <div id="whatsapp" className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
         {showWaTooltip && (
           <div className="relative animate-fade-in mb-2 rounded-2xl bg-foreground text-background text-sm font-semibold px-4 py-3 pr-9 shadow-card max-w-[200px]">
             Pide cotización rápida
