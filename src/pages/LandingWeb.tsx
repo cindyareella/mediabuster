@@ -400,6 +400,8 @@ const LandingWeb = () => {
                 price: "Desde $18,000 – $22,000 + IVA",
                 ideal: "Ideal para la mayoría de negocios",
                 featured: true,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Sitio%20Web%20Completo*",
                 benefits: [
                   "Hasta 6 secciones o páginas",
                   "Diseño a medida orientado a ventas",
