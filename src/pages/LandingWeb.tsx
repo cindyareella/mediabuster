@@ -37,6 +37,7 @@ const LandingWeb = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showWaTooltip, setShowWaTooltip] = useState(true);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [form, setForm] = useState({
     name: "",
     lastName: "",
