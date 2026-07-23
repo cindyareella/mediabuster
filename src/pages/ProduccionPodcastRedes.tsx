@@ -371,8 +371,8 @@ const ProduccionPodcastRedes = () => {
           <div className="mt-14 grid md:grid-cols-3 gap-6">
             {[
               { icon: PenLine, title: "Estrategia y Guionaje", copy: "Diseñamos temarios y narrativas alineadas directamente a tus objetivos comerciales.", tag: "01 / Estrategia" },
-              { icon: Mic, title: "Producción de Podcast y Reels", copy: "Set de grabación físico in-house y dirección remota profesional para formatos largos y cortos.", tag: "02 / Producción" },
-              { icon: Film, title: "Edición Cinematográfica", copy: "Cortes dinámicos y diseño sonoro premium que elevan la percepción de tu marca.", tag: "03 / Post" },
+              { icon: Mic, title: "Producción de Podcast y Reels", copy: "Set de grabación físico in-house o dirección remota profesional para formatos largos y cortos.", tag: "02 / Producción" },
+              { icon: Film, title: "Edición de Alta Calidad", copy: "Cortes dinámicos y diseño sonoro premium que elevan la percepción de tu marca.", tag: "03 / Post" },
             ].map(({ icon: Icon, title, copy, tag }) => (
               <div
                 key={title}
