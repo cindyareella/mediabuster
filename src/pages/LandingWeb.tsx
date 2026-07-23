@@ -384,6 +384,8 @@ const LandingWeb = () => {
                 price: "Desde $12,000 + IVA",
                 ideal: "Ideal para campañas de Google Ads o Meta Ads",
                 featured: false,
+                whatsapp:
+                  "https://wa.me/525635406982?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20plan%20*Landing%20de%20Alta%20Conversi%C3%B3n*",
                 benefits: [
                   "1 página optimizada para conversión",
                   "Diseño responsive premium",
