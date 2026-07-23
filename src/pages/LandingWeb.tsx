@@ -13,6 +13,8 @@ import {
   Linkedin,
   Facebook,
   X,
+  Check,
+  ChevronDown,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -35,6 +37,7 @@ const LandingWeb = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [showWaTooltip, setShowWaTooltip] = useState(true);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [form, setForm] = useState({
     name: "",
     lastName: "",
@@ -355,6 +358,166 @@ const LandingWeb = () => {
               Solicitar mi diagnóstico
               <Send className="ml-2 w-4 h-4" />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING — Pale Lavender */}
+      <section className="bg-muted">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
+          <div className="max-w-2xl mx-auto text-center">
+            <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+              Paquetes
+            </span>
+            <h2 className="font-display mt-4 font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
+              Elige el plan ideal para tu negocio
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Precios orientativos. El valor final se define después del diagnóstico gratuito.
+            </p>
+          </div>
+
+          <div className="mt-14 grid md:grid-cols-3 gap-6 items-stretch">
+            {[
+              {
+                name: "Landing de Alta Conversión",
+                price: "Desde $12,000 + IVA",
+                ideal: "Ideal para campañas de Google Ads o Meta Ads",
+                featured: false,
+                benefits: [
+                  "1 página optimizada para conversión",
+                  "Diseño responsive premium",
+                  "Formulario conectado a tu CRM o email",
+                  "Integración con píxeles de seguimiento",
+                  "Copy orientado a CRO",
+                  "Entrega en 7 a 10 días hábiles",
+                ],
+              },
+              {
+                name: "Sitio Web Completo",
+                price: "Desde $18,000 – $22,000 + IVA",
+                ideal: "Ideal para la mayoría de negocios",
+                featured: true,
+                benefits: [
+                  "Hasta 6 secciones o páginas",
+                  "Diseño a medida orientado a ventas",
+                  "Blog y estructura SEO on-page",
+                  "Apoyo en estructura de textos",
+                  "Formularios y WhatsApp integrados",
+                  "Capacitación para autogestión",
+                ],
+              },
+              {
+                name: "Sitio Premium / Escalable",
+                price: "Desde $28,000 + IVA",
+                ideal: "Para negocios que necesitan más secciones o funcionalidades",
+                featured: false,
+                benefits: [
+                  "Secciones y páginas ilimitadas",
+                  "Funcionalidades avanzadas a medida",
+                  "Integraciones con plataformas externas",
+                  "Optimización avanzada de performance",
+                  "Estrategia SEO técnica incluida",
+                  "Soporte prioritario post-entrega",
+                ],
+              },
+            ].map((plan) => (
+              <div
+                key={plan.name}
+                className={`relative flex flex-col rounded-3xl border bg-card p-8 shadow-card transition-all duration-300 ${
+                  plan.featured ? "border-primary shadow-glow -translate-y-1" : "border-border"
+                }`}
+              >
+                {plan.featured && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-primary text-primary-foreground">
+                    Recomendado
+                  </span>
+                )}
+                <h3 className="font-display font-bold text-xl text-foreground">{plan.name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{plan.ideal}</p>
+                <p className="mt-6 font-display font-extrabold text-2xl text-foreground">{plan.price}</p>
+                <ul className="mt-6 space-y-3 flex-1">
+                  {plan.benefits.map((b) => (
+                    <li key={b} className="flex items-start gap-3 text-sm text-foreground/80">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#top"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="mt-8 inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold bg-primary text-primary-foreground hover:bg-[hsl(258,90%,66%)] transition-all duration-300"
+                >
+                  Solicitar este plan
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-muted-foreground max-w-2xl mx-auto">
+            Los precios son orientativos. El valor final se define después del diagnóstico gratuito según el alcance real de tu proyecto.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ — White */}
+      <section className="bg-background">
+        <div className="max-w-3xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
+          <div className="text-center">
+            <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+              Dudas frecuentes
+            </span>
+            <h2 className="font-display mt-4 font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
+              Preguntas Frecuentes
+            </h2>
+          </div>
+
+          <div className="mt-12 space-y-3">
+            {[
+              { q: "¿Cuánto cuesta una página web?", a: "El precio depende del alcance del proyecto. Una landing de alta conversión parte desde $12,000 + IVA y un sitio web completo desde $18,000 + IVA. Después del diagnóstico gratuito te damos una cotización exacta y sin sorpresas." },
+              { q: "¿Cuánto tiempo tarda el proyecto?", a: "Landing page: 7 a 10 días hábiles. Sitio web completo: 15 a 20 días hábiles. El tiempo puede variar según la rapidez con la que nos entregues la información y el contenido." },
+              { q: "¿Qué incluye el diagnóstico gratuito?", a: "Analizamos tu situación actual (si ya tienes página o no), tus objetivos de negocio y te damos recomendaciones claras de qué tipo de sitio necesitas y una cotización precisa. Sin costo ni compromiso." },
+              { q: "¿Hacen páginas nuevas y también optimizan las existentes?", a: "Sí. Diseñamos páginas web nuevas desde cero y también optimizamos sitios existentes para que generen más ventas (velocidad, estructura, CRO y claridad de la ruta de compra)." },
+              { q: "¿La página se verá bien en celular?", a: "Sí. Todas nuestras páginas son 100% responsive y se optimizan especialmente para dispositivos móviles." },
+              { q: "¿Me ayudan con los textos y las fotos?", a: "En los paquetes intermedios y premium incluimos apoyo en la estructura de textos. Las fotografías las proporciona el cliente (o te orientamos sobre qué tipo de imágenes necesitas)." },
+              { q: "¿Ofrecen mantenimiento después de entregar la página?", a: "Sí. Ofrecemos planes de mantenimiento mensual opcionales que incluyen actualizaciones, respaldos y soporte técnico. También puedes administrar tu página tú mismo después de la capacitación." },
+              { q: "¿Puedo ver ejemplos de trabajos anteriores?", a: "Claro. En el diagnóstico te mostramos casos relevantes según tu industria." },
+              { q: "¿Cómo es el proceso de trabajo?", a: "1) Diagnóstico gratuito. 2) Cotización y firma de acuerdo. 3) Brief y recolección de información. 4) Diseño y desarrollo. 5) Revisiones. 6) Entrega y capacitación." },
+              { q: "¿Hay forma de pago a plazos?", a: "Sí. Trabajamos con el esquema 50% al inicio y 50% al momento de la entrega." },
+            ].map((item, i) => {
+              const isOpen = openFaq === i;
+              return (
+                <div key={item.q} className="rounded-2xl border border-border bg-card overflow-hidden">
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? null : i)}
+                    className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left transition-colors hover:bg-muted/50"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="font-display font-semibold text-base sm:text-lg text-foreground">
+                      {item.q}
+                    </span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-primary shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                      strokeWidth={2.5}
+                    />
+                  </button>
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="px-6 pb-5 text-muted-foreground leading-relaxed">
+                        {item.a}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
