@@ -415,6 +415,34 @@ const ProduccionPodcastRedes = () => {
         </div>
       </section>
 
+      {/* DEMO REEL — Lavender */}
+      <section className="bg-muted">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
+          <div className="max-w-3xl mx-auto text-center mb-10 lg:mb-14">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight" style={{ color: "#1E1B4B" }}>
+              Mira cómo queda el contenido cuando se produce con intención
+            </h2>
+            <p className="mt-4 text-base md:text-lg" style={{ color: "#5C5A7A" }}>
+              Producciones reales para marcas
+            </p>
+          </div>
+          <div
+            className="relative mx-auto w-full max-w-[900px] aspect-video overflow-hidden rounded-2xl"
+            style={{ boxShadow: "0 10px 30px rgba(30, 27, 75, 0.15)" }}
+          >
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/UdlAzxagUQ4?start=3&rel=0"
+              title="Demo Reel Media Buster"
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+
       {/* FOOTER — Midnight Indigo */}
       <footer className="bg-sage text-sage-foreground border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
