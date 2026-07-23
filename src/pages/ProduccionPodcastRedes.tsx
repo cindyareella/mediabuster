@@ -355,8 +355,8 @@ const ProduccionPodcastRedes = () => {
         </div>
       </section>
 
-      {/* SOLUTION — Lavender */}
-      <section className="bg-muted">
+      {/* SOLUTION — White */}
+      <section className="bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
