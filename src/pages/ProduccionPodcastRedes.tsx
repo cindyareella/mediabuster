@@ -68,6 +68,12 @@ const ProduccionPodcastRedes = () => {
       });
       if (!res.ok) throw new Error("fail");
       setSuccess(true);
+      // Google Ads conversion event
+      if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+        (window as any).gtag("event", "conversion", {
+          send_to: "AW-18343313136/KIbmCJHgwdUcEPD94qpE",
+        });
+      }
       setForm({ name: "", lastName: "", company: "", email: "", phone: "", service: "Contenido Multimedia", message: "" });
       toast({ title: "Solicitud enviada", description: "Te contactaremos en breve." });
     } catch {
