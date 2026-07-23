@@ -150,7 +150,7 @@ const LandingWeb = () => {
           </div>
 
           {/* FORM card */}
-          <div className="relative">
+          <div id="diagnostico" className="relative scroll-mt-24">
             <div className="relative rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-card">
               <div className="flex items-center justify-between mb-6">
                 <div>
