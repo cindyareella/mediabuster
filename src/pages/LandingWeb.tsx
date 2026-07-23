@@ -247,7 +247,7 @@ const LandingWeb = () => {
       </section>
 
       {/* BANNER */}
-      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-background">
+      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-muted">
         <img
           src={bannerDisenoWeb}
           alt="Diseñamos páginas web nuevas y optimizamos las existentes para que generen ventas reales."
