@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+import bannerDisenoWeb from "@/assets/banner-diseno-web.jpg";
+
 const WEBHOOK_URL = "https://hook.us2.make.com/w2zuepbacr7s43nrk9lejoldy2s5zp18";
 const WHATSAPP_URL = "https://wa.me/message/P2BQDIMVFCDCG1";
 const LOGO_URL = "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/MediaBuster-logo.png";
@@ -239,6 +241,18 @@ const LandingWeb = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* BANNER */}
+      <section aria-label="Diseñamos páginas web que generan ventas" className="bg-background">
+        <img
+          src={bannerDisenoWeb}
+          alt="Diseñamos páginas web nuevas y optimizamos las existentes para que generen ventas reales."
+          className="w-full h-auto block"
+          width={1920}
+          height={640}
+          loading="lazy"
+        />
       </section>
 
       {/* PROBLEM — Midnight Indigo */}
