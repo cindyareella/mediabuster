@@ -6,7 +6,7 @@ const logos = [
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-clinica-animal.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-concibe.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-conieco.png",
-  "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-dysa.png",
+  "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-dysa",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-flow.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-pozzeidon-png-111.png",
   "https://cdn.jsdelivr.net/gh/cindyareella/mediabuster@main/logo-DEM.png",
