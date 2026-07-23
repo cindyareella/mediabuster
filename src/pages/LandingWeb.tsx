@@ -150,7 +150,7 @@ const LandingWeb = () => {
           </div>
 
           {/* FORM card */}
-          <div className="relative">
+          <div id="diagnostico" className="relative scroll-mt-24">
             <div className="relative rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-card">
               <div className="flex items-center justify-between mb-6">
                 <div>
@@ -365,7 +365,7 @@ const LandingWeb = () => {
       </section>
 
       {/* PRICING — Pale Lavender */}
-      <section className="bg-muted">
+      <section id="precios" className="bg-muted scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
@@ -471,7 +471,7 @@ const LandingWeb = () => {
       </section>
 
       {/* FAQ — White */}
-      <section className="bg-background">
+      <section id="faq" className="bg-background scroll-mt-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
           <div className="text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
@@ -556,7 +556,7 @@ const LandingWeb = () => {
       </footer>
 
       {/* Floating WhatsApp */}
-      <div className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
+      <div id="whatsapp" className="fixed bottom-6 right-6 z-[60] flex items-end gap-2">
         {showWaTooltip && (
           <div className="relative animate-fade-in mb-2 rounded-2xl bg-foreground text-background text-sm font-semibold px-4 py-3 pr-9 shadow-card max-w-[200px]">
             Pide cotización rápida
