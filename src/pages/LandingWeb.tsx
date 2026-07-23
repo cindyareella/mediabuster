@@ -99,11 +99,13 @@ const LandingWeb = () => {
       {/* HEADER */}
       <header className="w-full border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-3 flex items-center">
-          <img
-            src={LOGO_URL}
-            alt="Media Buster"
-            className="h-12 md:h-14 w-auto object-contain"
-          />
+          <a href="/" aria-label="Ir al inicio de Media Buster">
+            <img
+              src={LOGO_URL}
+              alt="Media Buster"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+          </a>
         </div>
       </header>
 
